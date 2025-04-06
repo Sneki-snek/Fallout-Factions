@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="40b8-8776-c343-c2bb" name="Brotherhood of Steel" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Paladin" hidden="false" id="7892-c47d-cbdf-45ba">
+      <profiles>
+        <profile name="Paladin" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="a42b-0ae4-712d-18ff">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">7</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">7</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">6</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">5</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">4</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Natrual Leader, Power Armor</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon" id="aeeb-9f82-43ba-9659" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Flamer" hidden="false" id="35db-aa84-7755-f201" type="selectionEntry" targetId="16c5-d9b7-70db-c100">
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="67"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Gatling Laser" hidden="false" id="d9bb-ac08-8a03-2956" type="selectionEntry" targetId="d84a-cc60-e193-6eb7">
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="72"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Minigun" hidden="false" id="0bea-bce4-608d-1eb5" type="selectionEntry" targetId="d117-c43d-7ae6-f826">
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="79"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75c9-5047-7d7b-a3db"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Natural Leader" id="d0eb-c316-4d91-85ef" hidden="false" type="rule" targetId="4dce-6c82-fc0f-93b7"/>
+        <infoLink name="Power Armor" id="fe5b-3114-8ed3-90a0" hidden="false" type="rule" targetId="8c35-1a78-88be-8a5d"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="9e15-d8c3-563e-36bc" id="eda0-50b9-2787-d815" primary="false" name="BoS"/>
+        <categoryLink targetId="1ada-7eae-f801-68b5" id="d3d9-d19c-830f-4280" primary="true" name="Leader"/>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="376b-6b8c-5a5c-f4fb" primary="false" name="Unit"/>
+        <categoryLink targetId="fea4-7d20-3941-c6c1" id="c75c-1267-f55a-654e" primary="false" name="Champion"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Field Scribe" hidden="false" id="bb77-ed0d-e832-e45b">
+      <profiles>
+        <profile name="Field Scribe" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="d4d3-52fd-a4a6-1a71">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">3</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">4</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">4</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">3</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">6</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Spotter</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Spotter" id="c6e7-3cb8-fddb-358f" hidden="false" type="rule" targetId="3bb0-9935-901e-e7d5"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon" id="6bb2-5220-9369-0a74" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Laser Pistol" hidden="false" id="1f52-4531-c23f-e347" type="selectionEntry" targetId="2dce-2737-bfbb-72a5">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="roster" shared="false" id="e9f1-1af4-e7be-009d" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="21"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="10mm Pistol" hidden="false" id="d0b1-4e50-62ad-b88b" type="selectionEntry" targetId="01f5-feb9-6b93-c0bb">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="roster" shared="false" id="ee79-c5cf-7b47-6592" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="26"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Crusader Pistol" hidden="false" id="4109-b45e-c206-6596" type="selectionEntry" targetId="c36f-d341-6fe2-f501">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="roster" shared="false" id="e483-8186-44ce-4a0e" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="31"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4252-0324-283f-a919"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="fea4-7d20-3941-c6c1" id="9b02-a358-2ee6-5dd1" primary="true" name="Champion"/>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="a823-fc83-c93b-acb9" primary="false" name="Unit"/>
+        <categoryLink targetId="9e15-d8c3-563e-36bc" id="a5fa-ce4a-0779-e794" primary="false" name="BoS"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Knight" hidden="false" id="81f6-eae0-ed45-e34d">
+      <categoryLinks>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="9fa6-f8ec-ebc9-34d4" primary="true" name="Grunt"/>
+        <categoryLink targetId="9e15-d8c3-563e-36bc" id="e5a3-98a8-df50-95b5" primary="false" name="BoS"/>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="3b3d-46a3-d174-7230" primary="false" name="Unit"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Knight" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="cbb6-fa3e-eac6-674b">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">6</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">6</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">4</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">4</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">3</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Power Armor</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Power Armor" id="ac65-80fb-3531-bb91" hidden="false" type="rule" targetId="8c35-1a78-88be-8a5d"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon" id="3237-00bc-2bc1-297b" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Laser Rifle" hidden="false" id="e80b-b466-9ab6-3794" type="selectionEntry" targetId="a2d0-db6f-b505-2b17">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="93b2-a748-ce86-d83a" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="60"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Laser Pistol" hidden="false" id="e2c6-abe9-7902-bb09" type="selectionEntry" targetId="2dce-2737-bfbb-72a5">
+              <entryLinks>
+                <entryLink import="true" name="Machete" hidden="false" id="c591-987f-9f95-1def" type="selectionEntry" targetId="68dd-8716-1975-44f0">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6bf2-1579-6d3e-a49e-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bf2-1579-6d3e-a49e-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="7fbb-2b81-a22b-bbe0" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="50"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Ripper" hidden="false" id="ba2c-4728-4029-f0e8" type="selectionEntry" targetId="c66b-2620-710e-88d4">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="2026-8b41-56cf-dffa" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="55"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95ae-a6f4-d2bb-cb5e"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Aspirant" hidden="false" id="f2be-d8d0-450d-0d1a">
+      <categoryLinks>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="bbeb-bd6b-9371-4dd4" primary="false" name="Unit"/>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="1ad9-b110-33bf-aced" primary="true" name="Grunt"/>
+        <categoryLink targetId="9e15-d8c3-563e-36bc" id="8634-de6b-9c24-91b3" primary="false" name="BoS"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Aspirant" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="6e1e-d80c-9583-d9e9">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">4</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">5</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">4</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">4</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">1</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon" id="5d77-5914-56b1-fcb9" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Laser Pistol" hidden="false" id="67bf-47af-3a1f-9a1d" type="selectionEntry" targetId="2dce-2737-bfbb-72a5">
+              <entryLinks>
+                <entryLink import="true" name="Hand weapon" hidden="false" id="d91e-b038-c8cf-9502" type="selectionEntry" targetId="3ce4-7ecb-dd45-ecb7">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1cd2-a718-efdc-e027-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cd2-a718-efdc-e027-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="08a0-4157-177f-94dd" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="20"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Crusader Pistol" hidden="false" id="61a0-3a21-477d-6f05" type="selectionEntry" targetId="c36f-d341-6fe2-f501">
+              <entryLinks>
+                <entryLink import="true" name="Hand weapon" hidden="false" id="8258-62cb-d34e-7c9e" type="selectionEntry" targetId="3ce4-7ecb-dd45-ecb7">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8d6c-0439-50fa-8180-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d6c-0439-50fa-8180-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="03df-14ca-e60a-2cbf" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="23"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Combat rifle" hidden="false" id="391c-fee2-31be-2404" type="selectionEntry" targetId="be00-8f6b-cab0-c93c">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="bc06-45f6-8108-f888" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="24"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Laser Rifle" hidden="false" id="03b5-e6fb-e9ea-d7bc" type="selectionEntry" targetId="a2d0-db6f-b505-2b17">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="324a-5436-884c-7c45" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="25"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b77d-3c4a-d62c-b085"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Initiate" hidden="false" id="01d0-3e5d-b441-49f2">
+      <profiles>
+        <profile name="Initiate" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="0760-f2e4-876e-c55e">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">3</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">4</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">4</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">3</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">4</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">1</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Sprint</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon" id="623f-6a43-0bdb-812a" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Laser Rifle" hidden="false" id="8c38-c7bd-c133-286e" type="selectionEntry" targetId="a2d0-db6f-b505-2b17">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="61dd-04c5-8b93-d2c1" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="23"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Combat rifle" hidden="false" id="82b6-1eac-80ad-a434" type="selectionEntry" targetId="be00-8f6b-cab0-c93c">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="daae-6820-c877-3433" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="24"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Recon Hunting Rifle" hidden="false" id="babc-d667-22f8-9d35" type="selectionEntry" targetId="0d46-42b1-192d-5ddd">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="4580-fe86-571d-018c" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="19"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Sprint" id="3fbd-7f98-b0eb-a429" hidden="false" type="rule" targetId="a8b1-b1b0-0922-f8f7"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="61df-07f6-63ba-e439" primary="true" name="Grunt"/>
+        <categoryLink targetId="9e15-d8c3-563e-36bc" id="a111-88e1-0e6a-3418" primary="false" name="BoS"/>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="8255-301e-ff40-1fec" primary="false" name="Unit"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="BoS Tier" hidden="false" id="b5b7-99e5-5941-6182" sortIndex="">
+      <categoryLinks>
+        <categoryLink targetId="dbe8-a807-a59a-f3bc" id="801d-9235-6595-3e81" primary="false" name="Tier"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>
