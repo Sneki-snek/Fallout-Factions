@@ -94,7 +94,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Specialism" id="1a71-bd29-0b8d-c6e4" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Hunter" hidden="false" id="8757-b6d0-8f5b-4e15">
+            <selectionEntry type="upgrade" import="true" name="Hunter Specialist" hidden="false" id="8757-b6d0-8f5b-4e15">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon" id="6622-59a9-79a5-babe" hidden="false" sortIndex="1">
                   <entryLinks>
@@ -126,7 +126,7 @@
                         <infoLink name="Sniper" id="52bf-7112-4114-8a82" hidden="false" type="rule" targetId="2f17-3dea-93ae-3262"/>
                       </infoLinks>
                       <profiles>
-                        <profile name="Sniper" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="1216-beaa-1c40-767d">
+                        <profile name="Sniper Specialist" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="1216-beaa-1c40-767d">
                           <characteristics>
                             <characteristic name="S" typeId="0658-e36f-340b-d2fd">3</characteristic>
                             <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
@@ -146,7 +146,7 @@
                         <infoLink name="Survivalist" id="6eae-207c-543c-94ce" hidden="false" type="rule" targetId="a024-4a3d-99cc-7337"/>
                       </infoLinks>
                       <profiles>
-                        <profile name="Survivalist" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="258e-42bd-8696-a960">
+                        <profile name="Survivalist Specialist" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="258e-42bd-8696-a960">
                           <characteristics>
                             <characteristic name="S" typeId="0658-e36f-340b-d2fd">3</characteristic>
                             <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
@@ -165,7 +165,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Trader" hidden="false" id="22a8-ef3e-f08c-a4aa">
+            <selectionEntry type="upgrade" import="true" name="Trader Specialist" hidden="false" id="22a8-ef3e-f08c-a4aa">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Perk" id="d26f-f136-776f-5e2a" hidden="false" sortIndex="2">
                   <constraints>
@@ -177,7 +177,7 @@
                         <infoLink name="Fortune Finder" id="1135-2039-a8b7-4758" hidden="false" type="rule" targetId="bd26-d5b1-6acf-7665"/>
                       </infoLinks>
                       <profiles>
-                        <profile name="Fortune Finder" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="874e-34cf-1407-ffa5">
+                        <profile name="Fortune Finder Specialist" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="874e-34cf-1407-ffa5">
                           <characteristics>
                             <characteristic name="S" typeId="0658-e36f-340b-d2fd">3</characteristic>
                             <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
@@ -197,7 +197,7 @@
                         <infoLink name="Survivalist" id="be56-86b3-f67d-79a2" hidden="false" type="rule" targetId="a024-4a3d-99cc-7337"/>
                       </infoLinks>
                       <profiles>
-                        <profile name="Survivalist" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="5aed-3836-2c21-fa65">
+                        <profile name="Survivalist Specialist" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="5aed-3836-2c21-fa65">
                           <characteristics>
                             <characteristic name="S" typeId="0658-e36f-340b-d2fd">3</characteristic>
                             <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
@@ -233,7 +233,7 @@
                 </entryLink>
               </entryLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Medic" hidden="false" id="137f-5204-d67a-a85f">
+            <selectionEntry type="upgrade" import="true" name="Medic Specialist" hidden="false" id="137f-5204-d67a-a85f">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Perk" id="338d-a04e-35e8-fa2f" hidden="false" sortIndex="2">
                   <constraints>
@@ -245,7 +245,7 @@
                         <infoLink name="Medic" id="f06f-6d85-aad1-74de" hidden="false" type="rule" targetId="e28c-0861-0c69-52ad"/>
                       </infoLinks>
                       <profiles>
-                        <profile name="Medic" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="1365-ab27-4074-dba2">
+                        <profile name="Medic Specialist" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="1365-ab27-4074-dba2">
                           <characteristics>
                             <characteristic name="S" typeId="0658-e36f-340b-d2fd">3</characteristic>
                             <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
@@ -265,7 +265,7 @@
                         <infoLink name="Survivalist" id="6960-62c2-96cf-998b" hidden="false" type="rule" targetId="a024-4a3d-99cc-7337"/>
                       </infoLinks>
                       <profiles>
-                        <profile name="Survivalist" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="7493-d6a4-c08c-ad9c">
+                        <profile name="Survivalist Specialist" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="7493-d6a4-c08c-ad9c">
                           <characteristics>
                             <characteristic name="S" typeId="0658-e36f-340b-d2fd">3</characteristic>
                             <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
@@ -524,4 +524,7 @@
       </infoLinks>
     </selectionEntry>
   </selectionEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Companions" id="c290-fe41-6b2b-cfb4" targetId="4a14-b2f0-fd22-9574" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>

@@ -192,8 +192,7 @@
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f26e-ded7-b6a3-1e3f-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f26e-ded7-b6a3-1e3f-max"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="858e-1273-ba0e-f31b"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -348,4 +347,7 @@
       </entryLinks>
     </selectionEntry>
   </selectionEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Companions" id="4a84-8760-698b-e3de" targetId="4a14-b2f0-fd22-9574" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>

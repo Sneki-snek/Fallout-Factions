@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="40b8-8776-c343-c2bb" name="Brotherhood of Steel" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Paladin" hidden="false" id="7892-c47d-cbdf-45ba">
+    <selectionEntry type="upgrade" import="true" name="Paladin" hidden="false" id="7892-c47d-cbdf-45ba" sortIndex="2">
       <profiles>
         <profile name="Paladin" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="a42b-0ae4-712d-18ff">
           <characteristics>
@@ -52,7 +52,7 @@
         <categoryLink targetId="fea4-7d20-3941-c6c1" id="c75c-1267-f55a-654e" primary="false" name="Champion"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Field Scribe" hidden="false" id="bb77-ed0d-e832-e45b">
+    <selectionEntry type="upgrade" import="true" name="Field Scribe" hidden="false" id="bb77-ed0d-e832-e45b" sortIndex="3">
       <profiles>
         <profile name="Field Scribe" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="d4d3-52fd-a4a6-1a71">
           <characteristics>
@@ -110,7 +110,7 @@
         <categoryLink targetId="9e15-d8c3-563e-36bc" id="a5fa-ce4a-0779-e794" primary="false" name="BoS"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Knight" hidden="false" id="81f6-eae0-ed45-e34d">
+    <selectionEntry type="upgrade" import="true" name="Knight" hidden="false" id="81f6-eae0-ed45-e34d" sortIndex="4">
       <categoryLinks>
         <categoryLink targetId="f14c-998a-b1aa-2af4" id="9fa6-f8ec-ebc9-34d4" primary="true" name="Grunt"/>
         <categoryLink targetId="9e15-d8c3-563e-36bc" id="e5a3-98a8-df50-95b5" primary="false" name="BoS"/>
@@ -176,7 +176,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Aspirant" hidden="false" id="f2be-d8d0-450d-0d1a">
+    <selectionEntry type="upgrade" import="true" name="Aspirant" hidden="false" id="f2be-d8d0-450d-0d1a" sortIndex="4">
       <categoryLinks>
         <categoryLink targetId="536d-4b88-52f1-46cc" id="bbeb-bd6b-9371-4dd4" primary="false" name="Unit"/>
         <categoryLink targetId="f14c-998a-b1aa-2af4" id="1ad9-b110-33bf-aced" primary="true" name="Grunt"/>
@@ -255,7 +255,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Initiate" hidden="false" id="01d0-3e5d-b441-49f2">
+    <selectionEntry type="upgrade" import="true" name="Initiate" hidden="false" id="01d0-3e5d-b441-49f2" sortIndex="4">
       <profiles>
         <profile name="Initiate" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="0760-f2e4-876e-c55e">
           <characteristics>
@@ -310,10 +310,8 @@
         <categoryLink targetId="536d-4b88-52f1-46cc" id="8255-301e-ff40-1fec" primary="false" name="Unit"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="BoS Tier" hidden="false" id="b5b7-99e5-5941-6182" sortIndex="">
-      <categoryLinks>
-        <categoryLink targetId="dbe8-a807-a59a-f3bc" id="801d-9235-6595-3e81" primary="false" name="Tier"/>
-      </categoryLinks>
-    </selectionEntry>
   </selectionEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Companions" id="1ba6-4c3a-831e-6234" targetId="4a14-b2f0-fd22-9574" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>

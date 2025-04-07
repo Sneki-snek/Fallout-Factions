@@ -474,4 +474,7 @@ When choosing your Active model, you may choose an Exhausted model. If you do, 
       </selectionEntries>
     </selectionEntry>
   </selectionEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Companions" id="bcfc-852d-9d4b-596b" targetId="4a14-b2f0-fd22-9574" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>

@@ -681,5 +681,322 @@
         <cost name="Parts" typeId="0537-7e50-b379-38b7" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Brahmin" hidden="false" id="5c0c-2699-41df-f133" sortIndex="5">
+      <categoryLinks>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="c2e6-b339-b2fa-8456" primary="false" name="Unit"/>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="23b2-2154-fa7e-f83c" primary="false" name="Grunt"/>
+        <categoryLink targetId="3d88-d079-2f02-28c6" id="abc0-b9b9-428b-b90d" primary="true" name="Companion"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Brahmin" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="0979-3cc6-22a5-e2bc">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">4</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">3</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">5</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">1</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">1</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">2</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">1</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Beast, Rad Resistant</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Beast" id="43f0-369f-d46c-12e3" hidden="false" type="rule" targetId="d257-f473-5d56-2fa4"/>
+        <infoLink name="Rad Resistant" id="fd33-63a4-d6cc-bfc6" hidden="false" type="rule" targetId="760a-3b74-8c57-ce18"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Trample" hidden="false" id="d4b5-ea49-bdd9-f242" type="selectionEntry" targetId="2639-a597-d6ad-05b7">
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="15"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d2a1-37df-361c-e104-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2a1-37df-361c-e104-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bloatfly" hidden="false" id="d8ad-362f-0dc1-fdd6" sortIndex="5">
+      <categoryLinks>
+        <categoryLink name="Unit" hidden="false" id="2fb3-c826-3b90-e554" targetId="536d-4b88-52f1-46cc" primary="false"/>
+        <categoryLink name="Grunt" hidden="false" id="1bf5-f737-f8f8-01af" targetId="f14c-998a-b1aa-2af4" primary="false"/>
+        <categoryLink name="Companion" hidden="false" id="2f57-e908-9c0a-f93c" targetId="3d88-d079-2f02-28c6" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Bloatfly" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="6613-a67f-4c60-ab7e">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">2</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">3</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">2</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">1</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">1</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">3</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">1</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">1</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Beast, Rad Resistant, Flight, Swarm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Beast" id="f924-7dd0-1303-d0e8" hidden="false" type="rule" targetId="d257-f473-5d56-2fa4"/>
+        <infoLink name="Rad Resistant" id="066c-76dc-2a41-4220" hidden="false" type="rule" targetId="760a-3b74-8c57-ce18"/>
+        <infoLink name="Flight" id="fa24-8d9c-042b-3276" hidden="false" type="rule" targetId="cf1b-8b2e-c7fe-c34a"/>
+        <infoLink name="Swarm" id="5500-7717-9785-d723" hidden="false" type="rule" targetId="514e-668c-d774-ac4c"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Bloatfly Larvae" hidden="false" id="c3d5-948d-0a1d-c288" type="selectionEntry" targetId="9dee-74ef-8212-677a">
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="5"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="90fe-eb3c-346c-251c"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bloodbug" hidden="false" id="fb36-3d10-6268-4675" sortIndex="5">
+      <categoryLinks>
+        <categoryLink name="Unit" hidden="false" id="6f6f-e6de-40bb-9e09" targetId="536d-4b88-52f1-46cc" primary="false"/>
+        <categoryLink name="Grunt" hidden="false" id="8ed5-b3ac-fc36-9003" targetId="f14c-998a-b1aa-2af4" primary="false"/>
+        <categoryLink name="Companion" hidden="false" id="5b0c-dbfd-e046-a49d" targetId="3d88-d079-2f02-28c6" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Bloodbug" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="d908-bf6e-44cb-c1b9">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">3</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">2</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">3</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">1</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">1</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">3</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">1</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">1</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Beast, Rad Resistant, Flight, Swarm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Beast" id="873f-e946-2e45-eb2d" hidden="false" type="rule" targetId="d257-f473-5d56-2fa4"/>
+        <infoLink name="Rad Resistant" id="d612-6cf2-10a8-7dcf" hidden="false" type="rule" targetId="760a-3b74-8c57-ce18"/>
+        <infoLink name="Flight" id="2a78-c714-c43e-5e8c" hidden="false" type="rule" targetId="cf1b-8b2e-c7fe-c34a"/>
+        <infoLink name="Swarm" id="b18f-0012-7a63-14a3" hidden="false" type="rule" targetId="514e-668c-d774-ac4c"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Bloodbug Proboscis" hidden="false" id="2b46-75c4-dc2c-c5b1" type="selectionEntry" targetId="cdd8-a95f-baa0-925c">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4d44-b8a4-c6b5-a2ba"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="10"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Deathclaw" hidden="false" id="b188-f1ea-e611-1387" sortIndex="5">
+      <profiles>
+        <profile name="Deathclaw" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="6690-2205-8ed7-7492">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">7</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">2</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">6</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">1</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">1</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">5</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">1</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">3</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Beast, Blitz, Burly, Rad Resistant, Wide Swings</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Beast" id="67be-d77a-7bfb-bfcb" hidden="false" type="rule" targetId="d257-f473-5d56-2fa4"/>
+        <infoLink name="Blitz" id="8d22-497d-a025-035e" hidden="false" type="rule" targetId="3728-9cb7-6593-4865"/>
+        <infoLink name="Burly" id="88ff-de43-ec47-2588" hidden="false" type="rule" targetId="d6d4-d3d8-8ac3-7312"/>
+        <infoLink name="Rad Resistant" id="17b7-0776-3216-cf31" hidden="false" type="rule" targetId="760a-3b74-8c57-ce18"/>
+        <infoLink name="Wide swings" id="6c06-a1d1-c4dc-496f" hidden="false" type="rule" targetId="16f6-c980-c585-6e57"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Deathclaw Claws" hidden="false" id="4878-cd33-d2ec-ba71" type="selectionEntry" targetId="8c3a-00d2-60fe-2ef2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="04c9-011c-05d2-ff20-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04c9-011c-05d2-ff20-max"/>
+          </constraints>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="70"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="7a79-8ef5-05fa-7cef" primary="false" name="Unit"/>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="b9b0-d86d-a166-6a9c" primary="false" name="Grunt"/>
+        <categoryLink targetId="3d88-d079-2f02-28c6" id="425f-48ec-9f60-2684" primary="true" name="Companion"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mongrel" hidden="false" id="c5c6-1727-9ed5-cdc4" sortIndex="5">
+      <categoryLinks>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="90bb-8fa3-2820-6b3d" primary="false" name="Unit"/>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="146c-5816-586f-a3f8" primary="false" name="Grunt"/>
+        <categoryLink targetId="3d88-d079-2f02-28c6" id="2b0b-00ea-a849-19e0" primary="true" name="Companion"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Mongrel" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="1b46-c03a-2d67-86fc">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">4</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">4</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">4</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">1</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">2</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">1</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">1</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Beast, Rad Resistant, Sprint, Swarm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Beast" id="f4fd-81fc-c9c6-a7be" hidden="false" type="rule" targetId="d257-f473-5d56-2fa4"/>
+        <infoLink name="Rad Resistant" id="5d1a-fdf2-3630-bf47" hidden="false" type="rule" targetId="760a-3b74-8c57-ce18"/>
+        <infoLink name="Sprint" id="5d4e-5480-45ef-2ab0" hidden="false" type="rule" targetId="a8b1-b1b0-0922-f8f7"/>
+        <infoLink name="Swarm" id="7d50-db7c-75c6-fd64" hidden="false" type="rule" targetId="514e-668c-d774-ac4c"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Claws and jaws" hidden="false" id="867e-fb3f-029b-490e" type="selectionEntry" targetId="bf26-c7dc-98e9-c55d">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4176-6eba-9489-3a5d"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="10"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Radstag" hidden="false" id="a3bf-6881-b798-6210" sortIndex="6">
+      <profiles>
+        <profile name="Radstag" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="86c9-d808-9942-4752">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">4</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">3</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">4</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">1</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">1</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">3</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">1</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">1</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Beast, Rad Resistant</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Beast" id="e4d4-882e-3ead-21cf" hidden="false" type="rule" targetId="d257-f473-5d56-2fa4"/>
+        <infoLink name="Rad Resistant" id="a7ed-2956-0ace-0faa" hidden="false" type="rule" targetId="760a-3b74-8c57-ce18"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Radstag Antlers" hidden="false" id="ccee-ee34-2e84-2ac9" type="selectionEntry" targetId="e5cc-21e5-ada1-526b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="886d-1398-1afe-27df-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="886d-1398-1afe-27df-max"/>
+          </constraints>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="10"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="6d58-6bc6-a840-9dc0" primary="false" name="Unit"/>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="3967-4e5a-6f8b-2e19" primary="false" name="Grunt"/>
+        <categoryLink targetId="3d88-d079-2f02-28c6" id="7ca7-c8da-21c5-9801" primary="true" name="Companion"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Radstag Doe" hidden="false" id="f7e6-1cf8-ec8a-0adc" sortIndex="6">
+      <profiles>
+        <profile name="Radstag Doe" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="8c96-6adc-fce5-ad6b">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">3</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">3</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">3</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">1</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">1</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">3</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">1</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">1</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Beast, Rad Resistant, Swarm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Doe Shove" hidden="false" id="ad24-b676-77b7-2447" type="selectionEntry" targetId="daf4-11f0-a39e-c730">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e44f-1012-fd5f-8a75"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="5"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Beast" id="2563-6cc9-290a-2825" hidden="false" type="rule" targetId="d257-f473-5d56-2fa4"/>
+        <infoLink name="Rad Resistant" id="05a9-37ad-f3b3-daec" hidden="false" type="rule" targetId="760a-3b74-8c57-ce18"/>
+        <infoLink name="Swarm" id="c544-7642-f7d4-9fb0" hidden="false" type="rule" targetId="514e-668c-d774-ac4c"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="62cb-cac8-5cc6-2852" primary="false" name="Unit"/>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="e528-1e0e-3b07-c7d2" primary="false" name="Grunt"/>
+        <categoryLink targetId="3d88-d079-2f02-28c6" id="be8d-4a12-403f-bd63" primary="true" name="Companion"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Yao Guai" hidden="false" id="c555-e2e7-e5ec-ae97" sortIndex="7">
+      <profiles>
+        <profile name="Yao Guai" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="4ee9-3503-3d5c-a305">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">7</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">3</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">7</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">1</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">1</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">1</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">3</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Beast, Burly, Freight Train, Hardy, Rad Resistant</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Beast" id="320c-acf2-30fc-000c" hidden="false" type="rule" targetId="d257-f473-5d56-2fa4"/>
+        <infoLink name="Burly" id="7db0-0c4c-3ac5-d196" hidden="false" type="rule" targetId="d6d4-d3d8-8ac3-7312"/>
+        <infoLink name="Freight Train" id="a46c-9fc9-05af-8570" hidden="false" type="rule" targetId="5811-9887-62e5-b8f2"/>
+        <infoLink name="Hardy" id="b247-b044-bec2-aa2a" hidden="false" type="rule" targetId="ec70-6a0e-9d0a-54da"/>
+        <infoLink name="Rad Resistant" id="7167-2c07-8978-8b09" hidden="false" type="rule" targetId="760a-3b74-8c57-ce18"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Yao Guai Claws And Jaws" hidden="false" id="d776-1b37-4069-3943" type="selectionEntry" targetId="8180-f4f1-2c29-5331">
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="70"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a3f8-7132-a8b8-e30f-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3f8-7132-a8b8-e30f-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="81df-6d37-6cd5-f320" primary="false" name="Unit"/>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="32d7-5e42-5f21-c5f9" primary="false" name="Grunt"/>
+        <categoryLink targetId="3d88-d079-2f02-28c6" id="d157-117d-266c-4f5e" primary="true" name="Companion"/>
+      </categoryLinks>
+    </selectionEntry>
   </selectionEntries>
 </catalogue>

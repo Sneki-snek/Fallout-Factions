@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-556b-cae6-314e-a8f7" name="Fallout Factions" battleScribeVersion="2.03" revision="1" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
+<gameSystem id="sys-556b-cae6-314e-a8f7" name="Fallout Factions" battleScribeVersion="2.03" revision="2" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
   <categoryEntries>
     <categoryEntry name="Leader" id="1ada-7eae-f801-68b5"/>
     <categoryEntry name="Unit" id="536d-4b88-52f1-46cc" hidden="false"/>
@@ -8,7 +8,9 @@
     <categoryEntry name="Survivors" id="dd3e-727d-dc94-cb7e" hidden="false"/>
     <categoryEntry name="Super Mutant" id="903b-ab81-a717-63bf" hidden="false"/>
     <categoryEntry name="BoS" id="9e15-d8c3-563e-36bc" hidden="false"/>
-    <categoryEntry name="Tier" id="dbe8-a807-a59a-f3bc" hidden="false"/>
+    <categoryEntry name="Chems" id="735c-aebd-500f-1da2" hidden="false"/>
+    <categoryEntry name="Raider" id="f867-1634-0096-bae6" hidden="false"/>
+    <categoryEntry name="Companion" id="3d88-d079-2f02-28c6" hidden="false"/>
   </categoryEntries>
   <profileTypes>
     <profileType name="Unit" id="769b-f94e-65c4-86be" hidden="false">
@@ -90,11 +92,12 @@ For example, if the weapon has the Rifle (10”) Type, the Attack will gain X Bo
       <description>Models with this weapon gain the following Action: ACTION: SEND HELP! (UNENGAGED MODELS) The Active player chooses a Friendly model other than the model using this Action. That model moves up to 2” (this can be used to move into or out of Engagement).</description>
     </rule>
     <rule name="Area" id="edab-9a5e-37e3-6727" hidden="false">
-      <description>When making an Attack Action with this Weapon, the Active player nominates a Target point on the Battlefield instead of a Target model. This must be a point Visible to the attacking model 
-on the Battlefield surface, or a Terrain Feature. Each model (from either crew) within X” of the selected point counts as a Target model for the attack.
- Make a single Attack Test, to which no Bonus Dice can be applied. Then resolve the Inflict Damage step once for each Target model, in an order chosen by the Active player. If a rule adjusts 
+      <description>When making an Attack Action with this Weapon, the Active player nominates a Target point on the Battlefield instead of a Target model. This must be a point Visible to the attacking model on the Battlefield surface, or a Terrain Feature. Each model (from either crew) within X” of the selected point counts as a Target model for the attack.
+ 
+Make a single Attack Test, to which no Bonus Dice can be applied. Then resolve the Inflict Damage step once for each Target model, in an order chosen by the Active player. If a rule adjusts 
 the amount of Damage inflicted, or affects the Target Model (for example, the Ignite (X) or Maim Critical Effects), this does not carry over between models, and is instead tracked on each individual mode.
- Do not resolve Confusion until Damage has been applied to all models.</description>
+ 
+Do not resolve Confusion until Damage has been applied to all models.</description>
     </rule>
     <rule name="Big swing" id="8449-200a-0dbf-bb97" hidden="false">
       <description>When making an Attack Action with this Weapon, the attacking model can Take Fatigue to increase its Effective Range by X”.</description>
@@ -130,7 +133,7 @@ the amount of Damage inflicted, or affects the Target Model (for example, the I
       <description>After resolving an Attack Action with this Weapon, the Active player places a Radiation Token in contact with the Target model, or within 1” of the Target point if the Weapon also has the Area (X”) Trait.</description>
     </rule>
     <rule name="Power Armor" id="8c35-1a78-88be-8a5d" hidden="false">
-      <description>This model gains the following benefits: This model cannot Suffer Fatigue. It can still Take Fatigue by performing Actions, or other effects. This model’s Harm Limit is 4 instead of 3. This model is unaffected by Radiation Tokens. </description>
+      <description>This model gains the following benefits: This model cannot Suffer Fatigue. It can still Take Fatigue by performing Actions, or other effects. This model’s Harm Limit is 4 instead of 3. This model is unaffected by Radiation Tokens.</description>
     </rule>
     <rule name="Spotter" id="3bb0-9935-901e-e7d5" hidden="false">
       <description>Friendly models within the Control Area of one or more models with this Perk may Re-roll one dice when making the Rummage Action.</description>
@@ -138,27 +141,147 @@ the amount of Damage inflicted, or affects the Target Model (for example, the I
     <rule name="Sprint" id="a8b1-b1b0-0922-f8f7" hidden="false">
       <description>When this model uses the Get Moving Action, it may move an extra 2”.</description>
     </rule>
+    <rule name="Personal Stash" id="e72e-0994-5ac6-f432" hidden="false">
+      <description>This model reduces the cost of Common Chems when purchasing Chems before a game AND during play when any Friendly model makes a Rummage Action by 3 Caps.</description>
+    </rule>
+    <rule name="Sticky Fingers" id="c660-2294-b38e-74cf" hidden="false">
+      <description>When this model makes the Rummage Action to Find a Chem, after adding a Chem to the Crew Roster, they may add a second Chem with a Cap cost no higher than the total result of the two rolled dice.</description>
+    </rule>
+    <rule name="Tranquilize" id="475f-bdbf-9428-c2ef" hidden="false">
+      <description>At the end of the Inflict Damage step, the opposing player rolls X dice. For each one that scores higher than the Target&apos;s Endurance, the Target suffers one Harm, with Excess Harm causing an Injury. If this causes the Target to be Incapacitated, when you do the Treat the Wounded step, there is no lasting effect, as though you rolled Clean Bill of Health.
+
+</description>
+    </rule>
+    <rule name="Programmed" id="2a0d-9ec1-2472-4e1c" hidden="false">
+      <description>This model cannot be a crew’s Leader, cannot take the Crew Training Story Action. In addition, it cannot gain Perks, or Experience.</description>
+    </rule>
+    <rule name="Machine" id="748e-27c9-4f04-61d2" hidden="false">
+      <description>This model always passes any Confusion Test it is required to make. When this model is Incapacitated, it does not trigger Confusion Tests in other models. In addition, Chems cannot be used on this model, and it is unaffected by the Poison (X) and Tranquilise (X) Critical Effects. Finally, this model is unaffected by Radiation Tokens. </description>
+    </rule>
+    <rule name="Hardy" id="ec70-6a0e-9d0a-54da" hidden="false">
+      <description>This model cannot suffer Fatigue. This model still takes Fatigue by performing an Action or gaining a bonus.</description>
+    </rule>
+    <rule name="Self Destruct" id="30f4-2f38-73fe-3152" hidden="false">
+      <description>When this model is Incapacitated, each other model within 3” of it Suffers 1 Harm.</description>
+    </rule>
+    <rule name="Non-Lethal" id="6cfc-0a82-bea2-5840" hidden="false">
+      <description>This weapon can never inflict an Injury with an attack, whether via damage, or through Excess Harm.</description>
+    </rule>
+    <rule name="Eye Catching" id="7f85-3fd7-20af-c7e6" hidden="false">
+      <description>This model always counts as being Wide Open.</description>
+    </rule>
+    <rule name="Flight" id="cf1b-8b2e-c7fe-c34a" hidden="false">
+      <description>This model is unaffected by the Proximity of enemy models and can take the Get Moving action whilst Engaged. This model does not count vertical movement towards their total allowed when climbing, and is always considered to have an Agility greater than difference in elevation when dropping down from a Terrain Feature.</description>
+    </rule>
+    <rule name="Freight Train" id="5811-9887-62e5-b8f2" hidden="false">
+      <description>This model can take the Get Moving Action whilst Engaged.</description>
+    </rule>
+    <rule name="Swarm" id="514e-668c-d774-ac4c" hidden="false">
+      <description>When this model is taken as a Companion, you may add up to three models to your crew, instead of one, adding the Rating of each individual Companion to your Champion&apos;s Rating.</description>
+    </rule>
+    <rule name="Bullet Magnet" id="b657-143d-8b76-8315" hidden="false">
+      <description>When making a Ranged Attack against your models, Enemy models cannot Target this model, if there is a closer visible Friendly model that can be targeted. 
+If a model has the Unassuming Perk, it cannot take this Perk.</description>
+    </rule>
+    <rule name="Grounded" id="f57b-1cb0-e349-0254" hidden="false"/>
+    <rule name="Life Giver" id="77fd-a9bb-6361-3f53" hidden="false">
+      <description>At the start of each Round, this model recovers 2 Harm.</description>
+    </rule>
+    <rule name="Blitz" id="3728-9cb7-6593-4865" hidden="false">
+      <description>After this model completes a Brawl Action, the Active Player may move it up to 3”.</description>
+    </rule>
+    <rule name="Pushback" id="5f03-28ea-e4cf-e9b2" hidden="false">
+      <description>At the end of the Inflict Damage step, the opposing player rolls X dice. For each one that scores higher than the Attacked model&apos;s Strength, that model is moved 1” directly away from the Attacking model. 
+If the model cannot move this full distance, it moves as far as it can.</description>
+    </rule>
+    <rule name="Poison" id="34f6-9c3a-1617-3b87" hidden="false">
+      <description>At the end of the Inflict Damage step, the opposing player rolls X dice. For each one that scores higher than the Target model’s Endurance, it suffers one Harm, with Excess Harm causing an Injury.</description>
+    </rule>
+    <rule name="Wide swings" id="16f6-c980-c585-6e57" hidden="false">
+      <description>When creating a Dice Pool for a Melee Attack, this model gains 1 Bonus Die for each Enemy model it is Engaged with, beyond the first. </description>
+    </rule>
   </sharedRules>
   <forceEntries>
-    <forceEntry name="Roster" id="ebad-b61e-ed20-0fdf" hidden="false">
+    <forceEntry name="Tier 1" id="ebad-b61e-ed20-0fdf" hidden="false" sortIndex="1">
       <categoryLinks>
+        <categoryLink name="Chems" hidden="false" id="cf6f-e222-56e0-699f" targetId="735c-aebd-500f-1da2"/>
         <categoryLink name="Leader" hidden="false" id="d6a7-c502-8e2b-45da" targetId="1ada-7eae-f801-68b5"/>
         <categoryLink name="Champion" hidden="false" id="6323-43b7-ca90-245b" targetId="fea4-7d20-3941-c6c1"/>
         <categoryLink name="Grunt" hidden="false" id="0a8c-6578-c77e-ad5b" targetId="f14c-998a-b1aa-2af4"/>
-        <categoryLink name="Tier" hidden="false" id="d59d-77b9-5947-d010" targetId="dbe8-a807-a59a-f3bc" type="categoryEntry"/>
+        <categoryLink name="Companion" hidden="false" id="3d7a-ae5a-8c65-46cc" targetId="3d88-d079-2f02-28c6" type="categoryEntry"/>
       </categoryLinks>
-      <profiles>
-        <profile name="Roster" typeId="64fe-0daa-b19c-52ec" typeName="Tier" hidden="false" id="c6d4-0738-42e4-08b0">
-          <characteristics>
-            <characteristic name="Upgrade Limit per Model" typeId="8db5-a114-b96a-00c2"/>
-            <characteristic name="Champion Limit" typeId="2739-4d8c-8082-614f"/>
-            <characteristic name="Facility Limit" typeId="b4cd-132c-ceb3-8d94"/>
-          </characteristics>
-        </profile>
-      </profiles>
+    </forceEntry>
+    <forceEntry name="Tier 3" id="17e0-6c49-b318-053c" hidden="false" sortIndex="3">
+      <categoryLinks>
+        <categoryLink name="Chems" hidden="false" id="b6dd-5f65-4ab4-0b32" targetId="735c-aebd-500f-1da2"/>
+        <categoryLink name="Leader" hidden="false" id="63d9-ba1a-63e2-7203" targetId="1ada-7eae-f801-68b5"/>
+        <categoryLink name="Champion" hidden="false" id="55fc-727c-f46e-137b" targetId="fea4-7d20-3941-c6c1"/>
+        <categoryLink name="Grunt" hidden="false" id="209e-ad6f-b92a-4f8c" targetId="f14c-998a-b1aa-2af4"/>
+        <categoryLink name="Companion" hidden="false" id="fb0c-a4a3-5743-b047" targetId="3d88-d079-2f02-28c6"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Tier 2" id="9a49-a223-343b-ec0b" hidden="false" sortIndex="2">
+      <categoryLinks>
+        <categoryLink name="Chems" hidden="false" id="ccb4-efae-e7c1-c9ad" targetId="735c-aebd-500f-1da2"/>
+        <categoryLink name="Leader" hidden="false" id="a272-9d28-61ca-844c" targetId="1ada-7eae-f801-68b5"/>
+        <categoryLink name="Champion" hidden="false" id="e93a-4dad-d978-abe4" targetId="fea4-7d20-3941-c6c1"/>
+        <categoryLink name="Grunt" hidden="false" id="06e3-2cc7-6b07-8a61" targetId="f14c-998a-b1aa-2af4"/>
+        <categoryLink name="Companion" hidden="false" id="684c-fc42-33a6-be4f" targetId="3d88-d079-2f02-28c6"/>
+      </categoryLinks>
     </forceEntry>
   </forceEntries>
   <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Standard Ploys" hidden="false" id="09b9-c7b5-7479-75b5" sortIndex="1">
+      <rules>
+        <rule name="Teamwork" id="8b75-121c-16d7-e0be" hidden="false">
+          <description>You may Enact this Ploy at the end of your Turn:
+
+
+Take another Turn. When choosing an Active Model, you cannot choose the Active model from the prior Turn.</description>
+        </rule>
+        <rule name="Lucky Break" id="8d18-b797-f897-c2b6" hidden="false">
+          <description>You may enact this Ploy while making a S.P.EC.I.A.L. Test for a model, after Roll the Pool and Remove Duds, but before the Fortune Smiles Step: 
+You may Re-roll all Duds in the Pool. </description>
+        </rule>
+        <rule name="Second Wind" id="d718-31aa-5b24-e482" hidden="false">
+          <description>You may enact this Ploy at the start of your Turn:
+When choosing your Active model, you may choose an Exhausted model. If you do, it Recovers 1 Fatigue. </description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name=".44 Pistol" hidden="false" id="e86d-0cb6-809a-82f7">
+      <profiles>
+        <profile name=".44 Pistol" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="ea05-8db7-c685-7b62">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">.44 Pistol</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Pistol(14&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">4A</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">CQB</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="CQB" id="1325-c7c6-e63e-46a0" hidden="false" type="rule" targetId="528d-c5d6-b786-d394"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="10mm Pistol" hidden="false" id="01f5-feb9-6b93-c0bb">
+      <profiles>
+        <profile name="10mm Pistol" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="003f-0ba1-e649-36d8">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">10mm Pistol</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Pistol(10&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">3A</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">CQB, Fast</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Fast" id="8f4b-6213-16b4-6c1b" hidden="false" type="rule" targetId="e3de-3e1c-02b7-8cb2"/>
+        <infoLink name="CQB" id="b09b-de7b-0c5e-2915" hidden="false" type="rule" targetId="528d-c5d6-b786-d394"/>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Assault Rifle" hidden="false" id="c7ed-4b78-d623-fa8c">
       <profiles>
         <profile name="Assault Rifle" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="8ca2-4c9c-3c45-2be0">
@@ -280,6 +403,22 @@ the amount of Damage inflicted, or affects the Target Model (for example, the I
       </profiles>
       <infoLinks>
         <infoLink name="Fast" id="ee62-3157-dde6-eb10" hidden="false" type="rule" targetId="e3de-3e1c-02b7-8cb2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Crusader Pistol" hidden="false" id="c36f-d341-6fe2-f501">
+      <profiles>
+        <profile name="Crusader Pistol" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="0abe-980a-3baa-3f55">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Crusader Pistol</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Pistol(12&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">4A</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">-</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Maim</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Maim" id="bbd1-fbc4-df1d-6d61" hidden="false" type="rule" targetId="1446-58d6-7333-f74f"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Double-barreled Shotgun" hidden="false" id="0a24-b2a2-a0c6-6c45">
@@ -416,6 +555,23 @@ the amount of Damage inflicted, or affects the Target Model (for example, the I
         <infoLink name="Suppress" id="f1ba-e9e3-f4a8-1877" hidden="false" type="rule" targetId="a5a2-907b-3be3-11ce"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Laser Pistol" hidden="false" id="2dce-2737-bfbb-72a5">
+      <profiles>
+        <profile name="Laser Pistol" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="17b2-7845-0723-23b8">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Laser Pistol</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Pistol(10&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">3A</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">CQB</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Ignite(2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="CQB" id="51a7-8760-e3f9-d80b" hidden="false" type="rule" targetId="528d-c5d6-b786-d394"/>
+        <infoLink name="Ignite" id="7591-d10f-3f2d-71a4" hidden="false" type="rule" targetId="60d8-505b-5586-8d34"/>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Laser Rifle" hidden="false" id="a2d0-db6f-b505-2b17">
       <profiles>
         <profile name="Laser Rifle" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="c506-5476-8d1f-1e88">
@@ -430,6 +586,22 @@ the amount of Damage inflicted, or affects the Target Model (for example, the I
       </profiles>
       <infoLinks>
         <infoLink name="Ignite" id="872e-cca3-dff6-fc29" hidden="false" type="rule" targetId="60d8-505b-5586-8d34"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Machete" hidden="false" id="68dd-8716-1975-44f0">
+      <profiles>
+        <profile name="Machete" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="5917-f9af-9581-0de1">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Machete</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Melee</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">4S</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">-</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Maim</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Maim" id="2100-3175-789a-e6f8" hidden="false" type="rule" targetId="1446-58d6-7333-f74f"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Minigun" hidden="false" id="d117-c43d-7ae6-f826">
@@ -448,6 +620,24 @@ the amount of Damage inflicted, or affects the Target Model (for example, the I
         <infoLink name="Slow" id="b22f-1e8c-8918-09f4" hidden="false" type="rule" targetId="e85a-bbf0-475c-206d"/>
         <infoLink name="Storm" id="a06b-93e7-f547-3095" hidden="false" type="rule" targetId="acb2-136f-8458-d00a"/>
         <infoLink name="Pierce" id="5690-a482-c62b-e2d2" hidden="false" type="rule" targetId="cdb1-d4c1-caee-6ff6"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Missile Launcher" hidden="false" id="7b2e-67f8-6364-bb1c">
+      <profiles>
+        <profile name="Missile Launcher" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="659d-c4c0-33ca-f02a">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Missile Launcher</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Heavy(26&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">5S</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Area(3&quot;), Slow</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Maim</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Area" id="153e-10c0-df7a-3f56" hidden="false" type="rule" targetId="edab-9a5e-37e3-6727"/>
+        <infoLink name="Slow" id="8ed9-4ab5-a386-bb28" hidden="false" type="rule" targetId="e85a-bbf0-475c-206d"/>
+        <infoLink name="Maim" id="fe1b-31e5-e506-8af8" hidden="false" type="rule" targetId="1446-58d6-7333-f74f"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Molotov Cocktails" hidden="false" id="325d-a3c0-cb20-83f7">
@@ -536,6 +726,23 @@ the amount of Damage inflicted, or affects the Target Model (for example, the I
         <infoLink name="Pierce" id="2df3-031b-8e7c-55db" hidden="false" type="rule" targetId="cdb1-d4c1-caee-6ff6"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pipe Rifle" hidden="false" id="7f5f-fa85-ae4e-72c6">
+      <profiles>
+        <profile name="Pipe Rifle" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="3179-c80d-2997-e152">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Pipe Rifle</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Rifle(20&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">3P</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Aim(+1)</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Suppress(1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Aim" id="68ab-0e78-5167-2202" hidden="false" type="rule" targetId="0d95-52b4-68c7-1240"/>
+        <infoLink name="Suppress" id="ecfc-7874-e5fd-e8aa" hidden="false" type="rule" targetId="a5a2-907b-3be3-11ce"/>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma Pistol" hidden="false" id="f003-709a-bdbe-5127">
       <profiles>
         <profile name="Plasma Pistol" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="9255-b89a-82c4-48dc">
@@ -585,6 +792,57 @@ the amount of Damage inflicted, or affects the Target Model (for example, the I
       <infoLinks>
         <infoLink name="Aim" id="8565-e5c3-b4f6-e1ae" hidden="false" type="rule" targetId="0d95-52b4-68c7-1240"/>
         <infoLink name="Pierce" id="6bc3-5248-2e53-f64a" hidden="false" type="rule" targetId="cdb1-d4c1-caee-6ff6"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Recon Hunting Rifle" hidden="false" id="0d46-42b1-192d-5ddd">
+      <profiles>
+        <profile name="Recon Hunting Rifle" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="12a8-0b9f-b021-de0d">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Recon Hunting Rifle</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Rifle(24&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">4P</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Aim(+1)</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Pierce</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Aim" id="f64f-907c-c393-af2a" hidden="false" type="rule" targetId="0d95-52b4-68c7-1240"/>
+        <infoLink name="Pierce" id="b1de-a990-4915-7054" hidden="false" type="rule" targetId="cdb1-d4c1-caee-6ff6"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ripper" hidden="false" id="c66b-2620-710e-88d4">
+      <profiles>
+        <profile name="Ripper" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="53cc-df4d-4f61-40a6">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Ripper</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Melee</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">5S</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Fast</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Maim</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Fast" id="34db-300c-50c8-c8d1" hidden="false" type="rule" targetId="e3de-3e1c-02b7-8cb2"/>
+        <infoLink name="Maim" id="a139-74cd-3829-9c75" hidden="false" type="rule" targetId="1446-58d6-7333-f74f"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Robot lasers" hidden="false" id="f0b2-f678-3972-45da">
+      <profiles>
+        <profile name="Robot lasers" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="a096-753b-4de7-1495">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Robot lasers</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Rifle(16&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">4P</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Fast</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Suppress(1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Fast" id="80fd-8ad8-dcc6-e576" hidden="false" type="rule" targetId="e3de-3e1c-02b7-8cb2"/>
+        <infoLink name="Suppress" id="320e-2e0e-ebd4-e999" hidden="false" type="rule" targetId="a5a2-907b-3be3-11ce"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sawn-off shotgun" hidden="false" id="6b0b-4f78-621a-9b09">
@@ -655,110 +913,372 @@ the amount of Damage inflicted, or affects the Target Model (for example, the I
         <infoLink name="Maim" id="057d-71cf-bee0-4596" hidden="false" type="rule" targetId="1446-58d6-7333-f74f"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Laser Pistol" hidden="false" id="2dce-2737-bfbb-72a5">
+    <selectionEntry type="upgrade" import="true" name="Various Appendages" hidden="false" id="caf7-8411-2397-ba3d">
       <profiles>
-        <profile name="Laser Pistol" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="17b2-7845-0723-23b8">
+        <profile name="Various Appendages" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="fa1f-68f3-c3b4-7256">
           <characteristics>
-            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Laser Pistol</characteristic>
-            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Pistol(10&quot;)</characteristic>
-            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">3A</characteristic>
-            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">CQB</characteristic>
-            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Ignite(2)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="CQB" id="51a7-8760-e3f9-d80b" hidden="false" type="rule" targetId="528d-c5d6-b786-d394"/>
-        <infoLink name="Ignite" id="7591-d10f-3f2d-71a4" hidden="false" type="rule" targetId="60d8-505b-5586-8d34"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="10mm Pistol" hidden="false" id="01f5-feb9-6b93-c0bb">
-      <profiles>
-        <profile name="10mm Pistol" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="003f-0ba1-e649-36d8">
-          <characteristics>
-            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">10mm Pistol</characteristic>
-            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Pistol(10&quot;)</characteristic>
-            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">3A</characteristic>
-            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">CQB, Fast</characteristic>
-            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Fast" id="8f4b-6213-16b4-6c1b" hidden="false" type="rule" targetId="e3de-3e1c-02b7-8cb2"/>
-        <infoLink name="CQB" id="b09b-de7b-0c5e-2915" hidden="false" type="rule" targetId="528d-c5d6-b786-d394"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Crusader Pistol" hidden="false" id="c36f-d341-6fe2-f501">
-      <profiles>
-        <profile name="Crusader Pistol" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="0abe-980a-3baa-3f55">
-          <characteristics>
-            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Crusader Pistol</characteristic>
-            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Pistol(12&quot;)</characteristic>
-            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">4A</characteristic>
-            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">-</characteristic>
-            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Maim</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Maim" id="bbd1-fbc4-df1d-6d61" hidden="false" type="rule" targetId="1446-58d6-7333-f74f"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Ripper" hidden="false" id="c66b-2620-710e-88d4">
-      <profiles>
-        <profile name="Ripper" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="53cc-df4d-4f61-40a6">
-          <characteristics>
-            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Ripper</characteristic>
-            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Melee</characteristic>
-            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">5S</characteristic>
-            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Fast</characteristic>
-            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Maim</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Fast" id="34db-300c-50c8-c8d1" hidden="false" type="rule" targetId="e3de-3e1c-02b7-8cb2"/>
-        <infoLink name="Maim" id="a139-74cd-3829-9c75" hidden="false" type="rule" targetId="1446-58d6-7333-f74f"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Machete" hidden="false" id="68dd-8716-1975-44f0">
-      <profiles>
-        <profile name="Machete" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="5917-f9af-9581-0de1">
-          <characteristics>
-            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Machete</characteristic>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Various Appendages</characteristic>
             <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Melee</characteristic>
             <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">4S</characteristic>
-            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">-</characteristic>
-            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Maim</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Fast</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Maim, Suppress(2), Tranquilize(1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Maim" id="2100-3175-789a-e6f8" hidden="false" type="rule" targetId="1446-58d6-7333-f74f"/>
+        <infoLink name="Maim" id="4edf-7948-92cb-efd2" hidden="false" type="rule" targetId="1446-58d6-7333-f74f"/>
+        <infoLink name="Fast" id="09cd-f76a-d44f-bbf3" hidden="false" type="rule" targetId="e3de-3e1c-02b7-8cb2"/>
+        <infoLink name="Suppress" id="3da1-a886-411f-6f30" hidden="false" type="rule" targetId="a5a2-907b-3be3-11ce"/>
+        <infoLink name="Tranquilize" id="0705-823e-b981-f8d9" hidden="false" type="rule" targetId="475f-bdbf-9428-c2ef"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Recon Hunting Rifle" hidden="false" id="0d46-42b1-192d-5ddd">
+    <selectionEntry type="upgrade" import="true" name="Nail Gun" hidden="false" id="a0c2-49da-0aa8-5ae4">
       <profiles>
-        <profile name="Recon Hunting Rifle" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="12a8-0b9f-b021-de0d">
+        <profile name="Nail Gun" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="2e37-ab71-c2ed-e2c8">
           <characteristics>
-            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Recon Hunting Rifle</characteristic>
-            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Rifle(24&quot;)</characteristic>
-            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">4P</characteristic>
-            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Aim(+1)</characteristic>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Nail Gun</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Rifle(12&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">3P</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">CQB, Fast</characteristic>
             <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Pierce</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Aim" id="f64f-907c-c393-af2a" hidden="false" type="rule" targetId="0d95-52b4-68c7-1240"/>
-        <infoLink name="Pierce" id="b1de-a990-4915-7054" hidden="false" type="rule" targetId="cdb1-d4c1-caee-6ff6"/>
+        <infoLink name="CQB" id="b6c4-db19-7766-c580" hidden="false" type="rule" targetId="528d-c5d6-b786-d394"/>
+        <infoLink name="Fast" id="4bbf-80d2-ba85-643f" hidden="false" type="rule" targetId="e3de-3e1c-02b7-8cb2"/>
+        <infoLink name="Pierce" id="6c53-72e8-d2ef-e21c" hidden="false" type="rule" targetId="cdb1-d4c1-caee-6ff6"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Tier" hidden="false" id="08ad-dd61-418d-d50d" sortIndex="1">
-      <categoryLinks>
-        <categoryLink targetId="dbe8-a807-a59a-f3bc" id="d5c4-c93a-e115-97ac" primary="false" name="Tier"/>
-      </categoryLinks>
+    <selectionEntry type="upgrade" import="true" name="Hand Cryojet" hidden="false" id="61be-eee4-56c0-ebab">
+      <profiles>
+        <profile name="Hand Cryojet" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="504e-e4a4-1f1e-d03b">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Hand Cryojet</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Heavy(6&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">3S</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Area(2&quot;), CQB, Slow</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Suppress(1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Area" id="ad81-c944-540a-a1a2" hidden="false" type="rule" targetId="edab-9a5e-37e3-6727"/>
+        <infoLink name="CQB" id="5478-90b8-f66f-4b09" hidden="false" type="rule" targetId="528d-c5d6-b786-d394"/>
+        <infoLink name="Slow" id="b966-77c4-dd02-e1c1" hidden="false" type="rule" targetId="e85a-bbf0-475c-206d"/>
+        <infoLink name="Suppress" id="2ebd-db26-ef09-3c29" hidden="false" type="rule" targetId="a5a2-907b-3be3-11ce"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shock Hand" hidden="false" id="80f8-3e29-ab30-00a1">
+      <profiles>
+        <profile name="Shock Hand" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="45a0-55ae-1e3b-df0b">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Shock Hand</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Melee</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">4S</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Non-Lethal, Fast</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Suppress(1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Non-Lethal" id="6436-3f33-9837-0b7f" hidden="false" type="rule" targetId="6cfc-0a82-bea2-5840"/>
+        <infoLink name="Fast" id="cdf1-4d27-7c0b-0bab" hidden="false" type="rule" targetId="e3de-3e1c-02b7-8cb2"/>
+        <infoLink name="Suppress" id="1053-5d89-eed7-a028" hidden="false" type="rule" targetId="a5a2-907b-3be3-11ce"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Robot Bash" hidden="false" id="64a8-fd41-f878-3aaf">
+      <profiles>
+        <profile name="Robot Bash" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="5061-b923-d6fb-57a7">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Robot Bash</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Melee</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">4S</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">-</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Eyebot Laser" hidden="false" id="0f2f-da11-5144-8055">
+      <profiles>
+        <profile name="Eyebot Laser" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="a34a-9691-fdd9-9c6d">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Eyebot Laser</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Pistol(10&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">3A</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">CQB</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Ignite(1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="CQB" id="e006-1c3e-24ff-da38" hidden="false" type="rule" targetId="528d-c5d6-b786-d394"/>
+        <infoLink name="Ignite" id="8812-f36e-e6d6-1c47" hidden="false" type="rule" targetId="60d8-505b-5586-8d34"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Securitron SMG" hidden="false" id="8d19-769a-b48c-dfea">
+      <profiles>
+        <profile name="Securitron SMG" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="f458-c01d-b791-6652">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Securitron SMG</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Rifle(12&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">3P</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Storm(3)</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Suppress(2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Storm" id="7117-8c94-8f7e-f051" hidden="false" type="rule" targetId="acb2-136f-8458-d00a"/>
+        <infoLink name="Suppress" id="47c9-7fa2-478b-5683" hidden="false" type="rule" targetId="a5a2-907b-3be3-11ce"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shoulder Launchers" hidden="false" id="69e6-ddab-8d60-0735">
+      <profiles>
+        <profile name="Shoulder Launchers" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="15b0-3d79-fafd-b0e7">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Shoulder Launchers</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Heavy(12&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">3S</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Area(2&quot;)</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Maim</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Area" id="6eef-8487-8769-f349" hidden="false" type="rule" targetId="edab-9a5e-37e3-6727"/>
+        <infoLink name="Maim" id="a490-e264-3421-d801" hidden="false" type="rule" targetId="1446-58d6-7333-f74f"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Nuka Dispenser" hidden="false" id="2858-f6a4-79c6-d0a6">
+      <profiles>
+        <profile name="Nuka Dispenser" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="8199-7796-1015-846c">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Nuka Dispenser</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Pistol(8&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">4P</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Fast</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Suppress(1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Fast" id="850f-b84d-5b82-d92d" hidden="false" type="rule" targetId="e3de-3e1c-02b7-8cb2"/>
+        <infoLink name="Suppress" id="0e89-dd00-c7c1-f6d6" hidden="false" type="rule" targetId="a5a2-907b-3be3-11ce"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Trample" hidden="false" id="2639-a597-d6ad-05b7">
+      <profiles>
+        <profile name="Trample" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="cadb-67d3-a0f1-0b3b">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Trample</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Melee</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">4S</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Wind Up</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Pushback(3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Wind up" id="7a79-3056-2291-69b2" hidden="false" type="rule" targetId="dc23-e76e-87b2-ce6f"/>
+        <infoLink name="Pushback" id="856a-7d83-42b3-ae7e" hidden="false" type="rule" targetId="5f03-28ea-e4cf-e9b2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bloodbug Proboscis" hidden="false" id="cdd8-a95f-baa0-925c">
+      <profiles>
+        <profile name="Bloodbug Proboscis" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="424e-35f9-578a-2488">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Bloodbug Proboscis</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">melee</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">4S</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">-</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Poison(2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Poison" id="7218-cd4c-76ba-c315" hidden="false" type="rule" targetId="34f6-9c3a-1617-3b87"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Deathclaw Claws" hidden="false" id="8c3a-00d2-60fe-2ef2">
+      <profiles>
+        <profile name="Deathclaw Claws" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="b851-5e27-d6ae-c78e">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Deathclaw Claws</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Melee</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">5S</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">-</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Maim, Pushback(1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Maim" id="d398-ec4d-2465-3b3e" hidden="false" type="rule" targetId="1446-58d6-7333-f74f"/>
+        <infoLink name="Pushback" id="6df7-2fc5-e4d0-c987" hidden="false" type="rule" targetId="5f03-28ea-e4cf-e9b2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Doe Shove" hidden="false" id="daf4-11f0-a39e-c730">
+      <profiles>
+        <profile name="Doe Shove" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="1ba5-f8e1-5fcc-0a1e">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Doe Shove</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Melee</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">2S</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">-</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Yao Guai Claws And Jaws" hidden="false" id="8180-f4f1-2c29-5331">
+      <profiles>
+        <profile name="Yao Guai Claws And Jaws" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="bde3-ff21-0b31-e49f">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Yao Guai Claws And Jaws</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Melee</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">5S</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">-</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Maim, Pushback(2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Maim" id="973d-2cd6-9f09-6595" hidden="false" type="rule" targetId="1446-58d6-7333-f74f"/>
+        <infoLink name="Pushback" id="98d5-21f2-d82e-d9c3" hidden="false" type="rule" targetId="5f03-28ea-e4cf-e9b2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bloatfly Larvae" hidden="false" id="9dee-74ef-8212-677a">
+      <profiles>
+        <profile name="Bloatfly Larvae" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="961f-30f1-186e-684a">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Bloatfly Larvae</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Pistol(10&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">2A</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Fast</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Fast" id="de53-4844-6baf-da04" hidden="false" type="rule" targetId="e3de-3e1c-02b7-8cb2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Radstag Antlers" hidden="false" id="e5cc-21e5-ada1-526b">
+      <profiles>
+        <profile name="Radstag Antlers" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="f228-432f-8ed2-96a3">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Radstag Antlers</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Melee</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">4S</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Wind Up</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Pierce</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Wind up" id="d64e-f79c-65f1-3fd0" hidden="false" type="rule" targetId="dc23-e76e-87b2-ce6f"/>
+        <infoLink name="Pierce" id="9417-91fe-36b6-c18f" hidden="false" type="rule" targetId="cdb1-d4c1-caee-6ff6"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Chems" hidden="false" id="5d77-d4a5-7c51-f361" sortIndex="1" defaultAmount="1">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rad-X" hidden="false" id="2cef-e2b9-1bec-c77d" sortIndex="1">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e401-ce45-38a8-15f4"/>
+          </constraints>
+          <rules>
+            <rule name="Rad-X" id="d5c5-e86a-f201-3bae" hidden="false">
+              <description>When a model ends turn within 3&quot; or Rad token, no Endurance penalty from Rad tokens until end of round</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink targetId="735c-aebd-500f-1da2" id="724b-c0fd-795d-fb7d" primary="true" name="Chems"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="5"/>
+            <cost name="Parts" typeId="0537-7e50-b379-38b7" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Psycho" hidden="false" id="a68a-47e1-a7e3-b73f" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8f57-0d9d-0904-09e0"/>
+          </constraints>
+          <rules>
+            <rule name="Psycho" id="9987-e870-bcf5-5bde" hidden="false">
+              <description>When creating dice pool for an Attack, add +2 Dice</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="6"/>
+            <cost name="Parts" typeId="0537-7e50-b379-38b7" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Nuka-Cola" hidden="false" id="3b12-b146-2301-4d95" sortIndex="3">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="fa05-74c3-aa63-1b18"/>
+          </constraints>
+          <rules>
+            <rule name="Nuka-Cola" id="72fc-1c31-9d3f-ae3d" hidden="false">
+              <description>Start of model Action, model&apos;s Control Area is 3&quot; larger until end of turn</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="8"/>
+            <cost name="Parts" typeId="0537-7e50-b379-38b7" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Stimpak" hidden="false" id="02d9-dc2f-55cf-7b8c" sortIndex="4">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1690-778c-5103-615e"/>
+          </constraints>
+          <rules>
+            <rule name="Stimpak" id="591e-a3ec-4649-85e6" hidden="false">
+              <description>Start of turn, active model recovers 2 Harm</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="9"/>
+            <cost name="Parts" typeId="0537-7e50-b379-38b7" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Steady" hidden="false" id="fbaf-ad46-dcf0-bf11" sortIndex="5">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4946-38e8-893f-e76d"/>
+          </constraints>
+          <rules>
+            <rule name="Steady" id="36a1-63b7-b8c7-26ed" hidden="false">
+              <description>When creating a Dice Pool for a Ranged Attack, you may spend a dose of Steady to increase the Active model’s Perception by 1, until that Attack has resolved.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="10"/>
+            <cost name="Parts" typeId="0537-7e50-b379-38b7" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Jet" hidden="false" id="9838-c6ec-9c51-3ad4" sortIndex="6">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4922-c7c1-f11c-4c9e"/>
+          </constraints>
+          <rules>
+            <rule name="Jet" id="7d4a-1026-4c33-36f0" hidden="false">
+              <description>Start of your turn before choosing an Active model, remove 1 Fatigue from a model in your crew</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="15"/>
+            <cost name="Parts" typeId="0537-7e50-b379-38b7" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="735c-aebd-500f-1da2" id="47ae-1cb8-8328-4a90" primary="true" name="Chems"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <publications>
+    <publication name="Github" id="2a6d-6afe-dd1d-5321" hidden="false" publisherUrl="https://github.com/Sneki-snek/Fallout-Factions" shortName="Sneki-snek/Fallout-Factions"/>
+  </publications>
 </gameSystem>
