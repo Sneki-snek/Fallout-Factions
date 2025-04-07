@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="4a14-b2f0-fd22-9574" name="Companions" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Mr Handy" hidden="false" id="1bf3-0604-2e96-6c37" collective="false" sortIndex="2">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Type" id="400b-92d6-a371-5bc6" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Standard Unit" hidden="false" id="7a0b-9292-15c0-f27a">
+              <profiles>
+                <profile name="Standard Unit" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="ed0e-09cb-aa9c-79df">
+                  <characteristics>
+                    <characteristic name="S" typeId="0658-e36f-340b-d2fd">5</characteristic>
+                    <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
+                    <characteristic name="E" typeId="089e-bbfc-56a7-f03c">5</characteristic>
+                    <characteristic name="C" typeId="04b4-a668-4aa1-6152">0</characteristic>
+                    <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">1</characteristic>
+                    <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
+                    <characteristic name="L" typeId="d136-fa51-dc6b-206e">1</characteristic>
+                    <characteristic name="Wound" typeId="419f-3112-3e77-f90d">3</characteristic>
+                    <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Hardy, Machine, Programmed</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Hardy" id="edaf-a87c-3a1a-a142" hidden="false" type="rule" targetId="ec70-6a0e-9d0a-54da"/>
+                <infoLink name="Machine" id="e957-d454-c166-73a0" hidden="false" type="rule" targetId="748e-27c9-4f04-61d2"/>
+                <infoLink name="Programmed" id="373a-c923-c5bf-e737" hidden="false" type="rule" targetId="2a0d-9ec1-2472-4e1c"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Various Appendages" hidden="false" id="e7b2-4d12-8cf7-5ca5" type="selectionEntry" targetId="caf7-8411-2397-ba3d">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="28ad-4d3b-6b8d-8f1c-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28ad-4d3b-6b8d-8f1c-max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Robot lasers" hidden="false" id="6f52-e8a9-281e-3402" type="selectionEntry" targetId="f0b2-f678-3972-45da">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="57d2-6891-c4f5-49c1-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57d2-6891-c4f5-49c1-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78a2-b32f-f75c-b354"/>
+              </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="52"/>
+                <cost name="Parts" typeId="0537-7e50-b379-38b7" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Medical Unit" hidden="false" id="58ac-06b7-7e55-b4fe">
+              <profiles>
+                <profile name="Medical Unit" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="a8ea-c9a8-075a-29fe">
+                  <characteristics>
+                    <characteristic name="S" typeId="0658-e36f-340b-d2fd">5</characteristic>
+                    <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
+                    <characteristic name="E" typeId="089e-bbfc-56a7-f03c">5</characteristic>
+                    <characteristic name="C" typeId="04b4-a668-4aa1-6152">0</characteristic>
+                    <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">1</characteristic>
+                    <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
+                    <characteristic name="L" typeId="d136-fa51-dc6b-206e">1</characteristic>
+                    <characteristic name="Wound" typeId="419f-3112-3e77-f90d">3</characteristic>
+                    <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Hardy, Machine, Programmed, Medic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Hardy" id="f5da-4422-563b-2fd2" hidden="false" type="rule" targetId="ec70-6a0e-9d0a-54da"/>
+                <infoLink name="Machine" id="24fc-8e35-8354-bc05" hidden="false" type="rule" targetId="748e-27c9-4f04-61d2"/>
+                <infoLink name="Medic" id="d866-c602-e12c-d530" hidden="false" type="rule" targetId="e28c-0861-0c69-52ad"/>
+                <infoLink name="Programmed" id="acac-734b-bdb1-e384" hidden="false" type="rule" targetId="2a0d-9ec1-2472-4e1c"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Robot lasers" hidden="false" id="aacd-6b4e-b219-1980" type="selectionEntry" targetId="f0b2-f678-3972-45da">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="004f-31bf-84b8-680f-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="004f-31bf-84b8-680f-max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Various Appendages" hidden="false" id="8662-cfb6-d206-5a5d" type="selectionEntry" targetId="caf7-8411-2397-ba3d">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1fb5-9ca3-a7b1-2b06-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fb5-9ca3-a7b1-2b06-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a576-b4ec-9769-f1e1"/>
+              </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="57"/>
+                <cost name="Parts" typeId="0537-7e50-b379-38b7" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Combat Unit" hidden="false" id="d71b-2657-c6b0-ef9d">
+              <profiles>
+                <profile name="Combat Unit" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="782b-e0fb-f660-311c">
+                  <characteristics>
+                    <characteristic name="S" typeId="0658-e36f-340b-d2fd">5</characteristic>
+                    <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
+                    <characteristic name="E" typeId="089e-bbfc-56a7-f03c">5</characteristic>
+                    <characteristic name="C" typeId="04b4-a668-4aa1-6152">0</characteristic>
+                    <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">1</characteristic>
+                    <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
+                    <characteristic name="L" typeId="d136-fa51-dc6b-206e">1</characteristic>
+                    <characteristic name="Wound" typeId="419f-3112-3e77-f90d">3</characteristic>
+                    <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Hardy, Machine, Programmed</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Hardy" id="0cb5-d26d-56fe-30d9" hidden="false" type="rule" targetId="ec70-6a0e-9d0a-54da"/>
+                <infoLink name="Machine" id="90bd-e3a5-1c72-282f" hidden="false" type="rule" targetId="748e-27c9-4f04-61d2"/>
+                <infoLink name="Programmed" id="b767-7c6d-e4ba-215c" hidden="false" type="rule" targetId="2a0d-9ec1-2472-4e1c"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Flamer" hidden="false" id="bfcf-cfde-5793-914d" type="selectionEntry" targetId="16c5-d9b7-70db-c100">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a58f-cfa9-16f8-328c-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a58f-cfa9-16f8-328c-max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Robot lasers" hidden="false" id="2d3e-dbce-8364-266c" type="selectionEntry" targetId="f0b2-f678-3972-45da">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="02a4-0bf4-41bf-0d7f-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02a4-0bf4-41bf-0d7f-max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Various Appendages" hidden="false" id="44a4-49d2-2fa9-ba15" type="selectionEntry" targetId="caf7-8411-2397-ba3d">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7264-3c16-a6b3-bd60-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7264-3c16-a6b3-bd60-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37db-7e31-5032-d1cc"/>
+              </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="60"/>
+                <cost name="Parts" typeId="0537-7e50-b379-38b7" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b9e-9cec-4293-60aa"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="Unit" hidden="false" id="d80e-52e8-0068-c512" targetId="536d-4b88-52f1-46cc" primary="false"/>
+        <categoryLink name="Companion" hidden="false" id="1e26-3699-b863-2fc9" targetId="3d88-d079-2f02-28c6" primary="true"/>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="3f9e-fff8-49cd-6313" primary="false" name="Grunt"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Protectron" hidden="false" id="a3ca-e1c0-a828-6242" sortIndex="2">
+      <categoryLinks>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="0adb-8a68-0695-b708" primary="false" name="Unit"/>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="f515-d469-e9f5-bc8e" primary="false" name="Grunt"/>
+        <categoryLink targetId="3d88-d079-2f02-28c6" id="b103-38ac-920f-f98e" primary="true" name="Companion"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Type" id="077f-6594-2e72-5f0e" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25a1-6e28-478a-254e"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Builder Unit" hidden="false" id="3db9-4919-f9ac-9369">
+              <entryLinks>
+                <entryLink import="true" name="Nail Gun" hidden="false" id="90a2-13e9-3aff-9a79" type="selectionEntry" targetId="a0c2-49da-0aa8-5ae4">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0926-d91f-70d2-296e-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0926-d91f-70d2-296e-max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Robot Bash" hidden="false" id="c2a4-85a1-dae4-1203" type="selectionEntry" targetId="64a8-fd41-f878-3aaf">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="42a3-4c0c-1697-323d-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42a3-4c0c-1697-323d-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <profiles>
+                <profile name="Builder Unit" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="d2a7-fdd6-6633-fdcd">
+                  <characteristics>
+                    <characteristic name="S" typeId="0658-e36f-340b-d2fd">4</characteristic>
+                    <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
+                    <characteristic name="E" typeId="089e-bbfc-56a7-f03c">5</characteristic>
+                    <characteristic name="C" typeId="04b4-a668-4aa1-6152">0</characteristic>
+                    <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">1</characteristic>
+                    <characteristic name="A" typeId="775e-c925-22f0-7d33">2</characteristic>
+                    <characteristic name="L" typeId="d136-fa51-dc6b-206e">1</characteristic>
+                    <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
+                    <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Hardy,  Machine, Programmed, Self Destruct</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Hardy" id="3794-794d-b910-a6b8" hidden="false" type="rule" targetId="ec70-6a0e-9d0a-54da"/>
+                <infoLink name="Machine" id="c66c-fcb9-1fb2-d31a" hidden="false" type="rule" targetId="748e-27c9-4f04-61d2"/>
+                <infoLink name="Programmed" id="599d-4355-78bf-c3de" hidden="false" type="rule" targetId="2a0d-9ec1-2472-4e1c"/>
+                <infoLink name="Self Destruct" id="a471-5fec-8aef-32eb" hidden="false" type="rule" targetId="30f4-2f38-73fe-3152"/>
+              </infoLinks>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="30"/>
+                <cost name="Parts" typeId="0537-7e50-b379-38b7" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Firefighter Unit" hidden="false" id="fe81-cdf7-8027-9479">
+              <entryLinks>
+                <entryLink import="true" name="Hand Cryojet" hidden="false" id="48a4-7f36-8f9c-e007" type="selectionEntry" targetId="61be-eee4-56c0-ebab">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ea4-c5e2-e338-1f69-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ea4-c5e2-e338-1f69-max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Robot Bash" hidden="false" id="667c-c86b-275c-56be" type="selectionEntry" targetId="64a8-fd41-f878-3aaf">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ecfd-b9e5-3c42-d679-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ecfd-b9e5-3c42-d679-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <profiles>
+                <profile name="Firefighter Unit" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="28c4-dad1-b305-172b">
+                  <characteristics>
+                    <characteristic name="S" typeId="0658-e36f-340b-d2fd">4</characteristic>
+                    <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
+                    <characteristic name="E" typeId="089e-bbfc-56a7-f03c">5</characteristic>
+                    <characteristic name="C" typeId="04b4-a668-4aa1-6152">0</characteristic>
+                    <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">1</characteristic>
+                    <characteristic name="A" typeId="775e-c925-22f0-7d33">2</characteristic>
+                    <characteristic name="L" typeId="d136-fa51-dc6b-206e">1</characteristic>
+                    <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
+                    <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Hardy,  Machine, Programmed, Self Destruct</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Hardy" id="3697-3424-3f9e-bee5" hidden="false" type="rule" targetId="ec70-6a0e-9d0a-54da"/>
+                <infoLink name="Machine" id="bd8c-d469-97f5-7260" hidden="false" type="rule" targetId="748e-27c9-4f04-61d2"/>
+                <infoLink name="Programmed" id="b81c-5e27-8ada-3063" hidden="false" type="rule" targetId="2a0d-9ec1-2472-4e1c"/>
+                <infoLink name="Self Destruct" id="8030-2c51-1dae-9cd6" hidden="false" type="rule" targetId="30f4-2f38-73fe-3152"/>
+              </infoLinks>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="35"/>
+                <cost name="Parts" typeId="0537-7e50-b379-38b7" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Medical Unit" hidden="false" id="2a2d-472d-4b3e-936e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d1f-74ef-2efe-bb63"/>
+              </constraints>
+              <profiles>
+                <profile name="Medical Unit" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="0e82-28ca-2d10-2e5f">
+                  <characteristics>
+                    <characteristic name="S" typeId="0658-e36f-340b-d2fd">4</characteristic>
+                    <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
+                    <characteristic name="E" typeId="089e-bbfc-56a7-f03c">5</characteristic>
+                    <characteristic name="C" typeId="04b4-a668-4aa1-6152">0</characteristic>
+                    <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">1</characteristic>
+                    <characteristic name="A" typeId="775e-c925-22f0-7d33">2</characteristic>
+                    <characteristic name="L" typeId="d136-fa51-dc6b-206e">1</characteristic>
+                    <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
+                    <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Hardy,  Machine, Programmed, Self Destruct, Medic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Hardy" id="859f-d925-d3ff-012a" hidden="false" type="rule" targetId="ec70-6a0e-9d0a-54da"/>
+                <infoLink name="Machine" id="2944-a50a-d2cf-8838" hidden="false" type="rule" targetId="748e-27c9-4f04-61d2"/>
+                <infoLink name="Medic" id="b640-1a4a-60c2-c121" hidden="false" type="rule" targetId="e28c-0861-0c69-52ad"/>
+                <infoLink name="Programmed" id="b3d5-9e20-27b1-cddd" hidden="false" type="rule" targetId="2a0d-9ec1-2472-4e1c"/>
+                <infoLink name="Self Destruct" id="7340-9385-7bcf-6f49" hidden="false" type="rule" targetId="30f4-2f38-73fe-3152"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Robot Bash" hidden="false" id="957a-69b7-b68d-3caf" type="selectionEntry" targetId="64a8-fd41-f878-3aaf">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae35-59f1-83e3-3b82-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae35-59f1-83e3-3b82-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="33"/>
+                <cost name="Parts" typeId="0537-7e50-b379-38b7" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Police Unit" hidden="false" id="1d2d-6807-3875-1ac3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2bd-5bee-f146-f102"/>
+              </constraints>
+              <profiles>
+                <profile name="Police Unit" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="838f-de30-e62f-fab9">
+                  <characteristics>
+                    <characteristic name="S" typeId="0658-e36f-340b-d2fd">4</characteristic>
+                    <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
+                    <characteristic name="E" typeId="089e-bbfc-56a7-f03c">5</characteristic>
+                    <characteristic name="C" typeId="04b4-a668-4aa1-6152">0</characteristic>
+                    <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">1</characteristic>
+                    <characteristic name="A" typeId="775e-c925-22f0-7d33">2</characteristic>
+                    <characteristic name="L" typeId="d136-fa51-dc6b-206e">1</characteristic>
+                    <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
+                    <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Hardy,  Machine, Programmed, Self Destruct</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Hardy" id="fde4-af43-4e8f-3d4c" hidden="false" type="rule" targetId="ec70-6a0e-9d0a-54da"/>
+                <infoLink name="Machine" id="252d-afea-b0a2-fe53" hidden="false" type="rule" targetId="748e-27c9-4f04-61d2"/>
+                <infoLink name="Programmed" id="8b1c-6e30-e7c4-4de5" hidden="false" type="rule" targetId="2a0d-9ec1-2472-4e1c"/>
+                <infoLink name="Self Destruct" id="8c8f-6854-79fc-4b35" hidden="false" type="rule" targetId="30f4-2f38-73fe-3152"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Robot lasers" hidden="false" id="4bd7-5a56-c51e-1598" type="selectionEntry" targetId="f0b2-f678-3972-45da">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eced-1c5c-3e10-3ae2-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eced-1c5c-3e10-3ae2-max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Shock Hand" hidden="false" id="8814-eb3f-f507-7d25" type="selectionEntry" targetId="80f8-3e29-ab30-00a1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3ffe-22be-d399-2c6f-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ffe-22be-d399-2c6f-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="35"/>
+                <cost name="Parts" typeId="0537-7e50-b379-38b7" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Standard Unit" hidden="false" id="8685-6476-ea24-7c46" sortIndex="0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95a2-4b34-bb89-d03b"/>
+              </constraints>
+              <profiles>
+                <profile name="Standard Unit" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="2c6e-b673-6440-6107">
+                  <characteristics>
+                    <characteristic name="S" typeId="0658-e36f-340b-d2fd">4</characteristic>
+                    <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
+                    <characteristic name="E" typeId="089e-bbfc-56a7-f03c">5</characteristic>
+                    <characteristic name="C" typeId="04b4-a668-4aa1-6152">0</characteristic>
+                    <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">1</characteristic>
+                    <characteristic name="A" typeId="775e-c925-22f0-7d33">2</characteristic>
+                    <characteristic name="L" typeId="d136-fa51-dc6b-206e">1</characteristic>
+                    <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
+                    <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Hardy,  Machine, Programmed, Self Destruct</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Hardy" id="a29a-59a2-d330-140c" hidden="false" type="rule" targetId="ec70-6a0e-9d0a-54da"/>
+                <infoLink name="Machine" id="2972-cc36-decd-bfb1" hidden="false" type="rule" targetId="748e-27c9-4f04-61d2"/>
+                <infoLink name="Programmed" id="b682-0eaf-ae6a-1c3f" hidden="false" type="rule" targetId="2a0d-9ec1-2472-4e1c"/>
+                <infoLink name="Self Destruct" id="bcc6-5be0-2780-180e" hidden="false" type="rule" targetId="30f4-2f38-73fe-3152"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Robot lasers" hidden="false" id="6be5-1426-9d4e-feaf" type="selectionEntry" targetId="f0b2-f678-3972-45da">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2417-2267-f15c-41b5-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2417-2267-f15c-41b5-max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Robot Bash" hidden="false" id="81b4-34f5-805c-a1f9" type="selectionEntry" targetId="64a8-fd41-f878-3aaf">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8484-5cfc-9c86-2216-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8484-5cfc-9c86-2216-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="32"/>
+                <cost name="Parts" typeId="0537-7e50-b379-38b7" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Eyebot" hidden="false" id="3659-2f59-5fc0-11ac" sortIndex="2">
+      <profiles>
+        <profile name="Eyebot" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="ccc1-0c74-222b-bbbe">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">2</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">4</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">4</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">0</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">1</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">5</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">1</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">1</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Bullet Magnet, Eye Catching, Flight, Machine, Programmed</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Flight" id="694e-655e-a161-e211" hidden="false" type="rule" targetId="cf1b-8b2e-c7fe-c34a"/>
+        <infoLink name="Eye Catching" id="2923-7f52-2260-38ce" hidden="false" type="rule" targetId="7f85-3fd7-20af-c7e6"/>
+        <infoLink name="Machine" id="db03-15ef-536b-91b9" hidden="false" type="rule" targetId="748e-27c9-4f04-61d2"/>
+        <infoLink name="Programmed" id="f917-e218-9d31-135a" hidden="false" type="rule" targetId="2a0d-9ec1-2472-4e1c"/>
+        <infoLink name="Bullet Magnet" id="4035-ff38-c815-20f7" hidden="false" type="rule" targetId="b657-143d-8b76-8315"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Eyebot Laser" hidden="false" id="c14f-5e84-10f2-6c4c" type="selectionEntry" targetId="0f2f-da11-5144-8055">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f05-64cd-ab9f-3b4f-min" automatic="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f05-64cd-ab9f-3b4f-max" automatic="false"/>
+          </constraints>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="15"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="3d88-d079-2f02-28c6" id="8f14-15dd-cd3f-9ddb" primary="true" name="Companion"/>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="9b81-d807-d929-f685" primary="false" name="Unit"/>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="09d4-99db-6188-2bf4" primary="false" name="Grunt"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Securitron" hidden="false" id="1522-4cbb-830c-9598" sortIndex="3">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="MK 1.0" hidden="false" id="b721-bbae-5434-167c" sortIndex="1">
+          <profiles>
+            <profile name="MK 1.0" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="2044-a43b-516d-87a8">
+              <characteristics>
+                <characteristic name="S" typeId="0658-e36f-340b-d2fd">5</characteristic>
+                <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
+                <characteristic name="E" typeId="089e-bbfc-56a7-f03c">6</characteristic>
+                <characteristic name="C" typeId="04b4-a668-4aa1-6152">0</characteristic>
+                <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">1</characteristic>
+                <characteristic name="A" typeId="775e-c925-22f0-7d33">2</characteristic>
+                <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
+                <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
+                <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Burly, Grounded, Hardy, Machine, Programmed</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84ff-b63a-8bb2-e59c"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Burly" id="6c14-1472-f7ef-8223" hidden="false" type="rule" targetId="d6d4-d3d8-8ac3-7312"/>
+            <infoLink name="Hardy" id="10e2-867b-12d8-c2cd" hidden="false" type="rule" targetId="ec70-6a0e-9d0a-54da"/>
+            <infoLink name="Machine" id="437d-8c86-468d-8a43" hidden="false" type="rule" targetId="748e-27c9-4f04-61d2"/>
+            <infoLink name="Programmed" id="e4b0-d056-21ef-5a72" hidden="false" type="rule" targetId="2a0d-9ec1-2472-4e1c"/>
+            <infoLink name="Grounded" id="e919-2d09-fcc8-4504" hidden="false" type="rule" targetId="f57b-1cb0-e349-0254"/>
+          </infoLinks>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="45"/>
+            <cost name="Parts" typeId="0537-7e50-b379-38b7" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Robot lasers" hidden="false" id="f485-e690-5e26-57d3" type="selectionEntry" targetId="f0b2-f678-3972-45da">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ccc6-5915-9c72-ce1c-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ccc6-5915-9c72-ce1c-max"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e6cd-79ea-f98f-a581-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6cd-79ea-f98f-a581-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Robot Bash" hidden="false" id="b305-2f82-10ca-da57" type="selectionEntry" targetId="64a8-fd41-f878-3aaf">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="58cf-e06f-00a4-dc5b-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="58cf-e06f-00a4-dc5b-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Securitron SMG" hidden="false" id="610d-7946-3da1-f898" type="selectionEntry" targetId="8d19-769a-b48c-dfea">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff49-43c7-6f36-18fc-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff49-43c7-6f36-18fc-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="MK 2.0" hidden="false" id="0e09-1cda-5ca3-482e" sortIndex="2">
+          <profiles>
+            <profile name="MK 2.0" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="c04a-dcae-1e91-7c39">
+              <characteristics>
+                <characteristic name="S" typeId="0658-e36f-340b-d2fd">5</characteristic>
+                <characteristic name="P" typeId="1952-e9b4-6eee-c2af">6</characteristic>
+                <characteristic name="E" typeId="089e-bbfc-56a7-f03c">7</characteristic>
+                <characteristic name="C" typeId="04b4-a668-4aa1-6152">0</characteristic>
+                <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">1</characteristic>
+                <characteristic name="A" typeId="775e-c925-22f0-7d33">2</characteristic>
+                <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
+                <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
+                <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Burly, Hardy, Life Giver, Machine, Programmed</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c11f-cf4d-45bf-dc29"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Burly" id="ae77-590e-5efd-daa9" hidden="false" type="rule" targetId="d6d4-d3d8-8ac3-7312"/>
+            <infoLink name="Hardy" id="dd11-81ac-64d7-c659" hidden="false" type="rule" targetId="ec70-6a0e-9d0a-54da"/>
+            <infoLink name="Life Giver" id="3e6c-4bb2-2084-ded0" hidden="false" type="rule" targetId="77fd-a9bb-6361-3f53"/>
+            <infoLink name="Machine" id="dfc2-0231-216a-6e5e" hidden="false" type="rule" targetId="748e-27c9-4f04-61d2"/>
+            <infoLink name="Programmed" id="260d-b03c-6d3c-2e7c" hidden="false" type="rule" targetId="2a0d-9ec1-2472-4e1c"/>
+          </infoLinks>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="70"/>
+            <cost name="Parts" typeId="0537-7e50-b379-38b7" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Securitron SMG" hidden="false" id="08c8-2219-4563-a9f9" type="selectionEntry" targetId="8d19-769a-b48c-dfea">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5417-de9e-143e-df72-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5417-de9e-143e-df72-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Robot lasers" hidden="false" id="ad9c-43de-9599-3154" type="selectionEntry" targetId="f0b2-f678-3972-45da">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="04ae-398d-1e4c-03db-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04ae-398d-1e4c-03db-max"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d6a-88d8-ec23-489d-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d6a-88d8-ec23-489d-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Robot Bash" hidden="false" id="d4d9-ace2-31dd-db60" type="selectionEntry" targetId="64a8-fd41-f878-3aaf">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6bfe-b774-14a7-daee-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bfe-b774-14a7-daee-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shoulder Launchers" hidden="false" id="3a64-b7d7-3027-ac1b" type="selectionEntry" targetId="69e6-ddab-8d60-0735">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a81-2e47-1d97-a8af-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a81-2e47-1d97-a8af-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="2d01-9119-32ce-abce" primary="false" name="Grunt"/>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="ae4b-ef1d-d0e5-cc9c" primary="false" name="Unit"/>
+        <categoryLink targetId="3d88-d079-2f02-28c6" id="df7a-bd6e-4c33-9803" primary="true" name="Companion"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Nukatron" hidden="false" id="88f5-3d2b-d876-3645" sortIndex="4">
+      <profiles>
+        <profile name="Nukatron" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="4510-d5c6-706f-64fa">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">4</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">5</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">0</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">1</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">2</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">1</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Hardy, Machine, Programmed, Self Destruct</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Hardy" id="4df9-f6d1-2e73-6989" hidden="false" type="rule" targetId="ec70-6a0e-9d0a-54da"/>
+        <infoLink name="Machine" id="2f66-ec22-7ab7-e62a" hidden="false" type="rule" targetId="748e-27c9-4f04-61d2"/>
+        <infoLink name="Programmed" id="6942-3c30-d530-59c4" hidden="false" type="rule" targetId="2a0d-9ec1-2472-4e1c"/>
+        <infoLink name="Self Destruct" id="0040-cf5d-8130-9d44" hidden="false" type="rule" targetId="30f4-2f38-73fe-3152"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Nukatron" hidden="false" id="facf-a8cb-b689-ed4e">
+          <entryLinks>
+            <entryLink import="true" name="Robot Bash" hidden="false" id="56c4-bbee-3ea8-0fd2" type="selectionEntry" targetId="64a8-fd41-f878-3aaf">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7838-ea26-009d-da5f-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7838-ea26-009d-da5f-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Robot lasers" hidden="false" id="ff53-e87f-155a-4e0f" type="selectionEntry" targetId="f0b2-f678-3972-45da">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c9d1-8aef-df49-8f1b-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9d1-8aef-df49-8f1b-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48db-e245-7fde-988e"/>
+          </constraints>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="30"/>
+            <cost name="Parts" typeId="0537-7e50-b379-38b7" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Damaged Nukatron" hidden="false" id="bdb9-9557-056e-a487">
+          <entryLinks>
+            <entryLink import="true" name="Robot Bash" hidden="false" id="a44a-0434-43cd-7375" type="selectionEntry" targetId="64a8-fd41-f878-3aaf">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="40b0-6dbd-def0-a328-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40b0-6dbd-def0-a328-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a153-1bbe-3f72-9489"/>
+          </constraints>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="20"/>
+            <cost name="Parts" typeId="0537-7e50-b379-38b7" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Nukatron Guardian" hidden="false" id="e3ce-5756-b6f1-a077">
+          <entryLinks>
+            <entryLink import="true" name="Nuka Dispenser" hidden="false" id="f7a3-e730-7f5a-a825" type="selectionEntry" targetId="2858-f6a4-79c6-d0a6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c9f1-c081-896b-37c1-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9f1-c081-896b-37c1-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Robot Bash" hidden="false" id="284d-6087-9dec-1c14" type="selectionEntry" targetId="64a8-fd41-f878-3aaf">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="877d-4182-bb2f-3b92-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="877d-4182-bb2f-3b92-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="383c-f960-ceb4-8315"/>
+          </constraints>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="25"/>
+            <cost name="Parts" typeId="0537-7e50-b379-38b7" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="dbc2-9356-c18c-41f7" primary="false" name="Unit"/>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="64ab-098a-4dc7-afa3" primary="false" name="Grunt"/>
+        <categoryLink targetId="3d88-d079-2f02-28c6" id="6602-9310-78ef-82e5" primary="true" name="Companion"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mr Frothy" hidden="false" id="3d82-aa62-8bd0-7aa5" sortIndex="4">
+      <profiles>
+        <profile name="Mr Frothy" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="3949-7f07-0898-cbfb">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">5</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">6</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">0</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">1</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">1</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">3</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Flight, Hardy, Machine, Programmed, Self Destruct</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Flight" id="3674-e697-3f6b-f2ef" hidden="false" type="rule" targetId="cf1b-8b2e-c7fe-c34a"/>
+        <infoLink name="Hardy" id="6823-9112-b699-ea16" hidden="false" type="rule" targetId="ec70-6a0e-9d0a-54da"/>
+        <infoLink name="Machine" id="1e9a-b6cf-fc36-a4b8" hidden="false" type="rule" targetId="748e-27c9-4f04-61d2"/>
+        <infoLink name="Programmed" id="7af0-c198-66d1-a237" hidden="false" type="rule" targetId="2a0d-9ec1-2472-4e1c"/>
+        <infoLink name="Self Destruct" id="2237-f52d-02e2-8eae" hidden="false" type="rule" targetId="30f4-2f38-73fe-3152"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Nuka Dispenser" hidden="false" id="b152-ceb6-2cdf-c349" type="selectionEntry" targetId="2858-f6a4-79c6-d0a6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="03ac-4c30-bc42-056f-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03ac-4c30-bc42-056f-max"/>
+          </constraints>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="40"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Robot Bash" hidden="false" id="8627-57fb-2247-51e0" type="selectionEntry" targetId="64a8-fd41-f878-3aaf">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b5f0-8094-19d2-c63a-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5f0-8094-19d2-c63a-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="6a77-58c3-f8bf-2bdf" primary="false" name="Unit"/>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="5447-7904-be8d-3c8c" primary="false" name="Grunt"/>
+        <categoryLink targetId="3d88-d079-2f02-28c6" id="3182-83b2-af44-6717" primary="true" name="Companion"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Parts" typeId="0537-7e50-b379-38b7" value="0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>
