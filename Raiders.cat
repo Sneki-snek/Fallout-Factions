@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="7782-c17d-c51e-6a1a" name="Raiders" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Boss" hidden="false" id="ca26-0931-967f-3b92" sortIndex="2">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon" id="a051-7480-8fc0-18bf" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name=".44 Pistol" hidden="false" id="12c8-d3fa-ed98-585f" type="selectionEntry" targetId="e86d-0cb6-809a-82f7">
+              <entryLinks>
+                <entryLink import="true" name="Machete" hidden="false" id="155d-70a7-c904-5d17" type="selectionEntry" targetId="68dd-8716-1975-44f0">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a751-8030-360e-826d-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a751-8030-360e-826d-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="40"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Assault Rifle" hidden="false" id="e82f-9ac8-11d2-5fe0" type="selectionEntry" targetId="c7ed-4b78-d623-fa8c">
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="45"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Minigun" hidden="false" id="1749-4ed1-c612-829b" type="selectionEntry" targetId="d117-c43d-7ae6-f826">
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="54"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Combat rifle" hidden="false" id="bd81-132e-f263-9c1d" type="selectionEntry" targetId="be00-8f6b-cab0-c93c">
+              <entryLinks>
+                <entryLink import="true" name="Baseball bat" hidden="false" id="7188-7c05-fb58-af31" type="selectionEntry" targetId="d2df-08b3-0843-4045">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c012-1e46-bc7e-a84d-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c012-1e46-bc7e-a84d-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="48"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="705b-27d6-c5fb-9079"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="1ada-7eae-f801-68b5" id="a4ec-ff68-6032-8fff" primary="true" name="Leader"/>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="09cf-2c17-a7e9-bba6" primary="false" name="Unit"/>
+        <categoryLink targetId="fea4-7d20-3941-c6c1" id="4f0e-b5e7-29ff-f9f1" primary="false" name="Champion"/>
+        <categoryLink targetId="f867-1634-0096-bae6" id="d7bf-9338-337b-9be1" primary="false" name="Raider"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Boss" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="406b-2883-e2df-9455">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">5</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">6</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">5</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">5</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">5</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">3</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">3</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Natural Leader, Personal Stash, Power Armor</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Natural Leader" id="8c6a-01dc-c3c2-f21b" hidden="false" type="rule" targetId="4dce-6c82-fc0f-93b7"/>
+        <infoLink name="Power Armor" id="eec2-3503-1f82-e4d0" hidden="false" type="rule" targetId="8c35-1a78-88be-8a5d"/>
+        <infoLink name="Personal Stash" id="007b-ad9c-4d4c-df5e" hidden="false" type="rule" targetId="e72e-0994-5ac6-f432"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Butcher" hidden="false" id="e81a-709d-ab57-d840" sortIndex="3">
+      <categoryLinks>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="23e9-076d-d9d3-f5de" primary="false" name="Unit"/>
+        <categoryLink targetId="fea4-7d20-3941-c6c1" id="fec4-6b51-82ec-fe04" primary="true" name="Champion"/>
+        <categoryLink targetId="f867-1634-0096-bae6" id="4198-0fcb-7e28-61f7" primary="false" name="Raider"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="7370-d7dd-e26e-41df" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hunting Rifle" hidden="false" id="7ac0-7730-e7ce-5d0f" type="selectionEntry" targetId="3cbd-2920-a25f-7c85">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="roster" shared="false" id="575a-ee96-408c-3771" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Missile Launcher" hidden="false" id="f921-5c6a-9d5b-9c68" type="selectionEntry" targetId="7b2e-67f8-6364-bb1c">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="roster" shared="false" id="7e57-ec7d-e94f-de9e" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Flamer" hidden="false" id="8e66-34a5-985c-91ae" type="selectionEntry" targetId="16c5-d9b7-70db-c100">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="roster" shared="false" id="ceb6-bf37-c43a-45fb" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="075e-152c-dea1-6a3f"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Butcher" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="6169-0ee5-a5d3-817c">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">5</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">5</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">4</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">4</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">5</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Power Armor, Sticky Fingers</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Power Armor" id="0d12-6852-d265-797e" hidden="false" type="rule" targetId="8c35-1a78-88be-8a5d"/>
+        <infoLink name="Sticky Fingers" id="dfcf-618f-a3ad-8992" hidden="false" type="rule" targetId="c660-2294-b38e-74cf"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Veteran" hidden="false" id="c654-fb89-0526-f7df" sortIndex="3">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="b663-389b-8fe2-e876" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Pipe Pistol" hidden="false" id="c012-132b-116f-c136" type="selectionEntry" targetId="dafe-8774-8364-69ea">
+              <entryLinks>
+                <entryLink import="true" name="Hand weapon" hidden="false" id="eb30-0483-1034-c499" type="selectionEntry" targetId="3ce4-7ecb-dd45-ecb7">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8695-0f21-919b-dcb1-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8695-0f21-919b-dcb1-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="23"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="roster" shared="false" id="911d-27bb-7eab-1aa1" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Pipe Pistol" hidden="false" id="88bf-f3ab-e788-6ffc" type="selectionEntry" targetId="dafe-8774-8364-69ea">
+              <entryLinks>
+                <entryLink import="true" name="Machete" hidden="false" id="03bd-e577-6ea0-b6b8" type="selectionEntry" targetId="68dd-8716-1975-44f0">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6316-48a6-d9f2-1f1c-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6316-48a6-d9f2-1f1c-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="24"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="roster" shared="false" id="476a-5b61-5afe-5fdc" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Sawn-off shotgun" hidden="false" id="3264-25d9-bb66-ea0f" type="selectionEntry" targetId="6b0b-4f78-621a-9b09">
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="25"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="roster" shared="false" id="32b6-7886-ee17-803f" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Pipe Rifle" hidden="false" id="937f-27ae-95f7-8442" type="selectionEntry" targetId="7f5f-fa85-ae4e-72c6">
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="25"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="roster" shared="false" id="5698-167f-ab95-5921" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a002-0cd9-6b27-634e"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Veteran" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="012f-2025-8d9a-9f23">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">4</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">4</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">4</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">4</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">4</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Sticky Fingers</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Sticky Fingers" id="4a5f-4432-3b6f-d98d" hidden="false" type="rule" targetId="c660-2294-b38e-74cf"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="6cc1-7f38-7931-9d30" primary="false" name="Unit"/>
+        <categoryLink targetId="fea4-7d20-3941-c6c1" id="52e6-1653-0a60-5479" primary="true" name="Champion"/>
+        <categoryLink targetId="f867-1634-0096-bae6" id="f31b-3cde-ca64-063d" primary="false" name="Raider"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Scavver" hidden="false" id="1172-ce5e-9e57-7afb" sortIndex="4">
+      <categoryLinks>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="8b97-fa2d-1065-5d2f" primary="false" name="Unit"/>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="fbe9-4db4-09f5-8bfc" primary="true" name="Grunt"/>
+        <categoryLink targetId="f867-1634-0096-bae6" id="5038-3f1a-7eb2-dd27" primary="false" name="Raider"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="de40-10de-9503-7282" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Short Hunting Rifle" hidden="false" id="1d28-12fa-7a65-6d1c" type="selectionEntry" targetId="3e3e-737a-cb04-8d3a">
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="16"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="b1e1-8b89-546f-9870" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Pipe Rifle" hidden="false" id="fa80-c17e-bbf5-2f5f" type="selectionEntry" targetId="7f5f-fa85-ae4e-72c6">
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="18"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="771f-1797-204b-79a0" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Sawn-off shotgun" hidden="false" id="724f-14c5-71f0-ffef" type="selectionEntry" targetId="6b0b-4f78-621a-9b09">
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="18"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="b73c-3c8c-233c-37c0" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Automatic Pipe Rifle	" hidden="false" id="2449-81dc-c55e-d4ce" type="selectionEntry" targetId="1a15-83f9-5928-6829">
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="20"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="3cb4-a865-007a-6c56" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4dd-9fbf-b52d-001b"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Scavver" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="a703-c8a7-d007-3124">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">3</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">4</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">4</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">3</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">3</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">3</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">1</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Psycho" hidden="false" id="5e90-ed84-a46e-dd8d" sortIndex="4">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="9b54-9ec5-6139-55fa" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Pipe revolver" hidden="false" id="67f4-6508-48ca-5a8d" type="selectionEntry" targetId="fd15-209d-2487-23a1">
+              <entryLinks>
+                <entryLink import="true" name="Baseball bat" hidden="false" id="20fa-9130-d428-c643" type="selectionEntry" targetId="d2df-08b3-0843-4045">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c23-14b8-f468-77e0-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c23-14b8-f468-77e0-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="6adf-2ef4-46b2-5fb5" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Baseball Grenades" hidden="false" id="9c60-ad21-f268-7c74" type="selectionEntry" targetId="b6cf-b4f7-4e2c-7cf8">
+              <entryLinks>
+                <entryLink import="true" name="Hand weapon" hidden="false" id="733b-76b3-6a98-f321" type="selectionEntry" targetId="3ce4-7ecb-dd45-ecb7">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec38-2643-0333-022c-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec38-2643-0333-022c-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="b5ca-0549-b020-71d4" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Molotov Cocktails" hidden="false" id="1d1b-1e39-22aa-1f82" type="selectionEntry" targetId="325d-a3c0-cb20-83f7">
+              <entryLinks>
+                <entryLink import="true" name="Baseball bat" hidden="false" id="d087-076f-a6bd-b091" type="selectionEntry" targetId="d2df-08b3-0843-4045">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe75-8710-a90b-c91d-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe75-8710-a90b-c91d-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="3b16-9036-52d3-2785" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Pipe revolver" hidden="false" id="cd63-cc92-41b2-2e0a" type="selectionEntry" targetId="fd15-209d-2487-23a1">
+              <entryLinks>
+                <entryLink import="true" name="Hand weapon" hidden="false" id="011c-906a-953a-aff5" type="selectionEntry" targetId="3ce4-7ecb-dd45-ecb7">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae9f-b82a-1143-921f-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae9f-b82a-1143-921f-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="1bc8-3fb2-12e8-f0a7" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bccf-c15e-cdbf-7b56"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Psycho" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="a212-c88c-c3ed-4a37">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">4</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">3</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">4</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">3</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">3</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">1</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="4945-88f7-d090-c1af" primary="false" name="Unit"/>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="f66b-6d38-572d-c349" primary="true" name="Grunt"/>
+        <categoryLink targetId="f867-1634-0096-bae6" id="68eb-6e8e-ff33-7292" primary="false" name="Raider"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Scum" hidden="false" id="3753-24d2-cf75-9b1a" sortIndex="4">
+      <profiles>
+        <profile name="Scum" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="07e6-b96f-b560-76e1">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">3</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">3</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">3</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">3</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">3</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">3</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">1</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">1</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="0267-c6da-e9e8-d2f7" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Pipe revolver" hidden="false" id="76c7-e4d5-2506-f78c" type="selectionEntry" targetId="fd15-209d-2487-23a1">
+              <entryLinks>
+                <entryLink import="true" name="Baseball bat" hidden="false" id="e92a-b09d-d1d4-00af" type="selectionEntry" targetId="d2df-08b3-0843-4045">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c411-9254-cf18-0a70-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c411-9254-cf18-0a70-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="da41-a392-cbf6-5fa6" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="12"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Pipe Rifle" hidden="false" id="013c-fd29-5306-d42d" type="selectionEntry" targetId="7f5f-fa85-ae4e-72c6">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="33b0-b8f7-c901-b174" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="16"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Pipe Pistol" hidden="false" id="6f24-8124-8cc8-ff9a" type="selectionEntry" targetId="dafe-8774-8364-69ea">
+              <entryLinks>
+                <entryLink import="true" name="Machete" hidden="false" id="ad2f-5f2e-3570-b011" type="selectionEntry" targetId="68dd-8716-1975-44f0"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="a2a3-c54c-2e8d-1208" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="14"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Pipe Pistol" hidden="false" id="c8c9-9c71-9251-22e4" type="selectionEntry" targetId="dafe-8774-8364-69ea">
+              <entryLinks>
+                <entryLink import="true" name="Molotov Cocktails" hidden="false" id="6ad7-0e79-4470-4e38" type="selectionEntry" targetId="325d-a3c0-cb20-83f7">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ada-4997-3cfc-bea2-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ada-4997-3cfc-bea2-max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="5653-e3ed-4471-d6c9" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="13"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="459c-efe2-d72e-7107"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="dc53-0fc7-7e99-85aa" primary="false" name="Unit"/>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="f01d-40fe-8d88-2352" primary="true" name="Grunt"/>
+        <categoryLink targetId="f867-1634-0096-bae6" id="bbd2-a817-6472-5a51" primary="false" name="Raider"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ploys" hidden="false" id="dee6-f791-e21e-09fd" sortIndex="1">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Raider ploys" hidden="false" id="fa43-5d5d-2ca2-941a">
+          <rules>
+            <rule name="In Moderation" id="5c20-45ab-b3f5-dc72" hidden="false">
+              <description> You may enact this Ploy when a Friendly model chooses Find a Chem while making a Rummage Action;
+ In addition to the result of the rolls for this Action, add a single dose of any Rare Chem to your Crew Roster</description>
+            </rule>
+            <rule name="Oh Yeah!" id="d2da-d989-9969-821d" hidden="false">
+              <description>You may enact this Ploy at the start of any of your Turns. To enact this Ploy, remove a dose of any Common or Rare Chem from your Crew Roster. 
+
+
+Choose a Friendly, Exhausted Grunt and Recover all Fatigue from it. Until the end of this Round, whenever this model makes an Attack Action, it adds 3 Bonus Dice to its Dice Pool. When this model next becomes Exhausted, it cannot Recover Fatigue, or have Fatigue removed from it. 
+
+
+At the end of this Round, this model is Incapacitated.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Standard Ploys" hidden="false" id="378b-a048-2309-daf5">
+          <rules>
+            <rule name="Teamwork" id="4d37-aba0-f380-e74f" hidden="false">
+              <description>You may Enact this Ploy at the end of your Turn:
+
+
+Take another Turn. When choosing an Active Model, you cannot choose the Active model from the prior Turn.</description>
+            </rule>
+            <rule name="Lucky Break" id="7821-f921-1e80-38e1" hidden="false">
+              <description>You may enact this Ploy while making a S.P.EC.I.A.L. Test for a model, after Roll the Pool and Remove Duds, but before the Fortune Smiles Step: 
+You may Re-roll all Duds in the Pool. </description>
+            </rule>
+            <rule name="Second Wind" id="8e7e-e49f-e124-a8d8" hidden="false">
+              <description>You may enact this Ploy at the start of your Turn:
+When choosing your Active model, you may choose an Exhausted model. If you do, it Recovers 1 Fatigue. </description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>
