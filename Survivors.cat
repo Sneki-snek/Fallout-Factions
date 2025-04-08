@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="41f7-d620-4320-78a4" name="Survivors" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="4" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="41f7-d620-4320-78a4" name="Survivors" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="4" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="false" name="Swatter" hidden="false" id="76e4-59ff-11cb-a7e9">
       <selectionEntryGroups>
@@ -90,7 +90,7 @@
         <categoryLink targetId="f14c-998a-b1aa-2af4" id="ee29-5d67-c3e3-1175" primary="true" name="Grunt"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="false" name="Specialist" hidden="false" id="f3e9-e21b-fd5c-9345">
+    <selectionEntry type="upgrade" import="false" name="Specialist" hidden="false" id="f3e9-e21b-fd5c-9345" sortIndex="3">
       <selectionEntryGroups>
         <selectionEntryGroup name="Specialism" id="1a71-bd29-0b8d-c6e4" hidden="false">
           <selectionEntries>
@@ -116,105 +116,28 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e19-c098-f264-481f"/>
                   </constraints>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Perk" id="8b18-232b-d179-bad1" hidden="false" sortIndex="2">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb08-0946-cd61-caa3"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Sniper" hidden="false" id="11a5-5d7b-e207-2cb8">
-                      <infoLinks>
-                        <infoLink name="Sniper" id="52bf-7112-4114-8a82" hidden="false" type="rule" targetId="2f17-3dea-93ae-3262"/>
-                      </infoLinks>
-                      <profiles>
-                        <profile name="Sniper Specialist" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="1216-beaa-1c40-767d">
-                          <characteristics>
-                            <characteristic name="S" typeId="0658-e36f-340b-d2fd">3</characteristic>
-                            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
-                            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">4</characteristic>
-                            <characteristic name="C" typeId="04b4-a668-4aa1-6152">5</characteristic>
-                            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">6</characteristic>
-                            <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
-                            <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
-                            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
-                            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Sniper</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Survivalist" hidden="false" id="c5de-1a35-ce14-dd70">
-                      <infoLinks>
-                        <infoLink name="Survivalist" id="6eae-207c-543c-94ce" hidden="false" type="rule" targetId="a024-4a3d-99cc-7337"/>
-                      </infoLinks>
-                      <profiles>
-                        <profile name="Survivalist Specialist" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="258e-42bd-8696-a960">
-                          <characteristics>
-                            <characteristic name="S" typeId="0658-e36f-340b-d2fd">3</characteristic>
-                            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
-                            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">4</characteristic>
-                            <characteristic name="C" typeId="04b4-a668-4aa1-6152">5</characteristic>
-                            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">6</characteristic>
-                            <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
-                            <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
-                            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
-                            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Survivalist</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
               </selectionEntryGroups>
+              <profiles>
+                <profile name="Hunter Specialist" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="3299-a8bf-d5b0-d8fd">
+                  <characteristics>
+                    <characteristic name="S" typeId="0658-e36f-340b-d2fd">3</characteristic>
+                    <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
+                    <characteristic name="E" typeId="089e-bbfc-56a7-f03c">4</characteristic>
+                    <characteristic name="C" typeId="04b4-a668-4aa1-6152">5</characteristic>
+                    <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">6</characteristic>
+                    <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
+                    <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
+                    <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
+                    <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Sniper, Survivalist</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Sniper" id="9f0c-4e27-d3cb-2f0d" hidden="false" type="rule" targetId="2f17-3dea-93ae-3262"/>
+                <infoLink name="Survivalist" id="9297-2b75-ef53-a0c6" hidden="false" type="rule" targetId="a024-4a3d-99cc-7337"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Trader Specialist" hidden="false" id="22a8-ef3e-f08c-a4aa">
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Perk" id="d26f-f136-776f-5e2a" hidden="false" sortIndex="2">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25a2-b0d6-c3ef-f836"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Fortune Finder" hidden="false" id="7087-2b4e-e1b5-ab4a">
-                      <infoLinks>
-                        <infoLink name="Fortune Finder" id="1135-2039-a8b7-4758" hidden="false" type="rule" targetId="bd26-d5b1-6acf-7665"/>
-                      </infoLinks>
-                      <profiles>
-                        <profile name="Fortune Finder Specialist" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="874e-34cf-1407-ffa5">
-                          <characteristics>
-                            <characteristic name="S" typeId="0658-e36f-340b-d2fd">3</characteristic>
-                            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
-                            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">4</characteristic>
-                            <characteristic name="C" typeId="04b4-a668-4aa1-6152">5</characteristic>
-                            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">6</characteristic>
-                            <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
-                            <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
-                            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
-                            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Fortune Finder</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Survivalist" hidden="false" id="537f-ad75-4e00-ca78">
-                      <infoLinks>
-                        <infoLink name="Survivalist" id="be56-86b3-f67d-79a2" hidden="false" type="rule" targetId="a024-4a3d-99cc-7337"/>
-                      </infoLinks>
-                      <profiles>
-                        <profile name="Survivalist Specialist" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="5aed-3836-2c21-fa65">
-                          <characteristics>
-                            <characteristic name="S" typeId="0658-e36f-340b-d2fd">3</characteristic>
-                            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
-                            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">4</characteristic>
-                            <characteristic name="C" typeId="04b4-a668-4aa1-6152">5</characteristic>
-                            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">6</characteristic>
-                            <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
-                            <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
-                            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
-                            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Survivalist</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Flare gun" hidden="false" id="d5b7-6807-3b90-4049" type="selectionEntry" targetId="aec9-5f0a-3c99-82c9" sortIndex="1">
                   <constraints>
@@ -232,57 +155,27 @@
                   </costs>
                 </entryLink>
               </entryLinks>
+              <profiles>
+                <profile name="Trader Specialist" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="1aac-0379-57c8-03f7">
+                  <characteristics>
+                    <characteristic name="S" typeId="0658-e36f-340b-d2fd">3</characteristic>
+                    <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
+                    <characteristic name="E" typeId="089e-bbfc-56a7-f03c">4</characteristic>
+                    <characteristic name="C" typeId="04b4-a668-4aa1-6152">5</characteristic>
+                    <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">6</characteristic>
+                    <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
+                    <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
+                    <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
+                    <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Fortune Finder, Survivalist</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Fortune Finder" id="bd22-0408-9f78-b2d9" hidden="false" type="rule" targetId="bd26-d5b1-6acf-7665"/>
+                <infoLink name="Survivalist" id="ffc6-9594-1dcd-8e9a" hidden="false" type="rule" targetId="a024-4a3d-99cc-7337"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Medic Specialist" hidden="false" id="137f-5204-d67a-a85f">
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Perk" id="338d-a04e-35e8-fa2f" hidden="false" sortIndex="2">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07a8-0db2-df5c-4097"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Medic" hidden="false" id="4d12-b428-1bba-d7b5">
-                      <infoLinks>
-                        <infoLink name="Medic" id="f06f-6d85-aad1-74de" hidden="false" type="rule" targetId="e28c-0861-0c69-52ad"/>
-                      </infoLinks>
-                      <profiles>
-                        <profile name="Medic Specialist" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="1365-ab27-4074-dba2">
-                          <characteristics>
-                            <characteristic name="S" typeId="0658-e36f-340b-d2fd">3</characteristic>
-                            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
-                            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">4</characteristic>
-                            <characteristic name="C" typeId="04b4-a668-4aa1-6152">5</characteristic>
-                            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">6</characteristic>
-                            <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
-                            <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
-                            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
-                            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Medic</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Survivalist" hidden="false" id="8d2b-a10f-d80b-7174">
-                      <infoLinks>
-                        <infoLink name="Survivalist" id="6960-62c2-96cf-998b" hidden="false" type="rule" targetId="a024-4a3d-99cc-7337"/>
-                      </infoLinks>
-                      <profiles>
-                        <profile name="Survivalist Specialist" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="7493-d6a4-c08c-ad9c">
-                          <characteristics>
-                            <characteristic name="S" typeId="0658-e36f-340b-d2fd">3</characteristic>
-                            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
-                            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">4</characteristic>
-                            <characteristic name="C" typeId="04b4-a668-4aa1-6152">5</characteristic>
-                            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">6</characteristic>
-                            <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
-                            <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
-                            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
-                            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Survivalist</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Hand weapon" hidden="false" id="5819-6d2b-15ba-8124" type="selectionEntry" targetId="3ce4-7ecb-dd45-ecb7" sortIndex="1">
                   <modifiers>
@@ -297,6 +190,25 @@
                   </costs>
                 </entryLink>
               </entryLinks>
+              <profiles>
+                <profile name="Medic Specialist" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="a6f8-a6bb-1c31-ad96">
+                  <characteristics>
+                    <characteristic name="S" typeId="0658-e36f-340b-d2fd">3</characteristic>
+                    <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
+                    <characteristic name="E" typeId="089e-bbfc-56a7-f03c">4</characteristic>
+                    <characteristic name="C" typeId="04b4-a668-4aa1-6152">5</characteristic>
+                    <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">6</characteristic>
+                    <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
+                    <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
+                    <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
+                    <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Medic, Survivalist</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Medic" id="edd9-43a2-e883-8630" hidden="false" type="rule" targetId="e28c-0861-0c69-52ad"/>
+                <infoLink name="Survivalist" id="71c6-e045-638e-858f" hidden="false" type="rule" targetId="a024-4a3d-99cc-7337"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -424,15 +336,8 @@
         <infoLink name="Survivalist" id="9825-057f-162b-f079" hidden="false" type="rule" targetId="a024-4a3d-99cc-7337"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="false" name="Local Leader" hidden="false" id="02ce-36be-b897-4f74">
+    <selectionEntry type="upgrade" import="false" name="Local Leader" hidden="false" id="02ce-36be-b897-4f74" sortIndex="2">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Traits" id="ef61-09c7-7623-fd95" hidden="false">
-          <infoLinks>
-            <infoLink name="Natural Leader" id="2cb0-566b-090e-f72a" hidden="false" type="rule" targetId="4dce-6c82-fc0f-93b7"/>
-            <infoLink name="Inspirational" id="217f-d789-541d-7594" hidden="false" type="rule" targetId="facb-d492-1e4b-d36b"/>
-            <infoLink name="Survivalist" id="601d-b4c2-71dd-fd87" hidden="false" type="rule" targetId="a024-4a3d-99cc-7337"/>
-          </infoLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup name="weapons" id="47a5-a66b-416e-6a8b" hidden="false">
           <entryLinks>
             <entryLink import="true" name="Combat rifle" hidden="false" id="dfdf-af08-bf37-4ea7" type="selectionEntry" targetId="be00-8f6b-cab0-c93c">
@@ -447,7 +352,7 @@
             </entryLink>
             <entryLink import="true" name="Sawn-off shotgun" hidden="false" id="e338-35cb-a9cf-68b3" type="selectionEntry" targetId="6b0b-4f78-621a-9b09">
               <entryLinks>
-                <entryLink import="true" name="officer&apos;s sword" hidden="false" id="0ec5-4acd-57d5-25c6" type="selectionEntry" targetId="5c97-9be6-3e16-be85">
+                <entryLink import="true" name="Officer&apos;s sword" hidden="false" id="0ec5-4acd-57d5-25c6" type="selectionEntry" targetId="5c97-9be6-3e16-be85">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2001-8bc0-b374-d595-min"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2001-8bc0-b374-d595-max"/>
@@ -485,6 +390,11 @@
         <categoryLink name="Unit" hidden="false" id="7fa6-85df-69de-8c7c" targetId="536d-4b88-52f1-46cc" primary="false"/>
         <categoryLink targetId="1ada-7eae-f801-68b5" id="dc28-58aa-e2ee-8c8a" primary="true" name="Leader"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Inspirational" id="217f-d789-541d-7594" hidden="false" type="rule" targetId="facb-d492-1e4b-d36b"/>
+        <infoLink name="Natural Leader" id="2cb0-566b-090e-f72a" hidden="false" type="rule" targetId="4dce-6c82-fc0f-93b7"/>
+        <infoLink name="Survivalist" id="601d-b4c2-71dd-fd87" hidden="false" type="rule" targetId="a024-4a3d-99cc-7337"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="Good boy" hidden="false" id="9681-002c-bf54-7710">
       <categoryLinks>

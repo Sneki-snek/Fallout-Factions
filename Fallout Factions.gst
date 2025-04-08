@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-556b-cae6-314e-a8f7" name="Fallout Factions" battleScribeVersion="2.03" revision="2" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
+<gameSystem id="sys-556b-cae6-314e-a8f7" name="Fallout Factions" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
   <categoryEntries>
     <categoryEntry name="Leader" id="1ada-7eae-f801-68b5"/>
     <categoryEntry name="Unit" id="536d-4b88-52f1-46cc" hidden="false"/>
@@ -11,6 +11,7 @@
     <categoryEntry name="Chems" id="735c-aebd-500f-1da2" hidden="false"/>
     <categoryEntry name="Raider" id="f867-1634-0096-bae6" hidden="false"/>
     <categoryEntry name="Companion" id="3d88-d079-2f02-28c6" hidden="false"/>
+    <categoryEntry name="Disciples" id="47c0-48db-1b08-9c17" hidden="false"/>
   </categoryEntries>
   <profileTypes>
     <profileType name="Unit" id="769b-f94e-65c4-86be" hidden="false">
@@ -148,15 +149,13 @@ Do not resolve Confusion until Damage has been applied to all models.</descript
       <description>When this model makes the Rummage Action to Find a Chem, after adding a Chem to the Crew Roster, they may add a second Chem with a Cap cost no higher than the total result of the two rolled dice.</description>
     </rule>
     <rule name="Tranquilize" id="475f-bdbf-9428-c2ef" hidden="false">
-      <description>At the end of the Inflict Damage step, the opposing player rolls X dice. For each one that scores higher than the Target&apos;s Endurance, the Target suffers one Harm, with Excess Harm causing an Injury. If this causes the Target to be Incapacitated, when you do the Treat the Wounded step, there is no lasting effect, as though you rolled Clean Bill of Health.
-
-</description>
+      <description>At the end of the Inflict Damage step, the opposing player rolls X dice. For each one that scores higher than the Target&apos;s Endurance, the Target suffers one Harm, with Excess Harm causing an Injury. If this causes the Target to be Incapacitated, when you do the Treat the Wounded step, there is no lasting effect, as though you rolled Clean Bill of Health.</description>
     </rule>
     <rule name="Programmed" id="2a0d-9ec1-2472-4e1c" hidden="false">
       <description>This model cannot be a crew’s Leader, cannot take the Crew Training Story Action. In addition, it cannot gain Perks, or Experience.</description>
     </rule>
     <rule name="Machine" id="748e-27c9-4f04-61d2" hidden="false">
-      <description>This model always passes any Confusion Test it is required to make. When this model is Incapacitated, it does not trigger Confusion Tests in other models. In addition, Chems cannot be used on this model, and it is unaffected by the Poison (X) and Tranquilise (X) Critical Effects. Finally, this model is unaffected by Radiation Tokens. </description>
+      <description>This model always passes any Confusion Test it is required to make. When this model is Incapacitated, it does not trigger Confusion Tests in other models. In addition, Chems cannot be used on this model, and it is unaffected by the Poison (X) and Tranquilise (X) Critical Effects. Finally, this model is unaffected by Radiation Tokens.</description>
     </rule>
     <rule name="Hardy" id="ec70-6a0e-9d0a-54da" hidden="false">
       <description>This model cannot suffer Fatigue. This model still takes Fatigue by performing an Action or gaining a bonus.</description>
@@ -198,7 +197,13 @@ If the model cannot move this full distance, it moves as far as it can.</descri
       <description>At the end of the Inflict Damage step, the opposing player rolls X dice. For each one that scores higher than the Target model’s Endurance, it suffers one Harm, with Excess Harm causing an Injury.</description>
     </rule>
     <rule name="Wide swings" id="16f6-c980-c585-6e57" hidden="false">
-      <description>When creating a Dice Pool for a Melee Attack, this model gains 1 Bonus Die for each Enemy model it is Engaged with, beyond the first. </description>
+      <description>When creating a Dice Pool for a Melee Attack, this model gains 1 Bonus Die for each Enemy model it is Engaged with, beyond the first.</description>
+    </rule>
+    <rule name="One And Done" id="560a-1e6d-bde0-6254" hidden="false">
+      <description>After making an Attack with this Weapon, it cannot be used again this game.</description>
+    </rule>
+    <rule name="Bladed" id="5a76-fb3a-b6a9-2dfe" hidden="false">
+      <description>When a model with this Weapon uses a Makeshift Weapon to make a Melee Attack, add a Bonus Die to the Pool. </description>
     </rule>
   </sharedRules>
   <forceEntries>
@@ -208,7 +213,7 @@ If the model cannot move this full distance, it moves as far as it can.</descri
         <categoryLink name="Leader" hidden="false" id="d6a7-c502-8e2b-45da" targetId="1ada-7eae-f801-68b5"/>
         <categoryLink name="Champion" hidden="false" id="6323-43b7-ca90-245b" targetId="fea4-7d20-3941-c6c1"/>
         <categoryLink name="Grunt" hidden="false" id="0a8c-6578-c77e-ad5b" targetId="f14c-998a-b1aa-2af4"/>
-        <categoryLink name="Companion" hidden="false" id="3d7a-ae5a-8c65-46cc" targetId="3d88-d079-2f02-28c6" type="categoryEntry"/>
+        <categoryLink name="Companion" hidden="false" id="3d7a-ae5a-8c65-46cc" targetId="3d88-d079-2f02-28c6"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Tier 3" id="17e0-6c49-b318-053c" hidden="false" sortIndex="3">
@@ -241,11 +246,11 @@ Take another Turn. When choosing an Active Model, you cannot choose the Active 
         </rule>
         <rule name="Lucky Break" id="8d18-b797-f897-c2b6" hidden="false">
           <description>You may enact this Ploy while making a S.P.EC.I.A.L. Test for a model, after Roll the Pool and Remove Duds, but before the Fortune Smiles Step: 
-You may Re-roll all Duds in the Pool. </description>
+You may Re-roll all Duds in the Pool.</description>
         </rule>
         <rule name="Second Wind" id="d718-31aa-5b24-e482" hidden="false">
           <description>You may enact this Ploy at the start of your Turn:
-When choosing your Active model, you may choose an Exhausted model. If you do, it Recovers 1 Fatigue. </description>
+When choosing your Active model, you may choose an Exhausted model. If you do, it Recovers 1 Fatigue.</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -658,7 +663,7 @@ When choosing your Active model, you may choose an Exhausted model. If you do, 
         <infoLink name="Ignite" id="e71e-3c90-edd2-776f" hidden="false" type="rule" targetId="60d8-505b-5586-8d34"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="officer&apos;s sword" hidden="false" id="5c97-9be6-3e16-be85">
+    <selectionEntry type="upgrade" import="true" name="Officer&apos;s sword" hidden="false" id="5c97-9be6-3e16-be85">
       <profiles>
         <profile name="officers&apos;s Sword" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="9b63-1256-1377-23bc">
           <characteristics>
@@ -1179,6 +1184,110 @@ When choosing your Active model, you may choose an Exhausted model. If you do, 
       <infoLinks>
         <infoLink name="Wind up" id="d64e-f79c-65f1-3fd0" hidden="false" type="rule" targetId="dc23-e76e-87b2-ce6f"/>
         <infoLink name="Pierce" id="9417-91fe-36b6-c18f" hidden="false" type="rule" targetId="cdb1-d4c1-caee-6ff6"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Handmade Rifle" hidden="false" id="455a-4716-66ab-4ec5">
+      <profiles>
+        <profile name="Handmade Rifle" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="2dab-2008-aa26-75ef">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Handmade Rifle</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Rifle(18&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">4P</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Fast</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Suppress(2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Fast" id="0cbd-7088-56d8-88a3" hidden="false" type="rule" targetId="e3de-3e1c-02b7-8cb2"/>
+        <infoLink name="Suppress" id="f0b6-fbbc-9689-ac9a" hidden="false" type="rule" targetId="a5a2-907b-3be3-11ce"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Nuka Grenade" hidden="false" id="2e4e-d84a-1558-88f4">
+      <profiles>
+        <profile name="Nuka Grenade" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="d9ab-b175-06aa-8a78">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Nuka Grenade</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Grenade(8&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">5A</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Area(2&quot;), CQB, Irradiate, One And Done</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Maim</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Area" id="3a85-a8b5-b2d4-e89b" hidden="false" type="rule" targetId="edab-9a5e-37e3-6727"/>
+        <infoLink name="CQB" id="3380-85cd-e4fd-cd20" hidden="false" type="rule" targetId="528d-c5d6-b786-d394"/>
+        <infoLink name="Irradiate" id="d608-504e-1818-6638" hidden="false" type="rule" targetId="a37d-8ddd-6451-dbdd"/>
+        <infoLink name="One And Done" id="7b5f-2f4f-b93a-0664" hidden="false" type="rule" targetId="560a-1e6d-bde0-6254"/>
+        <infoLink name="Maim" id="9f58-3480-e5bf-5476" hidden="false" type="rule" targetId="1446-58d6-7333-f74f"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Syringer" hidden="false" id="0e3d-dd1f-cde8-8cca">
+      <profiles>
+        <profile name="Syringer" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="23f4-296f-9ae8-abdf">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Syringer</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Rifle(16&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">2P</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Aim(+2)</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Poison(3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Aim" id="59bc-d7ef-3fda-ac3c" hidden="false" type="rule" targetId="0d95-52b4-68c7-1240"/>
+        <infoLink name="Poison" id="1640-3e6c-330e-b7df" hidden="false" type="rule" targetId="34f6-9c3a-1617-3b87"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ranger&apos;s Hunting Rifle" hidden="false" id="d508-6bd3-5b31-c3a7">
+      <profiles>
+        <profile name="Ranger&apos;s Hunting Rifle" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="6100-8c4f-474b-52a2">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Ranger&apos;s Hunting Rifle</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Rifle(14&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">3P</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">-</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Pierce</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pierce" id="4716-3815-3f14-8f04" hidden="false" type="rule" targetId="cdb1-d4c1-caee-6ff6"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Marksman&apos;s Handmade Rifle" hidden="false" id="e0b2-9be6-5a98-b066">
+      <profiles>
+        <profile name="Marksman&apos;s Handmade Rifle" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="c6ea-636b-2683-6458">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Marksman&apos;s Handmade Rifle</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Rifle(30&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">2P</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Aim(+3)</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Pierce</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Aim" id="8e6a-0f0f-14d4-c9bf" hidden="false" type="rule" targetId="0d95-52b4-68c7-1240"/>
+        <infoLink name="Pierce" id="c398-b61f-e68d-7d12" hidden="false" type="rule" targetId="cdb1-d4c1-caee-6ff6"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Light Handmade Rifle" hidden="false" id="88c3-1c39-73ca-e37b">
+      <profiles>
+        <profile name="Light Handmade Rifle" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="9bc6-bb7d-2b77-b970">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Light Handmade Rifle</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Rifle(12&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">3P</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Bladed</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Suppress(1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Bladed" id="e19b-ca49-fb39-6710" hidden="false" type="rule" targetId="5a76-fb3a-b6a9-2dfe"/>
+        <infoLink name="Suppress" id="ca10-e956-d614-70ed" hidden="false" type="rule" targetId="a5a2-907b-3be3-11ce"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
