@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7782-c17d-c51e-6a1a" name="Raiders" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7782-c17d-c51e-6a1a" name="Raiders" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Boss" hidden="false" id="ca26-0931-967f-3b92" sortIndex="2">
       <selectionEntryGroups>
@@ -87,16 +87,25 @@
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="roster" shared="false" id="575a-ee96-408c-3771" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="41"/>
+              </costs>
             </entryLink>
             <entryLink import="true" name="Missile Launcher" hidden="false" id="f921-5c6a-9d5b-9c68" type="selectionEntry" targetId="7b2e-67f8-6364-bb1c">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="roster" shared="false" id="7e57-ec7d-e94f-de9e" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="56"/>
+              </costs>
             </entryLink>
             <entryLink import="true" name="Flamer" hidden="false" id="8e66-34a5-985c-91ae" type="selectionEntry" targetId="16c5-d9b7-70db-c100">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="roster" shared="false" id="ceb6-bf37-c43a-45fb" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="45"/>
+              </costs>
             </entryLink>
           </entryLinks>
           <constraints>
@@ -439,7 +448,7 @@
         <selectionEntry type="upgrade" import="true" name="Raider ploys" hidden="false" id="fa43-5d5d-2ca2-941a">
           <rules>
             <rule name="In Moderation" id="5c20-45ab-b3f5-dc72" hidden="false">
-              <description> You may enact this Ploy when a Friendly model chooses Find a Chem while making a Rummage Action;
+              <description>You may enact this Ploy when a Friendly model chooses Find a Chem while making a Rummage Action;
  In addition to the result of the rolls for this Action, add a single dose of any Rare Chem to your Crew Roster</description>
             </rule>
             <rule name="Oh Yeah!" id="d2da-d989-9969-821d" hidden="false">
@@ -463,11 +472,11 @@ Take another Turn. When choosing an Active Model, you cannot choose the Active 
             </rule>
             <rule name="Lucky Break" id="7821-f921-1e80-38e1" hidden="false">
               <description>You may enact this Ploy while making a S.P.EC.I.A.L. Test for a model, after Roll the Pool and Remove Duds, but before the Fortune Smiles Step: 
-You may Re-roll all Duds in the Pool. </description>
+You may Re-roll all Duds in the Pool.</description>
             </rule>
             <rule name="Second Wind" id="8e7e-e49f-e124-a8d8" hidden="false">
               <description>You may enact this Ploy at the start of your Turn:
-When choosing your Active model, you may choose an Exhausted model. If you do, it Recovers 1 Fatigue. </description>
+When choosing your Active model, you may choose an Exhausted model. If you do, it Recovers 1 Fatigue.</description>
             </rule>
           </rules>
         </selectionEntry>
