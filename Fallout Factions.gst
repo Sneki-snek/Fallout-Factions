@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-556b-cae6-314e-a8f7" name="Fallout Factions" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
+<gameSystem id="sys-556b-cae6-314e-a8f7" name="Fallout Factions" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
   <categoryEntries>
     <categoryEntry name="Leader" id="1ada-7eae-f801-68b5"/>
     <categoryEntry name="Unit" id="536d-4b88-52f1-46cc" hidden="false"/>
@@ -12,6 +12,9 @@
     <categoryEntry name="Raider" id="f867-1634-0096-bae6" hidden="false"/>
     <categoryEntry name="Companion" id="3d88-d079-2f02-28c6" hidden="false"/>
     <categoryEntry name="Disciples" id="47c0-48db-1b08-9c17" hidden="false"/>
+    <categoryEntry name="Operators" id="d1de-50c7-c2c2-f18e" hidden="false"/>
+    <categoryEntry name="Pack" id="d11a-0b61-4498-982b" hidden="false"/>
+    <categoryEntry name="Moth Cult" id="a435-53a8-5ea3-ec84" hidden="false"/>
   </categoryEntries>
   <profileTypes>
     <profileType name="Unit" id="769b-f94e-65c4-86be" hidden="false">
@@ -204,6 +207,46 @@ If the model cannot move this full distance, it moves as far as it can.</descri
     </rule>
     <rule name="Bladed" id="5a76-fb3a-b6a9-2dfe" hidden="false">
       <description>When a model with this Weapon uses a Makeshift Weapon to make a Melee Attack, add a Bonus Die to the Pool. </description>
+    </rule>
+    <rule name="Being Of Insight" id="8531-a2a1-67fc-4271" hidden="false">
+      <description>When this model would suffer an Injury, reduce Ritual Count by 1 on the Crew Roster. </description>
+    </rule>
+    <rule name="Being Of Rage" id="2e29-0cbd-ed90-df8d" hidden="false">
+      <description>When this model completes an Attack Action or would suffer an Injury, reduce Ritual Count by 1 on the Crew Roster. </description>
+    </rule>
+    <rule name="Mythical" id="10e3-cab0-a20e-229d" hidden="false">
+      <description>This model does not have a Health Value. When a crew&apos;s Ritual Count reaches 0, this model is Incapacitated.</description>
+    </rule>
+    <rule name="Offering" id="ca69-e341-8cbf-bcd0" hidden="false">
+      <description>When this model makes a Rummage Action, it may increase the crew&apos;s Ritual Count by two instead of Finding Chems or Finding Caps and Parts.</description>
+    </rule>
+    <rule name="Pacifist" id="7f83-9e7e-c1c8-fcc5" hidden="false">
+      <description>This model cannot take the Open Fire or Brawl Actions.</description>
+    </rule>
+    <rule name="Recruiter" id="ccda-d92f-7a42-2ac9" hidden="false">
+      <description> If a model with this Perk was not Incapacitated during a game, the crew that contained it may make a Recruit Story Action for free during the next Story Phase. </description>
+    </rule>
+    <rule name="True Wisdom Of The Mothman" id="b388-a30d-815e-6fd0" hidden="false">
+      <description> Friendly models within this model&apos;s Control Area may count their Charisma statistic as being 8. When a model within this model&apos;s Control Area would Fail a Confusion Test, you may reduce Ritual Count by 1 to have the model Pass the Test instead. </description>
+    </rule>
+    <rule name="Pulse" id="deac-cba4-2b17-3886" hidden="false">
+      <description> When making an Attack Action with this Weapon, each model Engaged with the Active model counts as a Target model.
+ 
+Make a single Attack Test, for which no Bonus Dice can be applied. Then resolve the Inflict Damage step once for each Target model, in an order chosen by the Active player. If a rule adjusts the amount of Damage inflicted (for example, the Ignite (X) Critical Effect), this does not carry over between models. Do not resolve Confusion until Damage has been applied to all models.</description>
+    </rule>
+    <rule name="Ritual" id="b5f5-12b8-c6d8-fc30" hidden="false">
+      <description>This model can contribute towards a crew&apos;s Ritual Count. 
+
+
+A crew&apos;s Ritual Count starts at 0. For each Luck Die remaining in the Pool during the Fortune Smiles step, the Active player can increase Ritual Count by 1 instead of rolling a Standard Dice.  
+This is marked on the Crew Roster. Critical Effects cannot be This model can contribute towards a crew&apos;s Ritual Count. 
+
+
+A crew&apos;s Ritual Count starts at 0. For each Luck Die remaining in the Pool during the Fortune Smiles step, the Active player can increase Ritual Count by 1 instead of rolling a Standard Die. 
+This is marked on the Crew Roster. Critical Effects cannot be triggered in a Test that increases Ritual Count. </description>
+    </rule>
+    <rule name="Showstopper" id="da4e-9737-82d8-3ae2" hidden="false">
+      <description> If this attack inflicts an amount of Damage equal to or greater than the Target&apos;s Endurance, any Excess Harm caused will result in the model suffering an Injury. </description>
     </rule>
   </sharedRules>
   <forceEntries>
@@ -1288,6 +1331,161 @@ When choosing your Active model, you may choose an Exhausted model. If you do, 
       <infoLinks>
         <infoLink name="Bladed" id="e19b-ca49-fb39-6710" hidden="false" type="rule" targetId="5a76-fb3a-b6a9-2dfe"/>
         <infoLink name="Suppress" id="ca10-e956-d614-70ed" hidden="false" type="rule" targetId="a5a2-907b-3be3-11ce"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shishkebab" hidden="false" id="d793-1d61-6fed-31e4">
+      <profiles>
+        <profile name="Shishkebab" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="ba77-b38b-5b8e-a75e">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Shishkebab</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Melee</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">4S</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">-</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Ignite(2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ignite" id="8bf7-d60b-8794-5949" hidden="false" type="rule" targetId="60d8-505b-5586-8d34"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Frag Grenades" hidden="false" id="3651-db9f-98a1-0ecc">
+      <profiles>
+        <profile name="Frag Grenades" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="4eb1-dfbd-bda2-e4e6">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Frag Grenades</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Grenade(10&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">3A</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Area(1&quot;), CQB</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Suppress(2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Area" id="2658-13b1-040f-afd3" hidden="false" type="rule" targetId="edab-9a5e-37e3-6727"/>
+        <infoLink name="CQB" id="8970-4ca8-d8e1-d367" hidden="false" type="rule" targetId="528d-c5d6-b786-d394"/>
+        <infoLink name="Suppress" id="f9ea-8b6e-89ab-207a" hidden="false" type="rule" targetId="a5a2-907b-3be3-11ce"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Combat Shotgun" hidden="false" id="5c43-7daf-6358-2eeb">
+      <profiles>
+        <profile name="Combat Shotgun" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="2a45-2700-4fc1-133b">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Combat Shotgun</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Rifle(10&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">4P</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Storm(1)</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Maim</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Storm" id="cd39-9990-82db-188f" hidden="false" type="rule" targetId="acb2-136f-8458-d00a"/>
+        <infoLink name="Maim" id="a6aa-d14c-eb01-7761" hidden="false" type="rule" targetId="1446-58d6-7333-f74f"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Deathclaw Gauntlet" hidden="false" id="dc46-5459-4113-9c61">
+      <profiles>
+        <profile name="Deathclaw Gauntlet" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="4f26-9ba8-ea97-939f">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Deathclaw Gauntlet</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Melee</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">5S</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Wind Up</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Pierce</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Wind up" id="3706-e609-753e-b02c" hidden="false" type="rule" targetId="dc23-e76e-87b2-ce6f"/>
+        <infoLink name="Pierce" id="c687-8321-d93a-ba5c" hidden="false" type="rule" targetId="cdb1-d4c1-caee-6ff6"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Predator Grenades" hidden="false" id="8c8b-7a09-ac6b-e530">
+      <profiles>
+        <profile name="Predator Grenades" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="88bf-d35f-a56d-89ed">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Predator Grenades</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Grenade(8&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">4A</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Area(3&quot;), CQB</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Maim</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Area" id="2202-d804-60f1-051c" hidden="false" type="rule" targetId="edab-9a5e-37e3-6727"/>
+        <infoLink name="CQB" id="165f-6cc6-8210-5b56" hidden="false" type="rule" targetId="528d-c5d6-b786-d394"/>
+        <infoLink name="Maim" id="eea8-a69b-cc52-3820" hidden="false" type="rule" targetId="1446-58d6-7333-f74f"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Automatic Handmade Rifle" hidden="false" id="47f2-2a0f-5f59-165e">
+      <profiles>
+        <profile name="Automatic Handmade Rifle" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="721d-927b-4178-7e2f">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Automatic Handmade Rifle</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Rifle(14&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">3P</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Fast, Storm(2)</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Suppress(2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Fast" id="c754-119c-42cf-c220" hidden="false" type="rule" targetId="e3de-3e1c-02b7-8cb2"/>
+        <infoLink name="Storm" id="671d-d58d-cf44-6c98" hidden="false" type="rule" targetId="acb2-136f-8458-d00a"/>
+        <infoLink name="Suppress" id="83dc-51e5-d8b5-cafd" hidden="false" type="rule" targetId="a5a2-907b-3be3-11ce"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mothman Sonic Wave" hidden="false" id="51cd-14fa-7dc8-a818">
+      <profiles>
+        <profile name="Mothman Sonic Wave" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="a489-5de0-a879-cf00">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Mothman Sonic Wave</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Melee</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">5S</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Pulse</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Pushback(2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pulse" id="81da-7627-0917-85fe" hidden="false" type="rule" targetId="deac-cba4-2b17-3886"/>
+        <infoLink name="Pushback" id="292b-0e85-e8f3-088f" hidden="false" type="rule" targetId="5f03-28ea-e4cf-e9b2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hardened Sniper Rifle" hidden="false" id="3727-8a43-6ed6-9bcd">
+      <profiles>
+        <profile name="Hardened Sniper Rifle" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="bf40-a452-e285-78b5">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Hardened Sniper Rifle</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Rifle(36&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">2P</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Aim(+3)</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Showstopper</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Aim" id="30ea-9f02-de94-5d3e" hidden="false" type="rule" targetId="0d95-52b4-68c7-1240"/>
+        <infoLink name="Showstopper" id="921a-91a6-6b4f-a8f1" hidden="false" type="rule" targetId="da4e-9737-82d8-3ae2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mothman Sonic Screech" hidden="false" id="c408-69c4-92d1-4494">
+      <profiles>
+        <profile name="Mothman Sonic Screech" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="df95-e442-3a17-aeaa">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Mothman Sonic Screech</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Pistol(10&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">5A</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Fast</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Pushback(1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Fast" id="2e6f-74c9-eb29-5942" hidden="false" type="rule" targetId="e3de-3e1c-02b7-8cb2"/>
+        <infoLink name="Pushback" id="126b-9083-7871-4cb4" hidden="false" type="rule" targetId="5f03-28ea-e4cf-e9b2"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="5b36-d524-33a0-1644" name="Moth Cult" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="4" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="High Priest" hidden="false" id="52fb-be48-3d51-8b55" sortIndex="2">
+      <profiles>
+        <profile name="High Priest" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="a6f1-4d31-12e5-8cf6">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">4</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">4</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">6</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">6</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">3</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">3</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Inspirational, Natural Leader, Offering, Ritual</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Inspirational" id="816f-5e46-276f-9423" hidden="false" type="rule" targetId="facb-d492-1e4b-d36b"/>
+        <infoLink name="Natural Leader" id="5578-4659-a4f5-780a" hidden="false" type="rule" targetId="4dce-6c82-fc0f-93b7"/>
+        <infoLink name="Offering" id="133d-cc30-23b5-9e4f" hidden="false" type="rule" targetId="ca69-e341-8cbf-bcd0"/>
+        <infoLink name="Ritual" id="cea9-0e10-370e-ab7c" hidden="false" type="rule" targetId="b5f5-12b8-c6d8-fc30"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Hand weapon" hidden="false" id="e606-32d2-bfb9-172d" type="selectionEntry" targetId="3ce4-7ecb-dd45-ecb7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1eca-afb2-fddf-e4df-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1eca-afb2-fddf-e4df-max"/>
+          </constraints>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="31"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="1ada-7eae-f801-68b5" id="e6cc-c153-cfc1-18c2" primary="true" name="Leader"/>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="8e1b-a9c3-bf51-5b8d" primary="false" name="Unit"/>
+        <categoryLink targetId="fea4-7d20-3941-c6c1" id="18be-3e24-14b7-af5d" primary="false" name="Champion"/>
+        <categoryLink targetId="a435-53a8-5ea3-ec84" id="ecf6-7586-51ac-4474" primary="false" name="Moth Cult"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Faithful" hidden="false" id="d709-d55d-f1ec-cfdc" sortIndex="3">
+      <categoryLinks>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="c887-07f2-8ff5-e196" primary="false" name="Unit"/>
+        <categoryLink targetId="fea4-7d20-3941-c6c1" id="8279-f045-10a3-8905" primary="true" name="Champion"/>
+        <categoryLink targetId="a435-53a8-5ea3-ec84" id="62ee-572b-b4c9-6096" primary="false" name="Moth Cult"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Faithful" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="db59-c393-cd49-d2c2">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">4</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">5</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">5</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">5</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">4</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Ritual</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ritual" id="4eca-ba1a-9c39-f084" hidden="false" type="rule" targetId="b5f5-12b8-c6d8-fc30"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Flamer" hidden="false" id="a75d-184c-3cae-6599" type="selectionEntry" targetId="16c5-d9b7-70db-c100">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1eb7-d51f-40fa-015b"/>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="3211-4c2d-64d0-439f" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="32"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Hunting Rifle" hidden="false" id="8ddc-c02a-32c3-64c1" type="selectionEntry" targetId="3cbd-2920-a25f-7c85">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebb2-5df9-2550-994a"/>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="8392-e4ad-c694-a78a" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="36"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Hardened Sniper Rifle" hidden="false" id="deb5-4ca4-23fd-6dd1" type="selectionEntry" targetId="3727-8a43-6ed6-9bcd">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f47-4bce-748c-2890"/>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="9a01-7e0e-99df-086c" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="39"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cultist" hidden="false" id="5f47-32c6-de58-6dfb" sortIndex="4">
+      <profiles>
+        <profile name="Cultist" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="5c8f-8185-90c9-84bd">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">5</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">3</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">4</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">4</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">3</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Ritual</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ritual" id="e830-da5b-0b2d-9a39" hidden="false" type="rule" targetId="b5f5-12b8-c6d8-fc30"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Molotov Cocktails" hidden="false" id="1384-047d-94e0-ec73" type="selectionEntry" targetId="325d-a3c0-cb20-83f7">
+          <entryLinks>
+            <entryLink import="true" name="Heavy Pipe Pistol" hidden="false" id="0463-007d-3a4f-1266" type="selectionEntry" targetId="09af-a011-8e2c-95ce">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c11d-706b-64a3-e439-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c11d-706b-64a3-e439-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="22"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e5c5-c4ed-aa81-be97"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="b439-e8f9-711c-e7f1" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Pipe revolver" hidden="false" id="9c9f-326e-a3f3-a32f" type="selectionEntry" targetId="fd15-209d-2487-23a1">
+          <entryLinks>
+            <entryLink import="true" name="Hand weapon" hidden="false" id="1324-ed59-0aee-36d0" type="selectionEntry" targetId="3ce4-7ecb-dd45-ecb7">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a74-bd47-16a1-ab61-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a74-bd47-16a1-ab61-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="23"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d157-8246-0f52-1406"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="46b5-6dbe-1d64-9b8b" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Heavy Pipe Pistol" hidden="false" id="1474-e80c-4b95-60ff" type="selectionEntry" targetId="09af-a011-8e2c-95ce">
+          <entryLinks>
+            <entryLink import="true" name="Machete" hidden="false" id="d19e-0898-6863-3827" type="selectionEntry" targetId="68dd-8716-1975-44f0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1bae-b901-17a7-c7a9-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bae-b901-17a7-c7a9-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="24"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ad2-93ad-64e2-c87d"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="7041-dd1f-377e-2234" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="54d9-6ec0-361a-d9d7" primary="false" name="Unit"/>
+        <categoryLink targetId="a435-53a8-5ea3-ec84" id="8fc2-dd9f-6323-b080" primary="false" name="Moth Cult"/>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="8673-b1e9-a643-8a36" primary="true" name="Grunt"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Disciple" hidden="false" id="8d62-9652-3db8-912c" sortIndex="4">
+      <profiles>
+        <profile name="Disciple" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="9c13-fd76-acea-11ed">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">3</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">4</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">4</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">4</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">3</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Ritual</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ritual" id="eee8-52f3-3a0f-3bc8" hidden="false" type="rule" targetId="b5f5-12b8-c6d8-fc30"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Double-barreled Shotgun" hidden="false" id="b40b-6c6e-81d6-365d" type="selectionEntry" targetId="0a24-b2a2-a0c6-6c45">
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="21"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8ae-841d-ab93-7f6c"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="cba2-ea18-eb88-5a50" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Combat Shotgun" hidden="false" id="0200-6b58-c0d0-8111" type="selectionEntry" targetId="5c43-7daf-6358-2eeb">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e303-2d60-dcd4-39b8"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="bb2b-995c-b60f-10e7" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Handmade Rifle" hidden="false" id="5179-e3df-21cf-2eff" type="selectionEntry" targetId="455a-4716-66ab-4ec5">
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="26"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f96-2255-9af2-bb75"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="915d-4688-0025-ae7f" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="5e9b-d1df-93d2-33b8" primary="false" name="Unit"/>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="fc91-8ba8-5df5-c1dc" primary="true" name="Grunt"/>
+        <categoryLink targetId="a435-53a8-5ea3-ec84" id="83e4-87e8-54f2-c70c" primary="false" name="Moth Cult"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Seeker" hidden="false" id="a34c-9145-08ba-d5be" sortIndex="4">
+      <profiles>
+        <profile name="Seeker" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="c8c3-d498-60b8-9f6a">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">3</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">3</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">4</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">3</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">3</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">3</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">1</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">1</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Ritual</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ritual" id="0ca7-bbed-9299-2d9e" hidden="false" type="rule" targetId="b5f5-12b8-c6d8-fc30"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Pipe Pistol" hidden="false" id="f4dd-3e42-391b-bff4" type="selectionEntry" targetId="dafe-8774-8364-69ea">
+          <entryLinks>
+            <entryLink import="true" name="Machete" hidden="false" id="28ac-d6c3-9c3f-cc8b" type="selectionEntry" targetId="68dd-8716-1975-44f0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="adbe-2327-b9ea-ffc6-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adbe-2327-b9ea-ffc6-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a832-ca0f-bea0-dc7d"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="95c5-c416-8975-b785" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="10mm Pistol" hidden="false" id="6974-a200-a473-8987" type="selectionEntry" targetId="01f5-feb9-6b93-c0bb">
+          <entryLinks>
+            <entryLink import="true" name="Machete" hidden="false" id="e982-43da-4ce0-9dd9" type="selectionEntry" targetId="68dd-8716-1975-44f0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b168-1b59-74f8-22cf-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b168-1b59-74f8-22cf-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3418-4cb6-3086-2a58"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="1387-c0a0-5e83-18de" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Pipe revolver" hidden="false" id="ef7e-00c7-2ee9-529a" type="selectionEntry" targetId="fd15-209d-2487-23a1">
+          <entryLinks>
+            <entryLink import="true" name="Machete" hidden="false" id="4bba-4fde-e8dd-ce6f" type="selectionEntry" targetId="68dd-8716-1975-44f0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9de1-b7b7-5e2d-1f98-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9de1-b7b7-5e2d-1f98-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d30-1b57-d26e-eba8"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="9cb4-ad82-9755-711b" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name=".44 Pistol" hidden="false" id="2955-7cde-af2a-af9f" type="selectionEntry" targetId="e86d-0cb6-809a-82f7">
+          <entryLinks>
+            <entryLink import="true" name="Machete" hidden="false" id="027a-5878-a94d-3ba4" type="selectionEntry" targetId="68dd-8716-1975-44f0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be08-5fab-ea9d-6a35-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be08-5fab-ea9d-6a35-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c0e-d18c-75f6-72fe"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="51b2-a0b9-94dc-a3e2" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="5411-59e2-11a0-ed07" primary="false" name="Unit"/>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="186c-8ce6-463b-e008" primary="true" name="Grunt"/>
+        <categoryLink targetId="a435-53a8-5ea3-ec84" id="08e5-9354-8de6-bd58" primary="false" name="Moth Cult"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Wise Mothman" hidden="false" id="81c6-b6b8-5d01-391b">
+      <profiles>
+        <profile name="The Wise Mothman" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="209c-d51e-c440-b714">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">4</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">6</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">7</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">8</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">8</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">5</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">3</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">-</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Being Of Insight, Flight, Mythical, Pacifist, Rad Resistant, Recruiter, True Wisdom Of The Mothman</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Being Of Insight" id="67db-7790-fad7-0e8a" hidden="false" type="rule" targetId="8531-a2a1-67fc-4271"/>
+        <infoLink name="Flight" id="9dad-1516-01a6-ee7c" hidden="false" type="rule" targetId="cf1b-8b2e-c7fe-c34a"/>
+        <infoLink name="Mythical" id="04d5-69b8-7a25-14fc" hidden="false" type="rule" targetId="10e3-cab0-a20e-229d"/>
+        <infoLink name="Pacifist" id="8690-7c83-a1b9-eb45" hidden="false" type="rule" targetId="7f83-9e7e-c1c8-fcc5"/>
+        <infoLink name="Rad Resistant" id="3acb-60d4-fdc1-f181" hidden="false" type="rule" targetId="760a-3b74-8c57-ce18"/>
+        <infoLink name="Recruiter" id="a160-aa16-8b6b-9449" hidden="false" type="rule" targetId="ccda-d92f-7a42-2ac9"/>
+        <infoLink name="True Wisdom Of The Mothman" id="9568-8596-ff4a-f048" hidden="false" type="rule" targetId="b388-a30d-815e-6fd0"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="e29d-3f0d-a97e-912b" primary="false" name="Unit"/>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="4b50-7afa-c0e6-c1b1" primary="true" name="Grunt"/>
+        <categoryLink targetId="a435-53a8-5ea3-ec84" id="d092-cf84-996f-120b" primary="false" name="Moth Cult"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Holy Mothman" hidden="false" id="0e55-f6ad-9f91-3d4e">
+      <profiles>
+        <profile name="Holy Mothman" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="e8b7-f8b0-9d43-8ffa">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">6</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">6</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">7</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">5</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">6</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">6</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">-</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Being Of Rage, Flight, Mythical, Rad Resistant</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Being Of Rage" id="a01a-302c-b40f-1ea9" hidden="false" type="rule" targetId="2e29-0cbd-ed90-df8d"/>
+        <infoLink name="Flight" id="79ed-b576-508a-e5f2" hidden="false" type="rule" targetId="cf1b-8b2e-c7fe-c34a"/>
+        <infoLink name="Mythical" id="12c4-db09-7ef4-ff69" hidden="false" type="rule" targetId="10e3-cab0-a20e-229d"/>
+        <infoLink name="Rad Resistant" id="ad55-bba3-5493-2e45" hidden="false" type="rule" targetId="760a-3b74-8c57-ce18"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="3d83-93ed-ed74-e188" primary="false" name="Unit"/>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="0646-5253-3e14-0138" primary="true" name="Grunt"/>
+        <categoryLink targetId="a435-53a8-5ea3-ec84" id="54ad-bfbe-ff3b-1637" primary="false" name="Moth Cult"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Companions" id="9171-6dd9-d027-d5aa" targetId="4a14-b2f0-fd22-9574" importRootEntries="true"/>
+  </catalogueLinks>
+</catalogue>
