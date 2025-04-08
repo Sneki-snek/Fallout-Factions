@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5050-ab57-f336-e105" name="Super mutants" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="4" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="5050-ab57-f336-e105" name="Super mutants" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="4" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Master" hidden="false" id="8239-f123-fe32-4349">
       <categoryLinks>
@@ -345,6 +345,32 @@
           </costs>
         </entryLink>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ploys" hidden="false" id="2f35-f067-3578-6660" sortIndex="1">
+      <entryLinks>
+        <entryLink import="true" name="Standard Ploys" hidden="false" id="83e8-f975-6adc-3ead" type="selectionEntry" targetId="09b9-c7b5-7479-75b5"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="New Group" id="52d3-e902-cb91-5c6b" hidden="false"/>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Mutants Ploys" hidden="false" id="e387-a14e-f399-cd70">
+          <rules>
+            <rule name="Surging Advance" id="21ea-bed4-4c10-4277" hidden="false">
+              <description>You may enact this Ploy at the start of any Round except the first. 
+
+
+Each Unengaged model in your crew may be moved up to 4”. During this move, no model can move into the Proximity of an Enemy model.</description>
+            </rule>
+            <rule name="The Next Stage" id="6216-789b-6fbe-5565" hidden="false">
+              <description> You may enact this Ploy at the start of any of your Turns. 
+
+
+You may Recover 1 Harm on each of your models. Until the start of the next Round, increase each of your models Endurance by 1</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </selectionEntries>
   <catalogueLinks>

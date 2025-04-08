@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="41f7-d620-4320-78a4" name="Survivors" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="4" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="41f7-d620-4320-78a4" name="Survivors" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="4" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="false" name="Swatter" hidden="false" id="76e4-59ff-11cb-a7e9">
       <selectionEntryGroups>
@@ -432,6 +432,26 @@
         <infoLink name="Sic &apos;em" id="d563-0012-8e04-f8d3" hidden="false" type="rule" targetId="4a96-f3e7-97cd-5a39"/>
         <infoLink name="Beast" id="868c-6073-47db-9730" hidden="false" type="rule" targetId="d257-f473-5d56-2fa4"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ploys" hidden="false" id="7aa0-b042-c265-c8fc" sortIndex="1">
+      <entryLinks>
+        <entryLink import="true" name="Standard Ploys" hidden="false" id="dc88-596f-bca1-c981" type="selectionEntry" targetId="09b9-c7b5-7479-75b5"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="7783-3a4b-c9a1-021d">
+          <rules>
+            <rule name="No Place Like Home" id="00f2-a454-30b4-9ef7" hidden="false">
+              <description> You may enact this Ploy when a Friendly model is Incapacitated.
+ Add 1 Bonus Dice to the Dice Pool of all Confusion Tests made as a result of the Friendly model being Incapacitated.</description>
+            </rule>
+            <rule name="Some Rain Must Fall" id="6129-2b34-0418-dee8" hidden="false">
+              <description>You may enact this Ploy when a Friendly model is Incapacitated by an Enemy model, after any Confusion Tests are made. 
+Each Friendly model may make an Open Fire or Brawl Action (without taking Fatigue) against the Enemy model whose Action Incapacitated the Friendly model. 
+These Actions follow the normal rules for targeting a model.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </selectionEntries>
   <catalogueLinks>

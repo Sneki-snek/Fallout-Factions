@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="40b8-8776-c343-c2bb" name="Brotherhood of Steel" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="40b8-8776-c343-c2bb" name="Brotherhood of Steel" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Paladin" hidden="false" id="7892-c47d-cbdf-45ba" sortIndex="2">
       <profiles>
@@ -309,6 +309,27 @@
         <categoryLink targetId="9e15-d8c3-563e-36bc" id="a111-88e1-0e6a-3418" primary="false" name="BoS"/>
         <categoryLink targetId="536d-4b88-52f1-46cc" id="8255-301e-ff40-1fec" primary="false" name="Unit"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ploys" hidden="false" id="b08b-cc42-76a4-5fec" sortIndex="1">
+      <entryLinks>
+        <entryLink import="true" name="Standard Ploys" hidden="false" id="9203-854e-b6bb-c06d" type="selectionEntry" targetId="09b9-c7b5-7479-75b5"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="BoS ploys" hidden="false" id="d5f8-715d-7218-7433">
+          <rules>
+            <rule name="The Chain That Binds" id="1790-6923-8424-ac46" hidden="false">
+              <description> You may enact this Ploy at the start of the game, before the start of the first Turn.
+
+ Each Grunt model within the Control Area of a Friendly Champion may take a single Action, taking Fatigue as normal.</description>
+            </rule>
+            <rule name="Vertibird Drop" id="ed8b-aa2f-1d51-10e8" hidden="false">
+              <description> You may enact this Ploy before Deploying models onto the Battlefield.
+
+Choose one of your models. That model is not deployed following the Starting Positions rules of this game. Instead, when you become the Active player on Turn 2, place the model in Base contact of a Battlefield edge of your choice</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </selectionEntries>
   <catalogueLinks>
