@@ -207,6 +207,9 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e303-2d60-dcd4-39b8"/>
             <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="bb2b-995c-b60f-10e7" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="23"/>
+          </costs>
         </entryLink>
         <entryLink import="true" name="Handmade Rifle" hidden="false" id="5179-e3df-21cf-2eff" type="selectionEntry" targetId="455a-4716-66ab-4ec5">
           <costs>
@@ -257,6 +260,9 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a832-ca0f-bea0-dc7d"/>
             <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="95c5-c416-8975-b785" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="12"/>
+          </costs>
         </entryLink>
         <entryLink import="true" name="10mm Pistol" hidden="false" id="6974-a200-a473-8987" type="selectionEntry" targetId="01f5-feb9-6b93-c0bb">
           <entryLinks>
@@ -271,6 +277,9 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3418-4cb6-3086-2a58"/>
             <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="1387-c0a0-5e83-18de" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="14"/>
+          </costs>
         </entryLink>
         <entryLink import="true" name="Pipe revolver" hidden="false" id="ef7e-00c7-2ee9-529a" type="selectionEntry" targetId="fd15-209d-2487-23a1">
           <entryLinks>
@@ -285,6 +294,9 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d30-1b57-d26e-eba8"/>
             <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="9cb4-ad82-9755-711b" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="15"/>
+          </costs>
         </entryLink>
         <entryLink import="true" name=".44 Pistol" hidden="false" id="2955-7cde-af2a-af9f" type="selectionEntry" targetId="e86d-0cb6-809a-82f7">
           <entryLinks>
@@ -299,6 +311,9 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c0e-d18c-75f6-72fe"/>
             <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="51b2-a0b9-94dc-a3e2" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="16"/>
+          </costs>
         </entryLink>
       </entryLinks>
       <categoryLinks>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5050-ab57-f336-e105" name="Super mutants" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="4" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="5050-ab57-f336-e105" name="Super mutants" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="4" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Master" hidden="false" id="8239-f123-fe32-4349">
+    <selectionEntry type="upgrade" import="true" name="Master" hidden="false" id="8239-f123-fe32-4349" sortIndex="2">
       <categoryLinks>
         <categoryLink targetId="fea4-7d20-3941-c6c1" id="34dc-ac25-4b2f-9ff9" primary="false" name="Champion"/>
         <categoryLink targetId="536d-4b88-52f1-46cc" id="6e7a-dc10-405a-5d4d" primary="false" name="Unit"/>
@@ -71,7 +71,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Brute" hidden="false" id="5689-26e9-3906-12ae" flatten="false" collapsible="false">
+    <selectionEntry type="upgrade" import="true" name="Brute" hidden="false" id="5689-26e9-3906-12ae" flatten="false" collapsible="false" sortIndex="3">
       <categoryLinks>
         <categoryLink name="Champion" hidden="false" id="f3b6-77ce-0fec-7dfd" targetId="fea4-7d20-3941-c6c1" primary="true"/>
         <categoryLink name="Unit" hidden="false" id="a564-6d8f-9243-3a5d" targetId="536d-4b88-52f1-46cc" primary="false"/>
@@ -130,7 +130,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Skirmisher" hidden="false" id="7982-eab5-abf0-f46c">
+    <selectionEntry type="upgrade" import="true" name="Skirmisher" hidden="false" id="7982-eab5-abf0-f46c" sortIndex="4">
       <categoryLinks>
         <categoryLink name="Unit" hidden="false" id="606a-9b75-255a-3f85" targetId="536d-4b88-52f1-46cc" primary="false"/>
         <categoryLink targetId="903b-ab81-a717-63bf" id="f3b4-0106-c16e-eb22" primary="false" name="Super Mutant"/>
@@ -197,7 +197,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Enforcer" hidden="false" id="bae0-fad4-63cf-3ff7">
+    <selectionEntry type="upgrade" import="true" name="Enforcer" hidden="false" id="bae0-fad4-63cf-3ff7" sortIndex="4">
       <categoryLinks>
         <categoryLink name="Unit" hidden="false" id="f76f-b209-b31a-9150" targetId="536d-4b88-52f1-46cc" primary="false"/>
         <categoryLink targetId="903b-ab81-a717-63bf" id="d7d3-3b15-98cf-2abd" primary="false" name="Super Mutant"/>
@@ -307,7 +307,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Hound" hidden="false" id="dd41-b96f-f118-aafa">
+    <selectionEntry type="upgrade" import="true" name="Hound" hidden="false" id="dd41-b96f-f118-aafa" sortIndex="4">
       <categoryLinks>
         <categoryLink name="Unit" hidden="false" id="b22e-cc06-98e8-24ee" targetId="536d-4b88-52f1-46cc" primary="false"/>
         <categoryLink targetId="f14c-998a-b1aa-2af4" id="0ab3-907b-f91b-e359" primary="true" name="Grunt"/>

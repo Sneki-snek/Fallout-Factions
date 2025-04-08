@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7782-c17d-c51e-6a1a" name="Raiders" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7782-c17d-c51e-6a1a" name="Raiders" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Boss" hidden="false" id="ca26-0931-967f-3b92" sortIndex="2">
       <selectionEntryGroups>
@@ -294,6 +294,9 @@
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="6adf-2ef4-46b2-5fb5" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="17"/>
+              </costs>
             </entryLink>
             <entryLink import="true" name="Baseball Grenades" hidden="false" id="9c60-ad21-f268-7c74" type="selectionEntry" targetId="b6cf-b4f7-4e2c-7cf8">
               <entryLinks>
@@ -307,6 +310,9 @@
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="b5ca-0549-b020-71d4" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="22"/>
+              </costs>
             </entryLink>
             <entryLink import="true" name="Molotov Cocktails" hidden="false" id="1d1b-1e39-22aa-1f82" type="selectionEntry" targetId="325d-a3c0-cb20-83f7">
               <entryLinks>
@@ -320,6 +326,9 @@
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="3b16-9036-52d3-2785" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="19"/>
+              </costs>
             </entryLink>
             <entryLink import="true" name="Pipe revolver" hidden="false" id="cd63-cc92-41b2-2e0a" type="selectionEntry" targetId="fd15-209d-2487-23a1">
               <entryLinks>
@@ -333,6 +342,9 @@
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="roster" shared="false" id="1bc8-3fb2-12e8-f0a7" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
+              <costs>
+                <cost name="Caps" typeId="2d27-af51-8c35-c315" value="17"/>
+              </costs>
             </entryLink>
           </entryLinks>
           <constraints>
