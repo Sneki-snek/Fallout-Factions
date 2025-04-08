@@ -365,6 +365,20 @@
         <categoryLink targetId="f14c-998a-b1aa-2af4" id="0646-5253-3e14-0138" primary="true" name="Grunt"/>
         <categoryLink targetId="a435-53a8-5ea3-ec84" id="54ad-bfbe-ff3b-1637" primary="false" name="Moth Cult"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Mothman Sonic Screech" hidden="false" id="3419-854e-ab80-32f4" type="selectionEntry" targetId="c408-69c4-92d1-4494">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e296-052a-3303-4b3d-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e296-052a-3303-4b3d-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Mothman Sonic Wave" hidden="false" id="920a-ccfe-f6b4-71b2" type="selectionEntry" targetId="51cd-14fa-7dc8-a818">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f306-2211-b68c-95af-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f306-2211-b68c-95af-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <catalogueLinks>
