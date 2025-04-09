@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-556b-cae6-314e-a8f7" name="Fallout Factions" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
+<gameSystem id="sys-556b-cae6-314e-a8f7" name="Fallout Factions" battleScribeVersion="2.03" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
   <categoryEntries>
     <categoryEntry name="Leader" id="1ada-7eae-f801-68b5"/>
     <categoryEntry name="Unit" id="536d-4b88-52f1-46cc" hidden="false"/>
@@ -15,6 +15,7 @@
     <categoryEntry name="Operators" id="d1de-50c7-c2c2-f18e" hidden="false"/>
     <categoryEntry name="Pack" id="d11a-0b61-4498-982b" hidden="false"/>
     <categoryEntry name="Moth Cult" id="a435-53a8-5ea3-ec84" hidden="false"/>
+    <categoryEntry name="Zetan" id="0c4d-56fb-e54c-2f01" hidden="false"/>
   </categoryEntries>
   <profileTypes>
     <profileType name="Unit" id="769b-f94e-65c4-86be" hidden="false">
@@ -206,13 +207,13 @@ If the model cannot move this full distance, it moves as far as it can.</descri
       <description>After making an Attack with this Weapon, it cannot be used again this game.</description>
     </rule>
     <rule name="Bladed" id="5a76-fb3a-b6a9-2dfe" hidden="false">
-      <description>When a model with this Weapon uses a Makeshift Weapon to make a Melee Attack, add a Bonus Die to the Pool. </description>
+      <description>When a model with this Weapon uses a Makeshift Weapon to make a Melee Attack, add a Bonus Die to the Pool.</description>
     </rule>
     <rule name="Being Of Insight" id="8531-a2a1-67fc-4271" hidden="false">
-      <description>When this model would suffer an Injury, reduce Ritual Count by 1 on the Crew Roster. </description>
+      <description>When this model would suffer an Injury, reduce Ritual Count by 1 on the Crew Roster.</description>
     </rule>
     <rule name="Being Of Rage" id="2e29-0cbd-ed90-df8d" hidden="false">
-      <description>When this model completes an Attack Action or would suffer an Injury, reduce Ritual Count by 1 on the Crew Roster. </description>
+      <description>When this model completes an Attack Action or would suffer an Injury, reduce Ritual Count by 1 on the Crew Roster.</description>
     </rule>
     <rule name="Mythical" id="10e3-cab0-a20e-229d" hidden="false">
       <description>This model does not have a Health Value. When a crew&apos;s Ritual Count reaches 0, this model is Incapacitated.</description>
@@ -224,13 +225,13 @@ If the model cannot move this full distance, it moves as far as it can.</descri
       <description>This model cannot take the Open Fire or Brawl Actions.</description>
     </rule>
     <rule name="Recruiter" id="ccda-d92f-7a42-2ac9" hidden="false">
-      <description> If a model with this Perk was not Incapacitated during a game, the crew that contained it may make a Recruit Story Action for free during the next Story Phase. </description>
+      <description>If a model with this Perk was not Incapacitated during a game, the crew that contained it may make a Recruit Story Action for free during the next Story Phase.</description>
     </rule>
     <rule name="True Wisdom Of The Mothman" id="b388-a30d-815e-6fd0" hidden="false">
-      <description> Friendly models within this model&apos;s Control Area may count their Charisma statistic as being 8. When a model within this model&apos;s Control Area would Fail a Confusion Test, you may reduce Ritual Count by 1 to have the model Pass the Test instead. </description>
+      <description>Friendly models within this model&apos;s Control Area may count their Charisma statistic as being 8. When a model within this model&apos;s Control Area would Fail a Confusion Test, you may reduce Ritual Count by 1 to have the model Pass the Test instead.</description>
     </rule>
     <rule name="Pulse" id="deac-cba4-2b17-3886" hidden="false">
-      <description> When making an Attack Action with this Weapon, each model Engaged with the Active model counts as a Target model.
+      <description>When making an Attack Action with this Weapon, each model Engaged with the Active model counts as a Target model.
  
 Make a single Attack Test, for which no Bonus Dice can be applied. Then resolve the Inflict Damage step once for each Target model, in an order chosen by the Active player. If a rule adjusts the amount of Damage inflicted (for example, the Ignite (X) Critical Effect), this does not carry over between models. Do not resolve Confusion until Damage has been applied to all models.</description>
     </rule>
@@ -243,10 +244,15 @@ This is marked on the Crew Roster. Critical Effects cannot be This model can co
 
 
 A crew&apos;s Ritual Count starts at 0. For each Luck Die remaining in the Pool during the Fortune Smiles step, the Active player can increase Ritual Count by 1 instead of rolling a Standard Die. 
-This is marked on the Crew Roster. Critical Effects cannot be triggered in a Test that increases Ritual Count. </description>
+This is marked on the Crew Roster. Critical Effects cannot be triggered in a Test that increases Ritual Count.</description>
     </rule>
     <rule name="Showstopper" id="da4e-9737-82d8-3ae2" hidden="false">
-      <description> If this attack inflicts an amount of Damage equal to or greater than the Target&apos;s Endurance, any Excess Harm caused will result in the model suffering an Injury. </description>
+      <description>If this attack inflicts an amount of Damage equal to or greater than the Target&apos;s Endurance, any Excess Harm caused will result in the model suffering an Injury.</description>
+    </rule>
+    <rule name="Mind Control" id="33fb-59e2-068a-9014" hidden="false">
+      <description>This model may take Open Fire Actions using the weapon carried by an enemy model within its Control Area. Visibility is checked from the enemy model that has the weapon used by this model. 
+During this Open Fire Action, this model uses its own Luck statistic and the appropriate Test statistic value from the enemy model. 
+Weapons with the One &amp; Done Trait cannot be used via this Perk.</description>
     </rule>
   </sharedRules>
   <forceEntries>
@@ -1486,6 +1492,123 @@ When choosing your Active model, you may choose an Exhausted model. If you do, 
       <infoLinks>
         <infoLink name="Fast" id="2e6f-74c9-eb29-5942" hidden="false" type="rule" targetId="e3de-3e1c-02b7-8cb2"/>
         <infoLink name="Pushback" id="126b-9083-7871-4cb4" hidden="false" type="rule" targetId="5f03-28ea-e4cf-e9b2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Electro-Suppressor" hidden="false" id="4d24-43fb-01b1-cd24">
+      <profiles>
+        <profile name="Electro-Suppressor" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="f2e4-5256-f7c3-6648">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Electro-Suppressor</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Melee</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">4S</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">-</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Suppress(3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Suppress" id="b842-88ed-db67-3e3f" hidden="false" type="rule" targetId="a5a2-907b-3be3-11ce"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Alien Blaster" hidden="false" id="4e20-8e73-a14e-27d0">
+      <profiles>
+        <profile name="Alien Blaster" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="b538-50ff-8981-2200">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Alien Blaster</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Pistol(12&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">4A</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Slow</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Meltdown</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Slow" id="1542-06e8-bb7f-54c8" hidden="false" type="rule" targetId="e85a-bbf0-475c-206d"/>
+        <infoLink name="Meltdown" id="14f9-aa0b-43c2-4c28" hidden="false" type="rule" targetId="2db2-034a-d477-aad7"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Alien Laser" hidden="false" id="6780-3d50-6216-05d8">
+      <profiles>
+        <profile name="Alien Laser" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="dc39-5abc-5e91-f9a7">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Alien Laser</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Pistol(14&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">3A</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Fast</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Ignite(2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Fast" id="9bb4-a6c7-3d66-bf88" hidden="false" type="rule" targetId="e3de-3e1c-02b7-8cb2"/>
+        <infoLink name="Ignite" id="ff4f-904d-f4b3-91bf" hidden="false" type="rule" targetId="60d8-505b-5586-8d34"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cryo Blaster" hidden="false" id="2e11-3d61-4397-1b21">
+      <profiles>
+        <profile name="Cyro Blaster" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="7b0f-a1b0-c835-43f9">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Cyro Blaster</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Pistol(12&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">2A</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Fast</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Suppress(2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Fast" id="3bba-f34f-3630-1816" hidden="false" type="rule" targetId="e3de-3e1c-02b7-8cb2"/>
+        <infoLink name="Suppress" id="8074-6227-77c3-b79b" hidden="false" type="rule" targetId="a5a2-907b-3be3-11ce"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Toxin Blaster" hidden="false" id="467c-df75-efdf-4337">
+      <profiles>
+        <profile name="Toxin Blaster" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="9e96-9591-f5c9-0f9c">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Toxin Blaster</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Pistol(12&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">3A</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">-</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Poison(2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Poison" id="5ce1-858c-9c8f-1711" hidden="false" type="rule" targetId="34f6-9c3a-1617-3b87"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Alien Disintegrator" hidden="false" id="d482-dfc0-384b-02d0">
+      <profiles>
+        <profile name="Alien Disintegrator" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="7dc6-da83-10e7-76bb">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Alien Disintegrator</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Rifle(16&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">5P</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">CQB</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">Meltdown</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="CQB" id="1fbd-d93a-ea2e-a7c5" hidden="false" type="rule" targetId="528d-c5d6-b786-d394"/>
+        <infoLink name="Meltdown" id="f025-94a9-f69b-60b7" hidden="false" type="rule" targetId="2db2-034a-d477-aad7"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Plasma Grenades" hidden="false" id="fc0a-6332-6d09-ca6a">
+      <profiles>
+        <profile name="Plasma Grenades" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="7ac0-2701-d8cc-ef0d">
+          <characteristics>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Plasma Grenades</characteristic>
+            <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Grenade(8&quot;)</characteristic>
+            <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">4A</characteristic>
+            <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Area(2&quot;), CQB</characteristic>
+            <characteristic name="Effect" typeId="b931-98fd-7018-c0bf">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="CQB" id="b430-e3d1-52d7-fa05" hidden="false" type="rule" targetId="528d-c5d6-b786-d394"/>
+        <infoLink name="Area" id="c75c-955c-7d93-276b" hidden="false" type="rule" targetId="edab-9a5e-37e3-6727"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>

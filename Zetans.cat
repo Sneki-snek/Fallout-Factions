@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="9264-7acc-2858-2734" name="Zetans" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Zetan Commander" hidden="false" id="26cb-a8c3-6dd7-505e" sortIndex="2">
+      <profiles>
+        <profile name="Zetan Commander" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="c7c7-00dc-1927-2acc">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">5</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">6</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">7</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">4</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">7</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">5</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">3</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">3</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Burly, Hardy, Natural Leader, Rad Resistant</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Burly" id="13d0-616e-b538-2afd" hidden="false" type="rule" targetId="d6d4-d3d8-8ac3-7312"/>
+        <infoLink name="Hardy" id="2758-a79c-e5d8-7efa" hidden="false" type="rule" targetId="ec70-6a0e-9d0a-54da"/>
+        <infoLink name="Natural Leader" id="d65c-ccde-6221-764f" hidden="false" type="rule" targetId="4dce-6c82-fc0f-93b7"/>
+        <infoLink name="Rad Resistant" id="bb82-906f-ce59-ac7e" hidden="false" type="rule" targetId="760a-3b74-8c57-ce18"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="1ada-7eae-f801-68b5" id="7abb-4fb4-6d6a-ba7e" primary="true" name="Leader"/>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="b06f-3ecc-0d92-3985" primary="false" name="Unit"/>
+        <categoryLink targetId="fea4-7d20-3941-c6c1" id="62e6-c616-a5d0-61d1" primary="false" name="Champion"/>
+        <categoryLink targetId="0c4d-56fb-e54c-2f01" id="c4b2-4c6f-21a8-6e73" primary="false" name="Zetan"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Electro-Suppressor" hidden="false" id="f429-e896-5e30-6e51" type="selectionEntry" targetId="4d24-43fb-01b1-cd24">
+          <entryLinks>
+            <entryLink import="true" name="Plasma Grenades" hidden="false" id="14b2-cff3-0e29-e628" type="selectionEntry" targetId="fc0a-6332-6d09-ca6a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9dfb-3497-81fa-f7b4-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dfb-3497-81fa-f7b4-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a3d-b0ee-9954-c72a"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Alien Disintegrator" hidden="false" id="39c2-7ff1-83bc-2074" type="selectionEntry" targetId="d482-dfc0-384b-02d0">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0194-3ca6-dd28-ff34"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Zetan Lieutenant" hidden="false" id="1ca4-3db8-59bf-4ec6" sortIndex="3">
+      <categoryLinks>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="f475-2d38-e981-d9e7" primary="false" name="Unit"/>
+        <categoryLink targetId="fea4-7d20-3941-c6c1" id="fca8-fef1-9973-4b9f" primary="true" name="Champion"/>
+        <categoryLink targetId="0c4d-56fb-e54c-2f01" id="6522-a7e0-cf86-2d88" primary="false" name="Zetan"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Zetan Lieutenant" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="1fe6-c88a-e053-7d6e">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">3</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">4</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">4</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">4</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">6</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">5</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Alien Blaster" hidden="false" id="28b1-3fe0-7347-231c" type="selectionEntry" targetId="4e20-8e73-a14e-27d0">
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="30"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e183-c714-a865-741f"/>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="2630-584b-5445-b98c" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Cryo Blaster" hidden="false" id="5a4a-6ee7-5049-47ce" type="selectionEntry" targetId="2e11-3d61-4397-1b21">
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="26"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="c948-f111-89b3-3e62" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83f5-56bf-0651-1e41"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Toxin Blaster" hidden="false" id="074b-6551-dd23-cf14" type="selectionEntry" targetId="467c-df75-efdf-4337">
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="28"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="1375-5bfd-4a9d-14b6" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f513-e3cd-e9c5-0aef"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Zetan Trooper" hidden="false" id="2b46-996c-c2ad-d819" sortIndex="4">
+      <categoryLinks>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="2a12-0fb8-fd5c-3eaa" primary="false" name="Unit"/>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="4b12-9298-250a-c8c2" primary="true" name="Grunt"/>
+        <categoryLink targetId="0c4d-56fb-e54c-2f01" id="ce11-e8b1-0fe7-3b87" primary="false" name="Zetan"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Zetan Trooper" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="4ebd-9d75-f555-be3c">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">2</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">4</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">4</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">3</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">5</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">1</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Cryo Blaster" hidden="false" id="4b68-496c-eece-bbe3" type="selectionEntry" targetId="2e11-3d61-4397-1b21">
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="21"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="3d04-8c29-f2a9-185b" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="760c-6702-d776-c4ee"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Alien Blaster" hidden="false" id="20c0-6004-5d6d-a755" type="selectionEntry" targetId="4e20-8e73-a14e-27d0">
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="25"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cba0-8a3f-33d1-3a14"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="d0ad-bda6-5486-a36c" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Toxin Blaster" hidden="false" id="1a8c-a61a-d9f9-b8ca" type="selectionEntry" targetId="467c-df75-efdf-4337">
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="23"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="1a59-0997-d868-86f0" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf5f-e94b-31a3-fe8a"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Alien Drone" hidden="false" id="3fad-48c6-7b01-cee1" sortIndex="5">
+      <profiles>
+        <profile name="Alien Drone" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="4579-ce47-7f5d-355a">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">2</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">4</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">6</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">1</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">1</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">1</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">3</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Machine, Rad Resistant</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Machine" id="86f4-1798-62a6-2cff" hidden="false" type="rule" targetId="748e-27c9-4f04-61d2"/>
+        <infoLink name="Rad Resistant" id="abb1-f214-f269-c7b8" hidden="false" type="rule" targetId="760a-3b74-8c57-ce18"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Alien Laser" hidden="false" id="48cf-c5a9-2b3d-1c86" type="selectionEntry" targetId="6780-3d50-6216-05d8">
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="30"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c1aa-e1fd-4997-178b-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1aa-e1fd-4997-178b-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="6a5e-9907-17c5-599c" primary="false" name="Unit"/>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="3f45-d49f-df35-d641" primary="true" name="Grunt"/>
+        <categoryLink targetId="0c4d-56fb-e54c-2f01" id="82c8-02e5-d7c0-4fe2" primary="false" name="Zetan"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Flatwoods Monster" hidden="false" id="4dd9-05d9-dbf7-3fbe" sortIndex="6">
+      <categoryLinks>
+        <categoryLink targetId="536d-4b88-52f1-46cc" id="d002-89bf-35b1-2422" primary="false" name="Unit"/>
+        <categoryLink targetId="f14c-998a-b1aa-2af4" id="11d6-2cb3-a0c3-5ec1" primary="true" name="Grunt"/>
+        <categoryLink targetId="0c4d-56fb-e54c-2f01" id="71b4-7dbb-5d99-36ac" primary="false" name="Zetan"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Flatwoods Monster" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="89a7-de34-225b-b7d1">
+          <characteristics>
+            <characteristic name="S" typeId="0658-e36f-340b-d2fd">2</characteristic>
+            <characteristic name="P" typeId="1952-e9b4-6eee-c2af">4</characteristic>
+            <characteristic name="E" typeId="089e-bbfc-56a7-f03c">5</characteristic>
+            <characteristic name="C" typeId="04b4-a668-4aa1-6152">6</characteristic>
+            <characteristic name="I" typeId="a27f-5d5a-e86c-7be5">6</characteristic>
+            <characteristic name="A" typeId="775e-c925-22f0-7d33">5</characteristic>
+            <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
+            <characteristic name="Wound" typeId="419f-3112-3e77-f90d">2</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Mind Control</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Mind Control" id="bd85-13b4-0fd8-7ac0" hidden="false" type="rule" targetId="33fb-59e2-068a-9014"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Alien Blaster" hidden="false" id="ab00-2bac-f81b-17ed" type="selectionEntry" targetId="4e20-8e73-a14e-27d0">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b66-0489-346e-95ea-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b66-0489-346e-95ea-max"/>
+          </constraints>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="40"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Companions" id="f29b-a8c4-527f-3eee" targetId="4a14-b2f0-fd22-9574" importRootEntries="true"/>
+  </catalogueLinks>
+</catalogue>
