@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="40b8-8776-c343-c2bb" name="Brotherhood of Steel" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="40b8-8776-c343-c2bb" name="Brotherhood of Steel" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Paladin" hidden="false" id="7892-c47d-cbdf-45ba" sortIndex="2">
       <profiles>
@@ -13,7 +13,7 @@
             <characteristic name="A" typeId="775e-c925-22f0-7d33">4</characteristic>
             <characteristic name="L" typeId="d136-fa51-dc6b-206e">2</characteristic>
             <characteristic name="Wound" typeId="419f-3112-3e77-f90d">4</characteristic>
-            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Natrual Leader, Power Armor</characteristic>
+            <characteristic name="Perks" typeId="ba84-901c-09d9-1905">Natural Leader, Power Armor</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -103,6 +103,12 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4252-0324-283f-a919"/>
           </constraints>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Companion?" id="e1d1-1e6f-4c5d-0d6f" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Roboteer" hidden="false" id="c0b6-ce12-88fe-f24a"/>
+            <selectionEntry type="upgrade" import="true" name="Tamer" hidden="false" id="210e-2d4c-6150-016a"/>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="fea4-7d20-3941-c6c1" id="9b02-a358-2ee6-5dd1" primary="true" name="Champion"/>
@@ -176,7 +182,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Aspirant" hidden="false" id="f2be-d8d0-450d-0d1a" sortIndex="4">
+    <selectionEntry type="upgrade" import="true" name="Aspirant" hidden="false" id="f2be-d8d0-450d-0d1a" sortIndex="5">
       <categoryLinks>
         <categoryLink targetId="536d-4b88-52f1-46cc" id="bbeb-bd6b-9371-4dd4" primary="false" name="Unit"/>
         <categoryLink targetId="f14c-998a-b1aa-2af4" id="1ad9-b110-33bf-aced" primary="true" name="Grunt"/>
@@ -255,7 +261,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Initiate" hidden="false" id="01d0-3e5d-b441-49f2" sortIndex="4">
+    <selectionEntry type="upgrade" import="true" name="Initiate" hidden="false" id="01d0-3e5d-b441-49f2" sortIndex="5">
       <profiles>
         <profile name="Initiate" typeId="769b-f94e-65c4-86be" typeName="Unit" hidden="false" id="0760-f2e4-876e-c55e">
           <characteristics>
@@ -318,18 +324,21 @@
         <selectionEntry type="upgrade" import="true" name="BoS ploys" hidden="false" id="d5f8-715d-7218-7433">
           <rules>
             <rule name="The Chain That Binds" id="1790-6923-8424-ac46" hidden="false">
-              <description> You may enact this Ploy at the start of the game, before the start of the first Turn.
+              <description>You may enact this Ploy at the start of the game, before the start of the first Turn.
 
  Each Grunt model within the Control Area of a Friendly Champion may take a single Action, taking Fatigue as normal.</description>
             </rule>
             <rule name="Vertibird Drop" id="ed8b-aa2f-1d51-10e8" hidden="false">
-              <description> You may enact this Ploy before Deploying models onto the Battlefield.
+              <description>You may enact this Ploy before Deploying models onto the Battlefield.
 
 Choose one of your models. That model is not deployed following the Starting Positions rules of this game. Instead, when you become the Active player on Turn 2, place the model in Base contact of a Battlefield edge of your choice</description>
             </rule>
           </rules>
         </selectionEntry>
       </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="735c-aebd-500f-1da2" id="1bca-1479-0ca7-40c6" primary="true" name="Extras"/>
+      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <catalogueLinks>

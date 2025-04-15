@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-556b-cae6-314e-a8f7" name="Fallout Factions" battleScribeVersion="2.03" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
+<gameSystem id="sys-556b-cae6-314e-a8f7" name="Fallout Factions" battleScribeVersion="2.03" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
   <categoryEntries>
-    <categoryEntry name="Leader" id="1ada-7eae-f801-68b5"/>
+    <categoryEntry name="Leader" id="1ada-7eae-f801-68b5">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aae9-2ebe-0d1d-d650"/>
+      </constraints>
+    </categoryEntry>
     <categoryEntry name="Unit" id="536d-4b88-52f1-46cc" hidden="false"/>
     <categoryEntry name="Champion" id="fea4-7d20-3941-c6c1" hidden="false"/>
     <categoryEntry name="Grunt" id="f14c-998a-b1aa-2af4" hidden="false"/>
     <categoryEntry name="Survivors" id="dd3e-727d-dc94-cb7e" hidden="false"/>
     <categoryEntry name="Super Mutant" id="903b-ab81-a717-63bf" hidden="false"/>
     <categoryEntry name="BoS" id="9e15-d8c3-563e-36bc" hidden="false"/>
-    <categoryEntry name="Chems" id="735c-aebd-500f-1da2" hidden="false"/>
+    <categoryEntry name="Extras" id="735c-aebd-500f-1da2" hidden="false"/>
     <categoryEntry name="Raider" id="f867-1634-0096-bae6" hidden="false"/>
     <categoryEntry name="Companion" id="3d88-d079-2f02-28c6" hidden="false"/>
     <categoryEntry name="Disciples" id="47c0-48db-1b08-9c17" hidden="false"/>
@@ -16,6 +20,7 @@
     <categoryEntry name="Pack" id="d11a-0b61-4498-982b" hidden="false"/>
     <categoryEntry name="Moth Cult" id="a435-53a8-5ea3-ec84" hidden="false"/>
     <categoryEntry name="Zetan" id="0c4d-56fb-e54c-2f01" hidden="false"/>
+    <categoryEntry name="Companion Unit" id="5c76-1167-3f40-11ca" hidden="false"/>
   </categoryEntries>
   <profileTypes>
     <profileType name="Unit" id="769b-f94e-65c4-86be" hidden="false">
@@ -45,6 +50,17 @@
         <characteristicType name="Upgrade Limit per Model" id="8db5-a114-b96a-00c2"/>
         <characteristicType name="Champion Limit" id="2739-4d8c-8082-614f"/>
         <characteristicType name="Facility Limit" id="b4cd-132c-ceb3-8d94"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Campaign active" id="84ef-b0bb-75c7-3c7b" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Description" id="8417-175a-25bc-4261"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Serious Injury" id="4269-8b6c-1919-6d4c" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Serious Injury" id="df0d-ef8d-1b6b-31bb"/>
+        <characteristicType name="Effect" id="964b-59f5-9d3d-e28a"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -302,6 +318,9 @@ You may Re-roll all Duds in the Pool.</description>
 When choosing your Active model, you may choose an Exhausted model. If you do, it Recovers 1 Fatigue.</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink targetId="735c-aebd-500f-1da2" id="6375-e248-9f07-aee2" primary="true" name="Extras"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name=".44 Pistol" hidden="false" id="e86d-0cb6-809a-82f7">
       <profiles>
@@ -1611,6 +1630,30 @@ When choosing your Active model, you may choose an Exhausted model. If you do, 
         <infoLink name="Area" id="c75c-955c-7d93-276b" hidden="false" type="rule" targetId="edab-9a5e-37e3-6727"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Campaign" hidden="true" id="70f7-fab3-913a-685c">
+      <categoryLinks>
+        <categoryLink targetId="735c-aebd-500f-1da2" id="7d9e-6f41-c7b8-23a4" primary="true" name="Extras"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Injury" hidden="false" id="50f3-3cdf-3f49-81d1">
+          <profiles>
+            <profile name="3" typeId="4269-8b6c-1919-6d4c" typeName="Serious Injury" hidden="false" id="0eaa-4252-8157-c7ad">
+              <characteristics>
+                <characteristic name="Serious Injury" typeId="df0d-ef8d-1b6b-31bb">Weakend</characteristic>
+                <characteristic name="Effect" typeId="964b-59f5-9d3d-e28a">-1 strength</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="61d4-ab67-bf1a-79c0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Chems" hidden="false" id="5d77-d4a5-7c51-f361" sortIndex="1" defaultAmount="1">
@@ -1707,8 +1750,30 @@ When choosing your Active model, you may choose an Exhausted model. If you do, 
         <categoryLink targetId="735c-aebd-500f-1da2" id="47ae-1cb8-8328-4a90" primary="true" name="Chems"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Enable Campaign Things?" hidden="true" id="61d4-ab67-bf1a-79c0" sortIndex="1">
+      <categoryLinks>
+        <categoryLink targetId="735c-aebd-500f-1da2" id="baac-f87a-a8a5-3ec0" primary="true" name="Extras"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Yes" hidden="false" id="b440-62e2-9a0a-2795">
+          <profiles>
+            <profile name="Campaign Things" typeId="84ef-b0bb-75c7-3c7b" typeName="Campaign active" hidden="false" id="8470-3f24-eb0c-6cac">
+              <characteristics>
+                <characteristic name="Description" typeId="8417-175a-25bc-4261">Enables Campaign things (WIP)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd4f-1206-d190-817b"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </selectionEntries>
   <publications>
     <publication name="Github" id="2a6d-6afe-dd1d-5321" hidden="false" publisherUrl="https://github.com/Sneki-snek/Fallout-Factions" shortName="Sneki-snek/Fallout-Factions"/>
   </publications>
+  <entryLinks>
+    <entryLink import="true" name="Campaign" hidden="false" id="9915-039e-6521-5975" type="selectionEntry" targetId="70f7-fab3-913a-685c" sortIndex="1"/>
+  </entryLinks>
 </gameSystem>

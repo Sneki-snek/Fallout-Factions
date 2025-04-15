@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9264-7acc-2858-2734" name="Zetans" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9264-7acc-2858-2734" name="Zetans" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="5" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Zetan Commander" hidden="false" id="26cb-a8c3-6dd7-505e" sortIndex="2">
       <profiles>
@@ -42,11 +42,17 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a3d-b0ee-9954-c72a"/>
           </constraints>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="44"/>
+          </costs>
         </entryLink>
         <entryLink import="true" name="Alien Disintegrator" hidden="false" id="39c2-7ff1-83bc-2074" type="selectionEntry" targetId="d482-dfc0-384b-02d0">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0194-3ca6-dd28-ff34"/>
           </constraints>
+          <costs>
+            <cost name="Caps" typeId="2d27-af51-8c35-c315" value="56"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntry>

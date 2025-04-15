@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7782-c17d-c51e-6a1a" name="Raiders" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7782-c17d-c51e-6a1a" name="Raiders" gameSystemId="sys-556b-cae6-314e-a8f7" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Boss" hidden="false" id="ca26-0931-967f-3b92" sortIndex="2">
       <selectionEntryGroups>
@@ -493,6 +493,9 @@ When choosing your Active model, you may choose an Exhausted model. If you do, 
           </rules>
         </selectionEntry>
       </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="735c-aebd-500f-1da2" id="bc60-d88b-3f12-b794" primary="true" name="Extras"/>
+      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <catalogueLinks>
