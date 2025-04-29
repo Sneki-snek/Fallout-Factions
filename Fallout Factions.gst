@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-556b-cae6-314e-a8f7" name="Fallout Factions" battleScribeVersion="2.03" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
+<gameSystem id="sys-556b-cae6-314e-a8f7" name="Fallout Factions" battleScribeVersion="2.03" revision="7" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" library="false">
   <categoryEntries>
     <categoryEntry name="Leader" id="1ada-7eae-f801-68b5">
       <constraints>
@@ -85,7 +85,7 @@
       <description>At the end of the Inflict Damage step, the opposing player rolls X dice. If any of them score higher than the Target’s Intelligence, the Target suffers Fatigue.</description>
     </rule>
     <rule name="Maim" id="1446-58d6-7333-f74f" hidden="false">
-      <description>At the end of the Inflict Damage step, the Target Suffers 1 Harm.</description>
+      <description>At the end of the Inflict Damage step, the Target Suffers 1 Harm. (Excess harm does not cause wounds)</description>
     </rule>
     <rule name="Pierce" id="cdb1-d4c1-caee-6ff6" hidden="false">
       <description>During the Inflict Damage step, the Target’s Endurance is treated as one lower.</description>
@@ -274,7 +274,7 @@ Weapons with the One &amp; Done Trait cannot be used via this Perk.</description
   <forceEntries>
     <forceEntry name="Tier 1" id="ebad-b61e-ed20-0fdf" hidden="false" sortIndex="1">
       <categoryLinks>
-        <categoryLink name="Chems" hidden="false" id="cf6f-e222-56e0-699f" targetId="735c-aebd-500f-1da2"/>
+        <categoryLink name="Extras" hidden="false" id="cf6f-e222-56e0-699f" targetId="735c-aebd-500f-1da2"/>
         <categoryLink name="Leader" hidden="false" id="d6a7-c502-8e2b-45da" targetId="1ada-7eae-f801-68b5"/>
         <categoryLink name="Champion" hidden="false" id="6323-43b7-ca90-245b" targetId="fea4-7d20-3941-c6c1"/>
         <categoryLink name="Grunt" hidden="false" id="0a8c-6578-c77e-ad5b" targetId="f14c-998a-b1aa-2af4"/>
@@ -283,7 +283,7 @@ Weapons with the One &amp; Done Trait cannot be used via this Perk.</description
     </forceEntry>
     <forceEntry name="Tier 3" id="17e0-6c49-b318-053c" hidden="false" sortIndex="3">
       <categoryLinks>
-        <categoryLink name="Chems" hidden="false" id="b6dd-5f65-4ab4-0b32" targetId="735c-aebd-500f-1da2"/>
+        <categoryLink name="Extras" hidden="false" id="b6dd-5f65-4ab4-0b32" targetId="735c-aebd-500f-1da2"/>
         <categoryLink name="Leader" hidden="false" id="63d9-ba1a-63e2-7203" targetId="1ada-7eae-f801-68b5"/>
         <categoryLink name="Champion" hidden="false" id="55fc-727c-f46e-137b" targetId="fea4-7d20-3941-c6c1"/>
         <categoryLink name="Grunt" hidden="false" id="209e-ad6f-b92a-4f8c" targetId="f14c-998a-b1aa-2af4"/>
@@ -292,7 +292,7 @@ Weapons with the One &amp; Done Trait cannot be used via this Perk.</description
     </forceEntry>
     <forceEntry name="Tier 2" id="9a49-a223-343b-ec0b" hidden="false" sortIndex="2">
       <categoryLinks>
-        <categoryLink name="Chems" hidden="false" id="ccb4-efae-e7c1-c9ad" targetId="735c-aebd-500f-1da2"/>
+        <categoryLink name="Extras" hidden="false" id="ccb4-efae-e7c1-c9ad" targetId="735c-aebd-500f-1da2"/>
         <categoryLink name="Leader" hidden="false" id="a272-9d28-61ca-844c" targetId="1ada-7eae-f801-68b5"/>
         <categoryLink name="Champion" hidden="false" id="e93a-4dad-d978-abe4" targetId="fea4-7d20-3941-c6c1"/>
         <categoryLink name="Grunt" hidden="false" id="06e3-2cc7-6b07-8a61" targetId="f14c-998a-b1aa-2af4"/>
@@ -567,7 +567,7 @@ When choosing your Active model, you may choose an Exhausted model. If you do, 
       <profiles>
         <profile name="Hand weapon" typeId="1bcc-ae3d-4698-9df3" typeName="Weapon" hidden="false" id="8c24-8706-575c-9f19">
           <characteristics>
-            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Medic hand weapon</characteristic>
+            <characteristic name="Name" typeId="114e-2c0b-81b9-4951">Hand weapon</characteristic>
             <characteristic name="Type" typeId="5e8a-c398-2f5a-6381">Melee</characteristic>
             <characteristic name="Test" typeId="c375-9a54-86ba-9ccd">3S</characteristic>
             <characteristic name="Traits" typeId="7887-3de6-dbe8-d084">Fast</characteristic>
@@ -1668,7 +1668,7 @@ When choosing your Active model, you may choose an Exhausted model. If you do, 
             </rule>
           </rules>
           <categoryLinks>
-            <categoryLink targetId="735c-aebd-500f-1da2" id="724b-c0fd-795d-fb7d" primary="true" name="Chems"/>
+            <categoryLink targetId="735c-aebd-500f-1da2" id="724b-c0fd-795d-fb7d" primary="true" name="Extras"/>
           </categoryLinks>
           <costs>
             <cost name="Caps" typeId="2d27-af51-8c35-c315" value="5"/>
@@ -1747,7 +1747,7 @@ When choosing your Active model, you may choose an Exhausted model. If you do, 
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="735c-aebd-500f-1da2" id="47ae-1cb8-8328-4a90" primary="true" name="Chems"/>
+        <categoryLink targetId="735c-aebd-500f-1da2" id="47ae-1cb8-8328-4a90" primary="true" name="Extras"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Enable Campaign Things?" hidden="true" id="61d4-ab67-bf1a-79c0" sortIndex="1">
